@@ -6,7 +6,7 @@ import Breadcrumb from '../../components/seo/Breadcrumb.astro';
 
 const title = 'Child Support UAE, How Much, Who Pays & How to Claim';
 const description =
-  'Child support in UAE is the father\'s legal obligation regardless of custody. Learn how UAE courts calculate amounts, what is covered, and how to enforce non-payment, for both Muslim and non-Muslim families.';
+  'Child support in the UAE: the father pays whatever the custody arrangement. What it covers, how courts estimate it, until what age, temporary orders and enforcement.';
 
 const hreflang = {
   en: 'https://divorceu.ae/en/child-support-uae/',
@@ -20,83 +20,88 @@ const breadcrumbs = [
 
 const whatIsCovered = [
   {
-    category: 'Food & basic needs',
-    detail: 'Reasonable food, clothing, and essential household items for the child. Courts assess this against the family\'s established standard of living, not a minimum subsistence level.',
+    category: 'Food & clothing',
+    detail: 'Article 95 of Federal Decree-Law No. 41 of 2024 defines maintenance as food, clothing, housing, medical treatment and education according to custom. “According to custom” means the court looks at what is normal for a family in your situation, not a bare minimum.',
     required: true,
   },
   {
     category: 'School fees & education',
-    detail: 'Tuition fees, books, uniforms, school transport, and extracurricular activities. The school tier must be consistent with what the child was accustomed to during the marriage.',
+    detail: 'Education is named in Article 95. In Abu Dhabi civil cases, Article 23 of the 2022 Regulation also names education among the costs the father must keep paying after the divorce. Which school, and at what cost, is argued on the father’s means and the child’s situation (Article 96).',
     required: true,
   },
   {
-    category: 'Medical expenses',
-    detail: 'Routine medical, dental, and optical care. Emergency medical costs. Health insurance premiums. Courts treat medical care as a mandatory component of child support.',
+    category: 'Medical treatment',
+    detail: 'Medical treatment is part of maintenance under Article 95, and treatment is listed in Article 23 of the Abu Dhabi Regulation. Bring invoices and any insurance details so the court can see the real cost.',
     required: true,
   },
   {
     category: 'Housing',
-    detail: 'The custodial parent is entitled to suitable housing for themselves and the children at the father\'s expense, or a housing allowance if the marital home is unavailable. This continues for the duration of the custody period.',
+    detail: 'Housing is part of maintenance under Article 95. In Abu Dhabi civil cases, Article 19 of the 2022 Regulation obliges the father to pay the mother a housing allowance, in kind or cash, for the duration of joint custody unless the court decides otherwise, and the court may exempt him in whole or part if she can afford suitable housing.',
     required: true,
   },
   {
-    category: 'Domestic help',
-    detail: 'If the family employed domestic help during the marriage, courts can include the cost of a housekeeper/nanny in child support, particularly when the custodial mother is also employed.',
-    required: false,
+    category: 'Identity documents',
+    detail: 'Under Article 124 the father pays to obtain and renew the child’s identity documents. The custodian keeps them, but may not use them for travel without the permission of the guardian or the court.',
+    required: true,
   },
   {
-    category: 'Enrichment activities',
-    detail: 'Sports, tutoring, music lessons, and similar activities the child was engaged in before the divorce. Courts consider continuity important for children\'s welfare.',
+    category: 'Domestic help & activities',
+    detail: 'A nanny, tutoring, sport or music lessons are not named in the law. They are argued case by case under the “according to custom” test (Article 95) and the father’s means (Article 96). In Abu Dhabi civil cases, Article 23 covers other daily or periodic expenses the father was paying before the divorce.',
     required: false,
   },
 ];
 
 const calculationFactors = [
-  { factor: "Father's net monthly income", weight: 'Primary', detail: "The most important variable. UAE courts look at verified salary certificates, bank statements, and business income. Undeclared or hidden income is taken seriously, courts can investigate." },
-  { factor: 'Standard of living during marriage', weight: 'High', detail: "Child support aims to maintain the child's established standard of living, not reduce it dramatically. A child who attended private school during the marriage is entitled to private school fees." },
-  { factor: 'Number of children', weight: 'High', detail: "More children = higher total support, though the amount per child is not simply multiplied. Courts assess the total reasonable needs of all children together." },
-  { factor: "Children's ages", weight: 'Medium', detail: "Older children (teenagers) typically have higher costs than younger children. School fees, medical costs, and activity costs all tend to increase with age." },
-  { factor: "Mother's income", weight: 'Medium', detail: "Under UAE law, the father bears primary financial responsibility regardless of the mother's income. However, a high-earning mother may affect discretionary additions beyond basic necessities." },
-  { factor: 'Custody arrangement', weight: 'Low', detail: "The father pays child support whether or not he has custody. If the father has full custody, support obligations transfer to him directly. Shared custody arrangements are assessed individually." },
+  { factor: 'The father’s means', weight: 'Primary', detail: 'Article 96 puts the payer’s means first. Expect the court to look at salary certificates, bank statements and business income; in Abu Dhabi civil cases the court relies on an accounting expert’s report on both parents’ finances (Regulation Article 24).' },
+  { factor: 'The child’s condition and needs', weight: 'High', detail: 'Article 96 also looks at the condition of the person being maintained: age, schooling, health and any special needs. Evidence of real costs (fee invoices, medical bills, rent) matters more than estimates.' },
+  { factor: 'Cost of living at the time and place', weight: 'High', detail: 'Article 96 refers to the economic situation of the time and place. Living costs in the emirate where the child lives are part of the assessment, and a later change in them can support a request to vary the amount (Article 97).' },
+  { factor: 'What the child had before', weight: 'Medium', detail: 'For Muslim families the test is custom (Article 95). In Abu Dhabi civil cases, Regulation Article 23 ties the duty to the education, residence fees, treatment and other daily or periodic expenses the father was providing before the divorce.' },
+  { factor: 'Number of children', weight: 'Medium', detail: 'Each child is entitled to maintenance, and the total still has to fit the father’s means (Article 96). There is no per-child percentage in the law.' },
+  { factor: 'The mother’s finances', weight: 'Low', detail: 'The duty sits with the father. A solvent mother pays only if the father is missing or unable, and can claim it back from him later (Article 106). In Abu Dhabi civil cases her solvency can reduce or remove the housing allowance (Regulation Article 19).' },
 ];
 
 const durations = [
-  { who: 'Boys', until: 'Age 11 (custody), financial support until 18 (adulthood)', note: 'After age 11, custody typically transfers to the father under UAE law. Financial support continues until the son can support himself.' },
-  { who: 'Girls', until: 'Marriage or financial independence', note: 'Daughters remain in the mother\'s custody longer. Financial support continues until marriage or until the daughter has her own income.' },
-  { who: 'Disabled children', until: 'Indefinitely', note: 'Children who cannot support themselves due to disability receive lifelong support regardless of age.' },
-  { who: 'Students', until: 'Completion of education (if enrolled)', note: 'UAE courts can extend support beyond 18 for children enrolled in higher education, the father is expected to support university study.' },
+  { who: 'Sons', until: 'Until he reaches the age at which his peers earn a living', note: 'Article 106 sets no fixed age; the court judges it. Custody, meaning who the child lives with, is a separate question and runs to 18 (Article 123).' },
+  { who: 'Sons who are students', until: 'Longer, while he studies and progresses normally', note: 'Article 106 lets the court extend maintenance for a son who is still a student and progressing normally, for the period the court estimates.' },
+  { who: 'Daughters', until: 'Until she marries or works', note: 'A divorced or widowed daughter goes back on her father’s maintenance unless she has property, works or someone else maintains her (Article 106).' },
+  { who: 'Adult son with a disability', until: 'While he cannot earn', note: 'An adult son who cannot earn a living because of a disability stays on the father’s maintenance (Article 106).' },
 ];
 
 const faqItems = [
   {
     question: 'How much is child support in UAE?',
     answer:
-      "There is no fixed amount, UAE courts determine child support based on the father's income, the child's needs, and the family's standard of living. As a rough guide, courts typically award 15–30% of the father's verified monthly income per child. For a father earning AED 20,000/month, one child might receive AED 4,000–6,000/month in total support (covering school fees, housing, medical, and basic needs combined). High-earner cases can result in AED 10,000–25,000/month per child.",
+      'There is no fixed amount and no percentage in the law. Under Article 96 of Federal Decree-Law No. 41 of 2024 the court estimates maintenance from the father’s means, the child’s condition and the economic situation of the time and place, and Article 95 says it covers food, clothing, housing, medical treatment and education according to custom. Figures you see quoted online as a “typical percentage” are not in any UAE statute; the amount in your case depends on the evidence of income and costs you put before the court.',
   },
   {
     question: 'Does the father pay child support if the mother has custody?',
     answer:
-      'Yes, and this is the most important thing to understand about UAE child support law. The father\'s financial obligation to support his children exists regardless of who has custody. If the mother has custody, the father pays child support to her to fund the children\'s care. This is not optional, it is a legal obligation enforceable by the court.',
+      'Yes. Under Article 106 of Federal Decree-Law No. 41 of 2024 the father maintains a child who has no money of their own, whoever the child lives with. If the mother has custody, the father pays maintenance for the children’s needs. Only if the father is missing or unable to pay does the duty fall on a solvent mother, and she can then claim it back from him later.',
   },
   {
     question: 'At what age does child support stop in UAE?',
     answer:
-      'For boys, financial support generally continues until adulthood (age 18) and beyond if the son is enrolled in university. For girls, support continues until marriage or financial independence. Disabled children receive support indefinitely. Note that custody (who the child lives with) has different age limits from financial support, they are separate questions.',
+      'The law does not use a single age. Under Article 106 a son is maintained until he reaches the age at which his peers earn a living, longer while he is a student progressing normally, and for as long as a disability stops him earning. A daughter is maintained until she marries or works, and goes back on her father’s maintenance if she is later divorced or widowed without property, work or other support. Custody is a separate question: it runs to 18 (Article 123).',
   },
   {
     question: 'What if the father refuses to pay child support in UAE?',
     answer:
-      'Non-payment of court-ordered child support in UAE is treated as a serious legal violation. Enforcement mechanisms include: wage garnishment (direct deduction from salary), travel ban (preventing the father from leaving the country), freezing of bank accounts, and in serious cases criminal prosecution under UAE family abandonment laws. Contact a lawyer immediately, courts act swiftly on non-payment of child support.',
+      'File the claim without delay. Maintenance that falls due from the date you file is a privileged debt that ranks ahead of the father’s other debts (Article 98), and a claim for a child’s past maintenance cannot go back more than one year before you file (Article 111). Once there is an order or judgment and it is not paid, you apply to the execution judge, who can use the enforcement measures in our <a href="/en/unpaid-alimony-enforcement-uae/">unpaid alimony enforcement guide</a>. A UAE-licensed lawyer can tell you which measures fit your case.',
   },
   {
     question: 'Is child support different for non-Muslim expats in UAE?',
     answer:
-      'The principle is similar, the father bears primary financial responsibility, but the 2022 civil personal status law for non-Muslim expats provides more flexibility. Courts applying the 2022 law consider both parents\' incomes more symmetrically and can order shared financial responsibility. The calculation is less formulaic than under Islamic law and gives judges more discretion to reach equitable outcomes.',
+      'The framework is different. The federal civil law for non-Muslims, Federal Decree-Law No. 41 of 2022, deals with the wife’s alimony after the divorce judgment (Article 9), and Cabinet Resolution No. 122 of 2023 lets a divorcee ask for temporary alimony until her financial rights are decided (Article 10). In Abu Dhabi, the 2022 Regulation under Abu Dhabi Law No. 14 of 2021 is specific: the father must keep paying the children’s education, residence fees, treatment and other daily or periodic expenses he was providing before the divorce (Article 23), and the court sets the amount from an accounting expert’s report (Article 24).',
   },
   {
     question: 'Can child support be increased after it is set?',
     answer:
-      'Yes. Child support orders in UAE are not permanent, either parent can apply to the court to modify the amount if circumstances change significantly. Grounds for increase: the father\'s income has risen substantially, the child\'s needs have grown (higher school fees, medical condition), or inflation has significantly eroded the original amount. Grounds for decrease: the father has suffered a genuine loss of income. You need a lawyer to file a modification application.',
+      'Yes, if circumstances change. Under Article 97 of Federal Decree-Law No. 41 of 2024 maintenance can be increased or decreased when circumstances change. An increase cannot be backdated more than six months, a decrease runs from the ruling, and no claim to change the amount is heard within one year of the ruling becoming final except in exceptional circumstances. Typical reasons are a change in the father’s income or a rise in the child’s needs, such as new school fees or a medical condition.',
+  },
+  {
+    question: 'Can I claim child support for months that have already passed?',
+    answer:
+      'Only for a limited period. Article 111 of Federal Decree-Law No. 41 of 2024 says a claim against the father for a child’s past maintenance is not heard for more than one year before the date of the claim. If the father stopped paying in January and you file in October of the same year, the whole period can be claimed; if you wait longer than a year, the older months are lost. That is the main reason to file early.',
   },
 ];
 ---
@@ -107,18 +112,20 @@ const faqItems = [
   lang="en"
   dir="ltr"
   hreflang={hreflang}
+  lastmod="2026-10-12"
 >
   <header class="hero">
     <div class="container hero__inner">
       <div class="hero__content">
         <Breadcrumb items={breadcrumbs} lang="en" />
         <h1 class="hero__h1">
-          Child Support in UAE , <br />How Much, Who Pays &amp; How to Claim
+          Child Support in UAE: <br />How Much, Who Pays &amp; How to Claim
         </h1>
         <p class="hero__sub">
-          Under UAE law, the father is legally obligated to financially support his children
-          regardless of who has custody. This guide explains what is covered, how courts calculate
-          amounts, and what to do if payments stop.
+          Under UAE law the father maintains a child who has no money of their own, whoever the child
+          lives with (Article 106 of Federal Decree-Law No. 41 of 2024). There is no fixed percentage:
+          the court estimates the amount from his means, the child’s needs and the cost of living, and
+          it can order temporary support while the case is heard.
         </p>
         <ul class="hero__trust">
           <li>✓ Muslim &amp; non-Muslim rules</li>
@@ -126,7 +133,7 @@ const faqItems = [
           <li>✓ Free first consultation</li>
           <li>✓ 100% confidential</li>
         </ul>
-        <p class="hero__author">Guide by <strong>Aleksi Suon</strong>, UAE Expat &amp; Legal Consultant</p>
+        <p class="hero__author">Guide by <strong>Aleksi Suon</strong>, UAE Expat &amp; Legal Consultant · Updated October 2026</p>
       </div>
       <div class="hero__form">
         <LeadForm lang="en" variant="hero" />
@@ -141,28 +148,144 @@ const faqItems = [
       <h2 id="principle-heading">The Fundamental Rule: Father Pays, Regardless of Custody</h2>
       <p>
         The most important thing to understand about child support in UAE: <strong>the father's obligation
-        to financially support his children exists regardless of who has custody.</strong>
+        to maintain his children exists regardless of who has custody.</strong>
       </p>
       <p>
-        Under both Islamic personal status law and the 2022 civil law for non-Muslim expats, the father is the
-        primary financial provider for his children. If the mother has custody, the father pays her child
-        support to fund the children's care. If the father has custody, the financial obligations fall on him
-        directly. Custody and financial support are two separate legal questions.
+        Under Article 106 of the Muslim personal status law, and in Abu Dhabi civil cases under Article 23
+        of the 2022 Regulation, the father carries the children's maintenance. If the mother has custody,
+        the father pays maintenance to cover the children's needs. If the father has custody, the costs fall
+        on him directly. Custody and maintenance are two separate legal questions:
+        <a href="/en/child-custody-uae/">custody</a> runs to 18 (Article 123), while maintenance follows
+        its own rules set out below.
       </p>
       <div class="key-box">
         <div class="key-stat">
-          <span class="key-num">15–30%</span>
-          <span class="key-label">of father's income, typical child support range per child</span>
+          <span class="key-num">Art. 106</span>
+          <span class="key-label">the father maintains a child who has no money of their own</span>
         </div>
         <div class="key-stat">
-          <span class="key-num">Age 18+</span>
-          <span class="key-label">support continues through university for enrolled students</span>
+          <span class="key-num">1 year</span>
+          <span class="key-label">how far back a claim for a child's past maintenance can reach (Art. 111)</span>
         </div>
         <div class="key-stat">
-          <span class="key-num">Travel ban</span>
-          <span class="key-label">primary enforcement tool for non-payment</span>
+          <span class="key-num">Privileged</span>
+          <span class="key-label">maintenance due from the filing date ranks ahead of other debts (Art. 98)</span>
         </div>
       </div>
+    </section>
+
+    <!-- How child support is set -->
+    <section class="section" aria-labelledby="how-set-heading">
+      <h2 id="how-set-heading">How Child Support Is Set in the UAE</h2>
+      <p>
+        Child support in the UAE is set by the court case by case, not by a formula. For Muslim
+        families, and for other residents whose case runs under Federal Decree-Law No. 41 of 2024, the
+        father pays for a child who has no money of their own (Article 106), the maintenance covers
+        food, clothing, housing, medical treatment and education according to custom (Article 95), and
+        the judge sizes it to the father's means, the child's condition and the economic situation of
+        the time and place (Article 96). The table sets out the rules that decide who pays, for how
+        long and how much.
+      </p>
+      <div class="duration-table">
+        <div class="duration-header">
+          <div>Question</div>
+          <div>The rule</div>
+          <div>Where it comes from</div>
+        </div>
+        <div class="duration-row">
+          <div class="duration-who">Who pays</div>
+          <div class="duration-until">The father, for a child without money of their own. If the father is missing or unable, a solvent mother pays and can claim it back from him later.</div>
+          <div class="duration-note">Article 106</div>
+        </div>
+        <div class="duration-row">
+          <div class="duration-who">Sons</div>
+          <div class="duration-until">Until he reaches the age at which his peers earn a living; longer while he is a student progressing normally, for the period the court estimates. An adult son who cannot earn because of a disability stays on the father.</div>
+          <div class="duration-note">Article 106</div>
+        </div>
+        <div class="duration-row">
+          <div class="duration-who">Daughters</div>
+          <div class="duration-until">Until she marries or works. A divorced or widowed daughter goes back on the father unless she has property, works or someone else maintains her.</div>
+          <div class="duration-note">Article 106</div>
+        </div>
+        <div class="duration-row">
+          <div class="duration-who">What it covers</div>
+          <div class="duration-until">Food, clothing, housing, medical treatment and education, according to custom. The father also pays to obtain and renew the child's identity documents.</div>
+          <div class="duration-note">Articles 95 and 124</div>
+        </div>
+        <div class="duration-row">
+          <div class="duration-who">How much</div>
+          <div class="duration-until">Based on the payer's means, the condition of the child and the economic situation of the time and place. It may be ordered in cash, and providing property in kind or a benefit can take the place of payment.</div>
+          <div class="duration-note">Article 96</div>
+        </div>
+        <div class="duration-row">
+          <div class="duration-who">Changing the amount</div>
+          <div class="duration-until">It can go up or down when circumstances change. An increase is not backdated more than six months; a decrease runs from the ruling; no change is heard within one year of the ruling becoming final except in exceptional circumstances.</div>
+          <div class="duration-note">Article 97</div>
+        </div>
+        <div class="duration-row">
+          <div class="duration-who">Priority</div>
+          <div class="duration-until">Maintenance falling due from the filing date is a privileged debt, ranking ahead of the father's other debts. Arrears from before filing are an ordinary debt.</div>
+          <div class="duration-note">Article 98</div>
+        </div>
+        <div class="duration-row">
+          <div class="duration-who">Back pay</div>
+          <div class="duration-until">A claim for a child's past maintenance against the father is not heard for more than one year before the date of the claim.</div>
+          <div class="duration-note">Article 111</div>
+        </div>
+        <div class="duration-row">
+          <div class="duration-who">While the case runs</div>
+          <div class="duration-until">On the wife's request, the court may order temporary alimony for her and her children during the hearings, enforceable immediately by force of law.</div>
+          <div class="duration-note">Article 100</div>
+        </div>
+      </div>
+
+      <h3>What this means for you in practice</h3>
+      <p>
+        Two of these rules reward filing early. Because maintenance is only a privileged debt from the
+        filing date (Article 98), and because past child maintenance cannot be claimed for more than one
+        year back (Article 111), every month you wait can cost you. A worked example: if the father
+        stopped paying in January 2026 and you file in October 2026, the whole unpaid period falls inside
+        the one-year window; if you wait until March 2027, the months before March 2026 are out of reach.
+        The one-year lock in Article 97 cuts both ways: once a ruling is final, neither parent can
+        normally ask to change the amount for a year, so put your full evidence of costs in the first
+        time.
+      </p>
+
+      <h3>Temporary child support while the case is heard</h3>
+      <p>
+        You do not have to wait for the final judgment. Under Article 100 of Federal Decree-Law No. 41 of
+        2024, the court may decide, during the hearings of the maintenance case and at the wife's
+        request, to award temporary alimony for her and her children against the respondent, and that
+        decision is enforceable immediately by force of law. Urgent and temporary maintenance requests
+        are also exempt from referral to Family Guidance (Article 8). Our guide to
+        <a href="/en/temporary-alimony-uae/">temporary alimony in the UAE</a> covers how to ask for it
+        and what evidence the court looks at.
+      </p>
+
+      <h3>Non-Muslim parents</h3>
+      <p>
+        In the federal civil law for non-Muslims, Federal Decree-Law No. 41 of 2022, the post-divorce
+        money rules we have verified are framed around the wife's claims. Under Article 9 she applies for
+        alimony after the divorce judgment and the judge decides on listed factors such as the years of
+        marriage, her age and each spouse's finances as found by an accounting expert. Under Article 10
+        of Cabinet Resolution No. 122 of 2023, a divorcee can ask for temporary alimony until her
+        financial rights are decided, on documents showing both spouses' monthly income and the last six
+        months of bank statements; the request can be refused if she has a job or fixed income that
+        covers her basic needs. Article 6 of the same Resolution lists care of the children among the
+        criteria for post-divorce compensation.
+      </p>
+      <p>
+        In Abu Dhabi the rules for children are spelled out. Article 23 of the 2022 Regulation under Abu
+        Dhabi Law No. 14 of 2021 obliges the father to spend on his children after the divorce, including
+        education, residence fees, treatment and the other daily or periodic expenses he was providing
+        before the divorce. Under Article 24 the court estimates the amount, can increase or decrease
+        it, and can set financial penalties for non-compliance, using the accounting expert's report so
+        that the children have a decent living without burdens beyond the father's means. Article 19
+        adds a housing allowance for the mother during joint custody; our guide to
+        <a href="/en/alimony-abu-dhabi/">alimony in Abu Dhabi</a> covers the mother's own claims. Outside Abu Dhabi, ask a lawyer
+        which provisions the court will apply to the children's costs in your case; non-Muslims may also
+        agree to apply other UAE family legislation (Article 1 of the 2022 federal law).
+      </p>
     </section>
 
     <img
@@ -177,8 +300,8 @@ const faqItems = [
     <section class="section" aria-labelledby="covered-heading">
       <h2 id="covered-heading">What Child Support Covers in UAE</h2>
       <p>
-        UAE courts assess child support as a package covering all of the child's reasonable needs , 
-        not just basic subsistence. Here is what is typically included:
+        UAE courts assess child support as a package covering the child's reasonable needs, not just
+        basic subsistence. Article 95 names the core items; the rest is argued case by case:
       </p>
       <div class="coverage-grid">
         {whatIsCovered.map((item) => (
@@ -186,7 +309,7 @@ const faqItems = [
             <div class="coverage-header">
               <h3>{item.category}</h3>
               <span class={`coverage-badge ${item.required ? 'badge--required' : 'badge--discretionary'}`}>
-                {item.required ? 'Mandatory' : 'Discretionary'}
+                {item.required ? 'In the law' : 'Case by case'}
               </span>
             </div>
             <p>{item.detail}</p>
@@ -199,8 +322,8 @@ const faqItems = [
     <section class="section" aria-labelledby="calc-heading">
       <h2 id="calc-heading">How UAE Courts Calculate Child Support</h2>
       <p>
-        There is no fixed formula, judges have discretion. However, these six factors consistently
-        drive the outcome:
+        There is no formula or percentage in the law. Article 96 tells the judge what to weigh, and
+        these are the factors that follow from it:
       </p>
       <div class="factors-table">
         {calculationFactors.map((item) => (
@@ -221,9 +344,11 @@ const faqItems = [
     <section class="section" aria-labelledby="duration-heading">
       <h2 id="duration-heading">How Long Does Child Support Last?</h2>
       <p>
-        The duration of child support in UAE depends on the child's gender, circumstances, and educational status.
-        Note that custody age limits (when the child moves to the other parent) are different from support
-        duration, support often continues long after custody changes.
+        The duration of child support in UAE depends on whether the child is a son or a daughter, on
+        study and on disability, under Article 106. It is not tied to custody: custody runs to 18
+        (Article 123), and from 15 the child may choose which parent to live with unless the child's
+        interest requires otherwise (Article 122), while maintenance can continue after 18 or stop
+        before it.
       </p>
       <div class="duration-table">
         <div class="duration-header">
@@ -246,42 +371,48 @@ const faqItems = [
       <h2 id="claim-heading">How to Claim Child Support in UAE</h2>
       <ol class="steps">
         <li>
-          <h3>File at the Personal Status Court in your emirate</h3>
+          <h3>File at the Personal Status Court in the right emirate</h3>
           <p>
-            Child support claims are filed at the Personal Status Court in the emirate where you reside.
-            You can file a standalone child support claim, you do not need to be in the middle of divorce
-            proceedings, though the two are often filed together.
+            A maintenance claim brought for children or by a custodian can be filed at the court where
+            the claimant or the respondent lives, works or has the marital home (Article 3). You can
+            file a standalone child support claim; you do not need to be in the middle of divorce
+            proceedings, though the two are often filed together. If the father is a foreign national
+            with no home in the UAE, Article 4 still lets UAE courts hear a maintenance claim for a wife
+            or minor child who lives here.
           </p>
         </li>
         <li>
           <h3>Gather financial evidence</h3>
           <p>
-            The court needs evidence of the father's income (salary certificate, bank statements, tax
-            documents if applicable) and evidence of the child's current costs (school fee invoices,
-            medical bills, rent, tuition receipts). The more documentation you have, the stronger your case.
+            The court needs evidence of the father's income (salary certificate, bank statements, business
+            records) and evidence of the child's current costs (school fee invoices, medical bills, rent,
+            tuition receipts). The more documentation you have, the stronger your case.
           </p>
         </li>
         <li>
-          <h3>Your lawyer files the nafaqa claim</h3>
+          <h3>File the nafaqa claim and ask for temporary support</h3>
           <p>
-            Your lawyer submits the maintenance claim (nafaqa al-awlad) with supporting documentation.
-            The court can issue an interim maintenance order while the full case is heard, you do not
-            have to wait months with no income.
+            You or your lawyer submit the maintenance claim (nafaqa al-awlad) with supporting
+            documentation. Ask at the same time for temporary maintenance: under Article 100 the court
+            may award it for the mother and children during the hearings, and it is enforceable
+            immediately.
           </p>
         </li>
         <li>
           <h3>Court hearing and judgment</h3>
           <p>
-            Both parties present their financial positions. The judge sets a monthly support amount
-            and issues a formal order. This is legally enforceable immediately.
+            Both parties present their financial positions. The judge sets a monthly amount and issues a
+            formal judgment. Either side can appeal within 30 days (Article 9 of Federal Decree-Law No. 41 of 2024), and the amount can later
+            be varied only on changed circumstances (Article 97).
           </p>
         </li>
         <li>
           <h3>Enforce the order if payments stop</h3>
           <p>
-            If the father stops paying, return to court. The enforcement tools available include
-            wage garnishment, travel ban, and account freezing. Non-payment is not treated leniently
-            by UAE courts, act quickly rather than waiting and hoping payments resume.
+            If the father stops paying, apply to the execution judge to enforce the order or judgment.
+            Our <a href="/en/unpaid-alimony-enforcement-uae/">unpaid alimony enforcement guide</a>
+            explains the measures available. Act quickly rather than waiting and hoping payments resume:
+            arrears are only privileged from the filing date (Article 98).
           </p>
         </li>
       </ol>
@@ -297,7 +428,7 @@ const faqItems = [
       <div class="service-links">
         <a href="/en/unpaid-alimony-enforcement-uae/" class="service-link">
           <strong>Unpaid Alimony in the UAE</strong>
-          <span>How to enforce a maintenance order: execution court, garnishment, travel ban</span>
+          <span>How to enforce a maintenance order through the execution court</span>
         </a>
         <a href="/en/child-custody-uae/" class="service-link">
           <strong>Child Custody UAE</strong>
@@ -315,6 +446,10 @@ const faqItems = [
           <strong>Divorce Cost UAE</strong>
           <span>Court fees and total cost breakdown</span>
         </a>
+        <a href="/en/temporary-alimony-uae/" class="service-link">
+          <strong>Temporary Alimony UAE</strong>
+          <span>Support for the mother and children while the case is heard</span>
+        </a>
       </div>
     </section>
 
@@ -325,8 +460,8 @@ const faqItems = [
     <section id="contact" class="section section--cta" aria-labelledby="cta-heading">
       <h2 id="cta-heading">Speak to a UAE Family Lawyer About Child Support</h2>
       <p>
-        Child support claims are time-sensitive, file early to secure interim maintenance.
-        Get a free confidential consultation today.
+        Child support claims are time-sensitive: past maintenance only reaches back one year, and
+        temporary maintenance can be ordered while the case is heard. Get a free confidential consultation today.
       </p>
       <LeadForm lang="en" variant="inline" />
     </section>
@@ -365,6 +500,8 @@ const faqItems = [
   .section h3 { font-size: 1.05rem; font-weight: 700; color: #1e3a5f; margin: 16px 0 6px; }
   .section p { color: #374151; line-height: 1.8; margin-bottom: 16px; }
   .section strong { color: #1e3a5f; }
+  .section p a { color: #2563eb; font-weight: 600; text-decoration: none; }
+  .section p a:hover { text-decoration: underline; }
   .section--cta { border-bottom: none; background: #f0f4ff; border-radius: 16px; padding: 60px 40px; margin-bottom: 60px; text-align: center; }
 
   .key-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; background: #1e3a5f; border-radius: 16px; padding: 32px; margin-top: 28px; }

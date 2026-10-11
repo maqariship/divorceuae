@@ -20,7 +20,7 @@ const articleSchema = {
   author: { '@type': 'Person', name: 'Aleksi Suon' },
   publisher: { '@type': 'Organization', name: 'Divorce UAE' },
   datePublished: '2025-01-15',
-  dateModified: '2026-09-25',
+  dateModified: '2026-10-12',
   inLanguage: 'en-AE',
   mainEntityOfPage: 'https://divorceu.ae/en/sharia-divorce-uae/',
 };
@@ -30,177 +30,90 @@ const breadcrumbs = [
   { name: 'Sharia Divorce UAE', url: 'https://divorceu.ae/en/sharia-divorce-uae/' },
 ];
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'What is Sharia divorce in UAE?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sharia divorce in UAE refers to the dissolution of a Muslim marriage under Islamic law as applied by UAE courts. It is governed by Federal Decree-Law No. 41 of 2024, which came into force on 15 April 2025 and replaced the previous Federal Law No. 28 of 2005. The law recognises four types of Islamic divorce: talaq (husband-initiated unilateral declaration), khula\' (wife-initiated with mahr return), tatliq lil-darar (judicial divorce for harm), and faskh (judicial annulment equivalent for fundamental defects in the marriage).',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How has UAE divorce law changed in 2024 and 2025?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Federal Decree-Law No. 41 of 2024 replaced the 20-year-old Federal Law No. 28 of 2005 and came into force on 15 April 2025. Key changes include: repeated talaq pronouncements now count as a single divorce; divorce must be documented at the competent court, with the husband required to register it within a short window reported at 15 days; referral to Family Guidance is now at the judge\'s discretion (it was mandatory under the old law); arbitration in contested harm cases is capped at 60 days, down from 90; custody now runs to age 18 for both boys and girls; addiction to intoxicants is a new ground for divorce; and khula\' can be granted without the husband\'s consent if the wife agrees to return her mahr.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can a Muslim woman divorce without her husband\'s consent in UAE?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Under Federal Decree-Law No. 41 of 2024, a wife can obtain a khula\' divorce without her husband\'s consent, provided she agrees to return her mahr (or the court-determined equivalent). Law-firm briefings report the khula\' provisions around Articles 65 to 68, though writers should confirm exact article numbers against the official text. The court grants the divorce against the husband\'s will once the wife\'s agreement to return mahr is confirmed. A wife can also obtain a judicial divorce (tatliq lil-darar) without consent if she proves grounds such as harm, abandonment, imprisonment, incurable disease, or addiction to intoxicants.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the difference between talaq and khula?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Talaq is a husband-initiated unilateral divorce declaration. Under Federal Decree-Law No. 41 of 2024 the divorce must be documented at the competent court; the husband is required to register it within a short window reported by law firms as 15 days. Repeated talaq pronouncements now count as a single divorce, not multiple ones. The wife does not need to agree and does not return mahr. Khula\' is a wife-initiated divorce where the wife requests dissolution and agrees to return the mahr to the husband. Under the 2024 law, khula\' can be granted without the husband\'s consent: the court grants it against his will if the wife agrees to the mahr return. Khula\' is irrevocable; a first or second revocable talaq can be reversed within the iddah period.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How long does Islamic divorce take in UAE?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Family Guidance and reconciliation is usually the first stage for Muslim couples. Under the 2024 law the judge decides whether to refer the case (it was mandatory under the 2005 law), and the stage usually takes a few weeks. After a non-reconciliation certificate is issued, a straightforward mutual consent or documented talaq typically completes within roughly 3 to 6 months total. A contested khula\' where the husband disputes the mahr amount can run longer, and a judicial divorce for harm (tatliq lil-darar) with evidence gathering may take a year or more including appeals. These are indicative estimates; Abu Dhabi Sharia courts may be faster for straightforward cases.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What financial rights does a Muslim wife have after Sharia divorce in UAE?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Under Federal Decree-Law No. 41 of 2024, a Muslim wife\'s financial rights on divorce are: (1) Mahr: the prompt mahr if not yet paid is immediately due, and deferred mahr falls due immediately on divorce regardless of any original deferral agreement. (2) Nafaqa al-iddah: maintenance during the iddah period (3 lunar months or until childbirth if pregnant). (3) Mut\'a: consolation payment of minimum one year\'s maintenance if the wife was not at fault and did not ask for the divorce. (4) Child support: the father pays regardless of which parent has physical care. (5) Housing during iddah. A khula\' divorce (wife-initiated) forfeits the mut\'a right since the wife initiated the separation.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is a UAE Sharia divorce valid in other Muslim countries?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes in most Muslim-majority countries. UAE Sharia divorces issued by the Personal Status Court are recognised in Egypt, Jordan, Lebanon, Saudi Arabia, Pakistan, Bangladesh, Malaysia, Indonesia, and most other Muslim-majority jurisdictions, provided the divorce is properly documented, attested (the UAE uses MOFA attestation, not apostilles), and issued by a competent court. The recognition is based on mutual respect for Islamic jurisprudence. However, each country has its own personal status registry procedures; an Egyptian national, for example, must register the UAE Sharia divorce at the Egyptian civil registry after attestation by the Egyptian consulate.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can a non-Muslim use UAE Personal Status Court?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Not for Sharia divorce. UAE Personal Status Courts applying Federal Decree-Law No. 41 of 2024 have jurisdiction over Muslim divorce cases. Non-Muslims have their own dedicated track under Federal Decree-Law No. 41 of 2022. If one spouse is Muslim and the other is not, the Muslim personal status law typically applies. A non-Muslim who converted to Islam after marriage would bring the case under the Muslim personal status track. Non-Muslims who want civil divorce file at the Dubai Personal Status Court non-Muslim division or Abu Dhabi Civil Family Court.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the Family Guidance Section in UAE divorce?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The Family Guidance Section (Dar al-Tawjeh al-Asari) is the counselling and reconciliation stage, attached to the court, that is usually the first step for Muslim couples. Under the 2005 law referral was mandatory; under Federal Decree-Law No. 41 of 2024 the judge decides whether to refer the spouses, and in practice many Muslim divorce cases in Dubai and Abu Dhabi still start there. There is no statutory time limit for the stage; it usually takes a few weeks. If reconciliation fails, the Family Guidance Section issues a non-reconciliation certificate, which is needed to move the case to court. That certificate has a short validity, commonly reported at around 3 months, after which the divorce petition must be filed.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How is child custody decided in Sharia divorce in UAE?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Under Federal Decree-Law No. 41 of 2024, the child\'s best interest is the primary standard. A major change is that custody now continues to age 18 for both boys and girls, replacing the old split of roughly 11 for boys and 13 for girls under the 2005 law. A child aged 15 or older may choose which parent to live with where the court finds it in the child\'s best interest. Legal guardianship (wilaya) generally remains with the father, and the father pays child support (nafaqa al-awlad) regardless of which parent has physical care. Courts can modify these defaults if the child\'s interests require it, for example if the mother is relocating abroad or a parent is unfit.',
-      },
-    },
-  ],
-};
-
 const divorceTypes = [
   {
     type: 'Talaq',
     who: 'Husband-initiated',
     consent: 'Wife consent not required',
-    mahr: 'Wife keeps full mahr',
-    notes: 'Must be documented at court; husband registers within a window reported at 15 days under Decree-Law 41/2024. Repeated pronouncements count as a single divorce. First and second revocable talaq can be reversed within iddah.',
+    mahr: 'Dowry due on irrevocable separation (Art. 46); half if before intercourse (Art. 47)',
+    notes: 'Husband must document it at court within 15 days (Art. 58); if he does not, without an acceptable excuse, the wife can claim compensation equal to maintenance until it is documented. Repeated pronouncements count as one divorce (Art. 57). A first or second talaq after intercourse or valid seclusion is revocable during the iddah (Arts. 60 and 61).',
     flag: 'talaq',
   },
   {
     type: "Khul'a",
     who: 'Wife-initiated',
-    consent: 'Husband consent NOT required under 2024 law',
-    mahr: 'Wife returns mahr',
-    notes: "Court grants against husband's will if wife agrees to mahr return (law firms report Arts. 65-68). Irrevocable. Mut'a forfeited since wife initiated. Most common route for women seeking divorce.",
+    consent: 'Agreed, or ordered by the court if the husband stubbornly refuses (Art. 66)',
+    mahr: 'Wife gives a consideration; if it is the dowry, returning what she received is enough (Art. 66)',
+    notes: 'Takes effect as a minor irrevocable divorce (Art. 65). No iddah maintenance after khula (Art. 101). The children’s rights, maintenance and custody cannot be part of the consideration (Art. 66). Spouses document it at court within 15 days (Art. 68).',
     flag: 'khula',
   },
   {
-    type: 'Tatliq lil-darar',
-    who: 'Court-granted on wife petition',
+    type: 'Court divorce (tatliq)',
+    who: 'Court-granted on a spouse’s claim',
     consent: 'No husband consent needed',
-    mahr: 'Wife keeps full mahr + mut\'a',
-    notes: "Grounds: physical harm, psychological abuse, financial abandonment, imprisonment, incurable disease, and addiction to intoxicants (new under 41/2024). Standard: harm making marriage 'impossible for a woman of similar standing.'",
+    mahr: 'Dowry due on irrevocable separation (Art. 46); mut’a possible if the separation was due to the husband (Art. 102)',
+    notes: 'Grounds by article: harm (Art. 71, with arbitrators given up to 60 days to report, Art. 72), non-payment of a due dowry (Art. 76), failure to maintain (Art. 77), desertion (Art. 78), absence, disappearance or imprisonment (Art. 79), addiction (Art. 80).',
     flag: 'judicial',
   },
   {
-    type: 'Faskh',
-    who: 'Court-granted annulment-equivalent',
+    type: 'Faskh (revocation)',
+    who: 'Court-granted on either spouse’s claim',
     consent: 'No',
-    mahr: 'Depends on ground',
-    notes: 'Grounds: deception at marriage, fraud, impotence (if not disclosed), incurable disease, fundamental defect in the marriage contract. Must be filed promptly after discovery of the defect.',
+    mahr: 'Depends on the ground and on whether the marriage was consummated (Arts. 70 and 75)',
+    notes: 'A serious defect or disease (Art. 69: incurable means revocation without a grace period, curable means up to one year to cure), breach of a valid condition in the marriage contract (Art. 33), or the wife’s request before intercourse or seclusion if she returns the dowry received (Art. 75).',
     flag: 'faskh',
   },
 ];
 
 const financialRights = [
-  { right: 'Prompt mahr (mu\'ajjal)', timing: 'Due at marriage / already due', notes: 'Enforceable immediately. Unpaid prompt mahr becomes a debt from day of divorce.' },
-  { right: 'Deferred mahr (mu\'ajjal)', timing: 'Due immediately on divorce', notes: 'Falls due in full on pronouncement of divorce, regardless of any original deferral. Enforced as privileged debt.' },
-  { right: "Nafaqa al-iddah (iddah maintenance)", timing: 'During iddah period', notes: "3 lunar months (if not pregnant) or until childbirth. Father's obligation even if wife is working." },
-  { right: "Mut'a (consolation)", timing: 'One-time payment post-divorce', notes: "Minimum 1 year's maintenance. Only if wife did not initiate divorce (khula'). Amount determined by court based on husband's means and marriage duration." },
-  { right: 'Child support (nafaqa al-awlad)', timing: "Until child's majority / marriage", notes: "Father's obligation regardless of custody arrangement. Continues for daughter until she marries." },
-  { right: 'Hadhana housing (iddah period)', timing: 'During iddah', notes: 'Husband must provide suitable accommodation for wife during iddah period unless she moves out voluntarily.' },
+  { right: 'Prompt dowry (muqaddam)', timing: 'Due on request if no deferral was agreed', notes: 'The dowry belongs to the wife (Art. 45). If no deferral and no time were agreed, it is due on request (Art. 46). If she moved in before receiving it, it stays a debt she can claim at any time (Art. 50).' },
+  { right: 'Deferred dowry (mu’akhkhar)', timing: 'On irrevocable separation or death', notes: 'Article 46: in all cases the dowry becomes due on irrevocable separation or the death of a spouse. A wife divorced before intercourse is entitled to half the specified dowry (Art. 47).' },
+  { right: 'Iddah maintenance (nafaqat al-iddah)', timing: 'During the iddah', notes: 'Due after a revocable divorce; after an irrevocable divorce only if she is pregnant, until the birth; none after khula or death (Art. 101).' },
+  { right: "Mut'a (compensation)", timing: 'Assessed on divorce', notes: 'For a wife in a consummated valid marriage divorced by the husband’s sole will without her request or cause, or where the divorce or revocation was due to him: not more than one year’s maintenance for women of her standing, set by his means, payable in instalments (Art. 102).' },
+  { right: 'Child maintenance (nafaqat al-awlad)', timing: 'Under Article 106', notes: 'The father maintains a child without money of their own: a son until his peers earn a living (longer while studying), a daughter until she marries or works (Art. 106). Past maintenance is limited to one year before the claim (Art. 111).' },
+  { right: 'Housing during the iddah', timing: 'During the iddah', notes: 'In all cases she may live in the marital home during the iddah, or in a suitable home if the marital home is unsuitable (Art. 101).' },
 ];
 
 const faqItems = [
   {
     question: 'What is Sharia divorce in UAE?',
-    answer: 'Islamic divorce for Muslims in UAE governed by Federal Decree-Law No. 41 of 2024 (in force 15 April 2025). Four recognised types: talaq, khula\', tatliq lil-darar, and faskh. See our dedicated guides on <a href="/en/talaq-uae/">talaq UAE</a> and <a href="/en/khula-divorce-uae/">khula divorce UAE</a>.',
+    answer: 'Islamic divorce for Muslims in the UAE, governed by Federal Decree-Law No. 41 of 2024 (in force 15 April 2025). A marriage ends in one of four ways: talaq by the husband, khula at the wife’s request, a court divorce on a ground in Articles 71 to 80, or revocation (faskh) for a defect or a breached condition. See our guides on <a href="/en/talaq-uae/">talaq UAE</a> and <a href="/en/khula-divorce-uae/">khula divorce UAE</a>.',
   },
   {
     question: 'How has UAE divorce law changed in 2024 and 2025?',
-    answer: 'Decree-Law 41/2024 replaced the 20-year-old Law 28/2005 from 15 April 2025. Key changes: repeated talaq now counts as a single divorce; divorce must be documented at court; Family Guidance referral is now at the judge\'s discretion; arbitration in contested harm cases is capped at 60 days (was 90); custody runs to age 18; and addiction to intoxicants is a new ground. See the <a href="/en/new-uae-personal-status-law-2025/">new UAE personal status law 2025</a> and our <a href="/en/uae-divorce-law/">UAE divorce law overview</a>.',
+    answer: 'Decree-Law 41/2024 replaced Law 28/2005 from 15 April 2025 and also applies to divorce cases that had no final judgment by then (Article 1). Key points: Family Guidance referral is at the judge’s discretion (Article 8); a talaq must be documented within 15 days, with compensation for the wife if the husband delays (Article 58); arbitrators in contested harm cases have up to 60 days (Article 72, where the old law allowed 90); and custody runs to 18 (Article 123). See the <a href="/en/new-uae-personal-status-law-2025/">new UAE personal status law 2025</a> and our <a href="/en/uae-divorce-law/">UAE divorce law overview</a>.',
   },
   {
-    question: 'Can a Muslim woman divorce without her husband\'s consent in UAE?',
-    answer: "Yes. Under Decree-Law 41/2024, khula' is granted by the court without the husband's consent if the wife agrees to return her mahr (law firms report Articles 65 to 68). Tatliq lil-darar, our <a href=\"/en/divorce-for-harm-uae/\">divorce for harm UAE</a> route, is also available without consent on proven grounds.",
+    question: 'Can a Muslim woman divorce without her husband’s consent in UAE?',
+    answer: 'Yes. Under Article 66 of Decree-Law 41/2024, if the husband stubbornly refuses khula, the court orders it for an appropriate consideration. She can also ask the court to end the marriage on a ground such as harm (Article 71), failure to maintain (Article 77), desertion (Article 78) or addiction (Article 80). See our <a href="/en/divorce-for-harm-uae/">divorce for harm UAE</a> guide.',
   },
   {
     question: "What is the difference between talaq and khula'?",
-    answer: "Talaq is husband-initiated, wife keeps mahr, revocable in first or second instance. Khula' is wife-initiated, wife returns mahr, irrevocable, granted without husband's consent under the 2024 law. See our <a href=\"/en/talaq-uae/\">talaq UAE</a> and <a href=\"/en/khula-divorce-uae/\">khula' divorce UAE</a> guides.",
+    answer: 'Talaq is the husband’s divorce: he must document it at court within 15 days (Article 58), repeated pronouncements count as one (Article 57), and a first or second talaq after consummation is revocable during the iddah. Khula is the wife’s exit for a consideration: it takes effect as a minor irrevocable divorce (Article 65), and the court can order it if the husband stubbornly refuses (Article 66). See our <a href="/en/talaq-uae/">talaq UAE</a> and <a href="/en/khula-divorce-uae/">khula’ divorce UAE</a> guides.',
   },
   {
     question: 'How long does Islamic divorce take in UAE?',
-    answer: 'Family Guidance, if the judge refers the case, usually takes a few weeks. A simple documented talaq or mutual consent divorce usually completes in about 3 to 6 months total; contested cases and a judicial divorce for harm can run a year or more with appeals. See <a href="/en/types-of-divorce-uae/">types of divorce UAE</a>.',
+    answer: 'There is no fixed timetable. Family Guidance applies only if the judge refers the case (Article 8), and a case to prove a divorce is exempt from it. In a contested harm case the arbitrators have up to 60 days from appointment to report (Article 72), and either side then has 30 days to appeal (Article 9). See <a href="/en/types-of-divorce-uae/">types of divorce UAE</a> and our <a href="/en/divorce-timeline-uae/">divorce timeline guide</a>.',
   },
   {
     question: 'What financial rights does a Muslim wife have after Sharia divorce in UAE?',
-    answer: "Full mahr, nafaqa al-iddah (3 months), mut'a (minimum 1 year, unless wife initiated via khula'), child support from father, housing during iddah. See our guides on <a href=\"/en/mahr-divorce-uae/\">mahr enforcement UAE</a> and <a href=\"/en/iddah-waiting-period-uae/\">iddah UAE</a>.",
+    answer: 'The dowry, due on irrevocable separation (Article 46); iddah maintenance after a revocable divorce, or after an irrevocable one if she is pregnant, but not after khula (Article 101); mut’a of up to one year’s maintenance where the husband divorced her by his sole will or the separation was due to him (Article 102); housing during the iddah; and child maintenance from the father (Article 106). See our guides on <a href="/en/mahr-divorce-uae/">mahr enforcement UAE</a> and <a href="/en/iddah-waiting-period-uae/">iddah UAE</a>.',
   },
   {
     question: 'Is a UAE Sharia divorce valid in other Muslim countries?',
-    answer: 'Yes in most Muslim-majority countries. Must be properly attested and registered in the home country civil registry. Egyptian, Jordanian, Pakistani, and Malaysian nationals must register the UAE decree at the relevant consulate and domestic registry.',
+    answer: 'That is decided by the other country’s own law, not by the UAE. Expect to have the UAE judgment or divorce certificate certified and attested in the UAE (the UAE is not a party to the Apostille Convention, so the route is court certification, MOFA attestation and embassy legalisation), translated if needed, and registered with the home-country registry. Check the requirements with that country’s consulate. See <a href="/en/divorce-certificate-attestation-uae/">divorce certificate attestation</a>.',
   },
   {
     question: 'Can a non-Muslim use UAE Personal Status Court?',
-    answer: 'No. The Sharia Personal Status Court under FL 41/2024 is for Muslims. Non-Muslims use the FL 41/2022 civil track at Dubai Personal Status Court or Abu Dhabi Civil Family Court. See our <a href="/en/non-muslim-divorce-uae/">non-Muslim divorce UAE</a> guide.',
+    answer: 'Not usually for a Sharia divorce. Non-Muslim foreigners have the civil law, Federal Decree-Law No. 41 of 2022, though Article 1 of that law lets them agree to apply other UAE family legislation. For UAE citizens, the 2024 law applies if either spouse is Muslim (Article 1). See our <a href="/en/non-muslim-divorce-uae/">non-Muslim divorce UAE</a> guide.',
   },
   {
     question: 'What is the Family Guidance Section?',
-    answer: 'Pre-court counselling and reconciliation for Muslim couples. Under Decree-Law 41/2024 the judge decides whether to refer the case (it was mandatory under the 2005 law), and the stage usually takes a few weeks. Where a case goes through it, the non-reconciliation certificate it issues is needed to move the divorce to court. See our <a href="/en/divorce-in-uae/">divorce in UAE</a> process guide.',
+    answer: 'A court-attached counselling and settlement service. Under Article 8 of Decree-Law 41/2024 the supervising judge may refer the spouses to it if a settlement seems feasible; it is not compulsory and the law sets no fixed period for it. A settlement reached there is recorded, approved by the judge and enforceable. Urgent and temporary matters and cases to prove a divorce are not referred. See our <a href="/en/family-guidance-section-uae/">Family Guidance Section guide</a>.',
   },
   {
     question: 'How is child custody decided in Sharia divorce in UAE?',
-    answer: "Under Decree-Law 41/2024 custody runs to age 18 for both boys and girls, and a child aged 15 or older may choose which parent to live with. Legal guardianship (wilaya) generally stays with the father, who pays child support regardless of physical care. See our <a href=\"/en/child-custody-uae/\">child custody UAE guide</a> for relocation and international cases.",
+    answer: 'Under Decree-Law 41/2024 custody runs to 18 (Article 123), and from 15 the child may choose which parent to live with unless the child’s interest requires otherwise (Article 122). After separation custody goes first to the mother (Article 114). Guardianship generally stays with the father, but a custodian mother has educational guardianship (Article 112), and the father pays child maintenance (Article 106). See our <a href="/en/child-custody-uae/">child custody UAE guide</a>.',
   },
 ];
 ---
@@ -213,8 +126,6 @@ const faqItems = [
   lang="en"
   schema={articleSchema}
 >
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
     <Breadcrumb items={breadcrumbs} />
   </div>
@@ -224,9 +135,9 @@ const faqItems = [
     <div class="hero-inner">
       <p class="hero-tag">Islamic Divorce Guide, UAE 2026</p>
       <h1>Sharia Divorce in UAE 2026: Talaq, Khula', Financial Rights, and the New Law</h1>
-      <p class="byline">By Aleksi Suon, UAE Expat &amp; Legal Consultant &middot; Updated September 2026</p>
+      <p class="byline">By Aleksi Suon, UAE Expat &amp; Legal Consultant &middot; Updated October 2026</p>
       <p class="hero-desc">
-        Federal Decree-Law No. 41 of 2024 replaced the old UAE Personal Status Law from 15 April 2025. If you are a Muslim in UAE contemplating divorce, whether you are the husband, the wife, or both, you need to understand the new rules: talaq documentation at court, the revised khula' procedure that works without husband consent, when the judge refers you to Family Guidance, custody now running to age 18, and what financial rights a wife now has. This guide covers all four types of Sharia divorce and every financial obligation that flows from them. For the full statutory picture, see our <a href="/en/new-uae-personal-status-law-2025/">new UAE personal status law 2025</a> explainer.
+        Sharia divorce in the UAE runs under Federal Decree-Law No. 41 of 2024, which covers Muslim UAE citizens and Muslim expats unless one spouse insists on their own national law (Article 1). A husband divorces by talaq, which counts as one divorce however often it is repeated (Article 57) and which he must document at court within 15 days (Article 58); a wife can leave by khula' for a consideration, which the court orders if he stubbornly refuses (Articles 65 and 66), or ask the court to end the marriage on a ground in Articles 69 to 80, such as a defect, harm, unpaid dowry, failure to maintain, desertion, absence or imprisonment, or addiction. Before a case reaches the judge, the supervising judge may refer the spouses to Family Guidance, but that referral is discretionary (Article 8). For the full statutory picture, see our <a href="/en/new-uae-personal-status-law-2025/">new UAE personal status law 2025</a> explainer.
       </p>
     </div>
   </section>
@@ -238,12 +149,12 @@ const faqItems = [
       <div class="answer-box">
         <h2>Six things to know about Sharia divorce in UAE from 2025</h2>
         <ul class="key-facts">
-          <li><strong>New law in force 15 April 2025.</strong> Federal Decree-Law No. 41 of 2024 replaces Law 28/2005. All new divorce filings follow the new law.</li>
-          <li><strong>Khula' is now granted without husband consent.</strong> The court grants khula' against the husband's will if the wife agrees to return her mahr (law firms report the provisions around Articles 65 to 68). This is a significant change for Muslim women.</li>
-          <li><strong>Repeated talaq counts as a single divorce.</strong> Repeated verbal, written or gestural pronouncements are now treated as one divorce, and the divorce must be documented at the competent court.</li>
-          <li><strong>Custody now runs to age 18</strong> for both boys and girls, replacing the old split of roughly 11 for boys and 13 for girls. A child aged 15 or older may choose which parent to live with.</li>
-          <li><strong>Family Guidance referral is now at the judge's discretion</strong> (it was mandatory under the old law), and arbitration in contested harm cases is capped at 60 days, down from 90, so those cases can reach a judgment sooner.</li>
-          <li><strong>Addiction to intoxicants is a new ground</strong> on which a spouse may seek divorce under the 2024 law.</li>
+          <li><strong>In force since 15 April 2025, including pending cases.</strong> Federal Decree-Law No. 41 of 2024 replaced Law 28/2005 and also applies to divorce proceedings that had no final judgment when it took effect (Article 1).</li>
+          <li><strong>A talaq must be documented within 15 days.</strong> If the husband does not document it at court in time, without an excuse the court accepts, the wife can claim compensation equal to maintenance from the divorce until it is documented (Article 58). Documentation is a duty, not a condition for the divorce to count.</li>
+          <li><strong>Repeated talaq counts as one divorce.</strong> Repeated pronouncements, or a divorce coupled with a number, whether spoken, written or signalled, count as a single divorce (Article 57).</li>
+          <li><strong>Khula' can be ordered over a refusal.</strong> If the husband stubbornly refuses, the court orders khula' for an appropriate consideration (Article 66); it takes effect as a minor irrevocable divorce (Article 65).</li>
+          <li><strong>Family Guidance referral is at the judge's discretion</strong> (Article 8), with no fixed statutory period, and arbitrators in contested harm cases have up to 60 days from appointment to report (Article 72; the old law allowed 90).</li>
+          <li><strong>Custody runs to age 18,</strong> and from 15 the child may choose which parent to live with unless the child's interest requires otherwise (Articles 122 and 123).</li>
         </ul>
       </div>
 
@@ -251,47 +162,47 @@ const faqItems = [
       <section class="content-section">
         <h2>The 2024 Law: What Changed and Who It Covers</h2>
         <p>
-          <strong>Federal Decree-Law No. 41 of 2024</strong> is the new Personal Status Law for Muslims in the UAE. It came into force on 15 April 2025, replacing <strong>Federal Law No. 28 of 2005</strong> which had governed Muslim family matters in UAE for two decades. All divorce petitions filed on or after 15 April 2025 are governed by the new law. Cases pending before that date continue under Law 28/2005.
+          <strong>Federal Decree-Law No. 41 of 2024</strong> is the Personal Status Law that governs Muslim family matters in the UAE. It came into force on 15 April 2025, replacing <strong>Federal Law No. 28 of 2005</strong>, which had governed Muslim family matters for two decades. It applies to events after that date, and Article 1 also applies it to divorce deeds, divorce proceedings and lineage proceedings that had no final judgment when it took effect, so a divorce case filed earlier but still undecided moves to the new rules.
         </p>
         <p>
-          Who does it cover? All Muslims in UAE, regardless of nationality. A British Muslim, an Egyptian Muslim, a Pakistani Muslim, a UAE national: all are subject to the new law when divorcing in UAE courts. Non-Muslims are not covered by this law; they use the parallel civil track under <a href="/en/non-muslim-divorce-uae/">Federal Decree-Law No. 41 of 2022</a>. For how the two systems fit together, see our <a href="/en/uae-divorce-law/">UAE divorce law overview</a>.
+          Who does it cover? Article 1 applies it to UAE citizens where both spouses or one of them is Muslim, and to non-UAE citizens unless one spouse insists on applying their own national law or another law permitted in the State. In practice, a British, Egyptian or Pakistani Muslim couple divorcing in a UAE court is under this law unless one of them asks for their home law. Non-Muslim foreigners have the parallel civil track under <a href="/en/non-muslim-divorce-uae/">Federal Decree-Law No. 41 of 2022</a>. For how the two systems fit together, see our <a href="/en/uae-divorce-law/">UAE divorce law overview</a>.
         </p>
 
-        <h3>The five most important changes from Law 28/2005</h3>
+        <h3>Five rules in the 2024 law that shape a divorce</h3>
         <div class="change-list">
           <div class="change-card">
             <div class="change-num">1</div>
             <div class="change-body">
-              <p class="change-title">Khula' without husband consent</p>
-              <p>Under the old law, khula' theoretically required the husband's cooperation or an extended court process to compel it. The new law removes this barrier: if the wife agrees to return her mahr and the court is satisfied the marriage has irretrievably broken down, the court grants the khula' against the husband's explicit objection. Law-firm briefings report the relevant provisions around Articles 65 to 68, though the exact article numbers should be checked against the official text. This is a fundamental shift in the wife's ability to exit a marriage.</p>
+              <p class="change-title">Khula' when the husband refuses</p>
+              <p>Khula' is separation at the wife's request with the husband accepting a consideration, and it takes effect as a minor irrevocable divorce (Article 65). The consideration can be any property; if it is the dowry, giving back what she received is enough and the rest is dropped (Article 66). If the husband stubbornly refuses, the court orders khula' for an appropriate consideration. The children's maintenance and custody cannot be bargained away as part of it.</p>
             </div>
           </div>
           <div class="change-card">
             <div class="change-num">2</div>
             <div class="change-body">
-              <p class="change-title">Repeated talaq counts as a single divorce</p>
-              <p>Repeated verbal, written or gestural pronouncements of divorce are now counted as a single divorce, not multiple ones. The divorce must be documented at the competent court, and the husband is required to register it within a short statutory window that law firms report as 15 days. If the husband delays, the wife may file to prove the divorce and claim compensation equivalent to maintenance from the divorce date until it is documented.</p>
+              <p class="change-title">Talaq: one divorce, documented within 15 days</p>
+              <p>Repeated pronouncements, or a divorce coupled with a number, count as a single divorce, whether spoken, written or signalled (Article 57). The husband must document the divorce before the competent court within 15 days of it happening (Article 58). If he does not, without an excuse the court accepts, the wife is entitled to compensation equal to maintenance from the divorce until it is documented, and she keeps the right to file her own case to prove the divorce.</p>
             </div>
           </div>
           <div class="change-card">
             <div class="change-num">3</div>
             <div class="change-body">
               <p class="change-title">Custody now runs to age 18</p>
-              <p>Custody now continues to age 18 for both boys and girls, replacing the old split of roughly 11 for boys and 13 for girls under the 2005 law. A child aged 15 or older may choose which parent to live with where the court finds it in the child's best interest. See our <a href="/en/child-custody-uae/">child custody UAE guide</a> for the detail.</p>
+              <p>Custody now continues to age 18 (Article 123), replacing the old split of roughly 11 for boys and 13 for girls under the 2005 law. From 15 the child may choose which parent to live with unless the child's interest requires otherwise (Article 122). See our <a href="/en/child-custody-uae/">child custody UAE guide</a> for the detail.</p>
             </div>
           </div>
           <div class="change-card">
             <div class="change-num">4</div>
             <div class="change-body">
-              <p class="change-title">Family Guidance referral discretionary, harm arbitration capped at 60 days, addiction added as a ground</p>
-              <p>Referral to Family Guidance is now at the judge's discretion under Article 8, where the 2005 law made it mandatory for most claims; Family Guidance itself has no statutory time limit and usually takes a few weeks. Separately, in contested harm cases, the two court-appointed arbitrators now have up to 60 days from their appointment to report (Article 72; the old law allowed 90), which helps those cases reach a judgment sooner. The 2024 law also adds addiction to intoxicants as a valid ground on which a spouse may seek divorce, alongside the existing harm grounds discussed in our <a href="/en/divorce-for-harm-uae/">divorce for harm UAE guide</a>.</p>
+              <p class="change-title">Family Guidance referral discretionary, harm arbitration capped at 60 days, addiction listed as a ground</p>
+              <p>Referral to Family Guidance is at the supervising judge's discretion under Article 8, where the 2005 law made it mandatory for most claims; the law sets no fixed period for Family Guidance. Separately, in contested harm cases, the two court-appointed arbitrators have up to 60 days from their appointment to report (Article 72; the old law allowed 90), which helps those cases reach a judgment sooner. Addiction is a listed ground for divorce (Article 80), alongside the harm grounds discussed in our <a href="/en/divorce-for-harm-uae/">divorce for harm UAE guide</a>.</p>
             </div>
           </div>
           <div class="change-card">
             <div class="change-num">5</div>
             <div class="change-body">
-              <p class="change-title">Updated maintenance rules</p>
-              <p>The new law revises the factors for nafaqa (maintenance) and mut'a (consolation payment), and law firms report that backdated maintenance can be claimed only for the preceding two years. Judges are expressly empowered to apply general principles of Islamic Sharia without being bound to a single jurisprudential school where this serves the best interest of the family. See our <a href="/en/alimony-uae/">alimony UAE guide</a> for how maintenance is assessed.</p>
+              <p class="change-title">Maintenance rules spelled out</p>
+              <p>Maintenance covers food, clothing, housing, medical treatment and education according to custom (Article 95), and is set by the payer's means, the recipient's condition and the economic situation of the time and place (Article 96). A wife's claim for past maintenance is not heard for more than two years before filing (Article 99), a child's for more than one year (Article 111), and an amount cannot normally be changed within a year of a final ruling (Article 97). See our <a href="/en/alimony-uae/">alimony UAE guide</a> for how maintenance is assessed.</p>
             </div>
           </div>
         </div>
@@ -331,53 +242,54 @@ const faqItems = [
 
         <h3>Talaq in detail</h3>
         <p>
-          Talaq is the husband's unilateral right to divorce. Under Federal Decree-Law No. 41 of 2024, a talaq must be documented at the competent court, and the husband is required to register it within a short window that law-firm briefings report as 15 days. A key change is that repeated pronouncements of divorce, whether verbal, written or gestural, are now counted as a single divorce rather than several. Registration does not create the talaq; it records and dates it for court enforcement. If the husband delays documentation, the wife may file to prove the divorce and claim maintenance-equivalent compensation from the divorce date until it is recorded.
+          Talaq is the husband's divorce. Under Article 58 he must document it before the competent court within 15 days of it happening, and repeated pronouncements, whether spoken, written or signalled, count as a single divorce (Article 57). Documentation does not create the talaq; it records and dates it. If the husband delays without an acceptable excuse, the wife can claim compensation equal to maintenance from the divorce date until it is documented, and she can file her own case to prove the divorce. Article 56 lists situations in which a divorce does not take effect at all, such as a pronouncement under duress, in anger so intense that the husband could not control his words, or while intoxicated.
         </p>
         <p>
-          A first or second revocable talaq (raj'i) can be reversed: the husband can take the wife back within the iddah period without a new marriage contract, either verbally or by deed. A third and final talaq is irrevocable (ba'in kubra) and requires a new marriage contract only after the ex-wife has married and divorced another man (tahleel), a rare and socially complex situation. For full details, see our dedicated <a href="/en/talaq-uae/">talaq UAE guide</a>.
+          A first or second talaq after intercourse or valid seclusion is revocable: during the iddah the husband can take his wife back by action or by explicit spoken or written words, without a new contract (Articles 60 to 62). If he documented the divorce, he must also document the take-back within 15 days and tell her at once (Article 64). A talaq before intercourse or seclusion is a minor irrevocable divorce, so remarrying needs a new contract and a new dowry (Articles 59 and 60). A third talaq is a major irrevocable divorce: she cannot remarry him until she has completed the waiting period from another husband who had a valid, consummated marriage with her (Article 59). For full details, see our dedicated <a href="/en/talaq-uae/">talaq UAE guide</a>.
         </p>
 
         <h3>Khula' in detail</h3>
         <p>
-          Khula' is the wife's route to divorce. Classically, it required the husband's agreement to accept the mahr in exchange for releasing the wife from the marriage. The 2024 law changes this: under Federal Decree-Law No. 41 of 2024, the court grants khula' without the husband's consent if the wife agrees to return her mahr and the court is satisfied the marriage cannot be salvaged. Law-firm briefings report the relevant provisions around Articles 65 to 68, though the exact numbering should be confirmed against the official text. This is a significant expansion of women's divorce rights. See our full <a href="/en/khula-divorce-uae/">khula' divorce UAE guide</a>.
+          Khula' is the wife's route out of the marriage. Article 65 defines it as separation at the wife's request with the husband's acceptance of a consideration, and it takes effect as a minor irrevocable divorce, so a later reunion needs a new contract and dowry. Under Article 66 the consideration can be any property, but it cannot include giving up the children's rights, maintenance or custody. If the husband stubbornly refuses, the court orders khula' for an appropriate consideration. The spouses document the khula' before the court within 15 days (Article 68). See our full <a href="/en/khula-divorce-uae/">khula' divorce UAE guide</a>.
         </p>
         <p>
-          The wife may not always have the mahr in hand. If the mahr was never paid (a surprisingly common situation where the mahr amount was agreed but the husband never transferred it), the court can offset the mahr obligation against the khula' award, resulting in a net-zero financial outcome. If the mahr was already paid and spent, the wife must either return it, agree a payment schedule, or the court may take other assets as equivalent. For detailed guidance on mahr enforcement, see our <a href="/en/mahr-divorce-uae/">mahr divorce UAE guide</a>.
+          The dowry rule in Article 66 matters in practice: where the consideration is the dowry, returning what she actually received is enough, and her claim to any unpaid remainder is dropped. After khula' there is no iddah maintenance (Article 101), so the money picture differs from a talaq. For detailed guidance on mahr, see our <a href="/en/mahr-divorce-uae/">mahr divorce UAE guide</a>.
         </p>
 
-        <h3>Tatliq lil-darar: judicial divorce for harm</h3>
+        <h3>Court divorce: the grounds in Articles 69 to 80</h3>
         <p>
-          This is the route available to wives who cannot use khula' (because returning the mahr would cause hardship) and whose husbands will not grant talaq. Grounds under the 2024 law include:
+          This is the route for a spouse whose partner will not agree to a talaq or khula'. The 2024 law sets out the grounds article by article:
         </p>
         <ul>
-          <li>Physical harm or violence</li>
-          <li>Psychological abuse (expressly included in the 2024 law)</li>
-          <li>Financial abandonment (failure to provide nafaqa for three or more consecutive months)</li>
-          <li>Husband's imprisonment for three years or more (with no prospect of early release)</li>
-          <li>Incurable or transmissible disease that poses a risk to the wife's health</li>
-          <li>Addiction to intoxicants (a new ground added by the 2024 law)</li>
-          <li>Absence without justification for one year or more (with no maintenance payments)</li>
+          <li>A serious harmful defect or disease, or one that prevents marital relations such as impotence (Article 69): incurable cases are revoked without a grace period, curable ones can be postponed for up to one year</li>
+          <li>Harm (Article 71), with two arbitrators appointed where the harm is disputed, who have up to 60 days to report (Article 72)</li>
+          <li>Revocation at the wife's request before intercourse or seclusion, if she returns the dowry she received (Article 75)</li>
+          <li>Non-payment of a dowry that is due (Article 76)</li>
+          <li>Failure to maintain (Article 77)</li>
+          <li>Desertion (Article 78)</li>
+          <li>Absence, disappearance or imprisonment of the husband (Article 79)</li>
+          <li>Addiction (Article 80)</li>
         </ul>
         <p>
-          Evidence requirements: police reports, medical records, witness testimony, and bank records showing no maintenance payments. Psychological abuse cases often require expert psychiatric or psychological testimony. Courts apply a contextual test: would a woman of comparable background and standing consider this harm sufficient to make continued marriage impossible? The standard is fact-sensitive and courts have discretion. For full guidance on this route, see our <a href="/en/divorce-for-harm-uae/">divorce for harm UAE guide</a>.
+          Each article has its own conditions, and the court applies them to your evidence: police and medical reports, witnesses, and bank records showing missed maintenance are typical. A wife in a consummated marriage whose divorce or revocation was due to the husband can also claim compensation (mut'a) of up to one year's maintenance (Article 102). For full guidance on the harm route, see our <a href="/en/divorce-for-harm-uae/">divorce for harm UAE guide</a>.
         </p>
       </section>
 
       <!-- Section 3: Family Guidance Section -->
       <section class="content-section">
-        <h2>The Family Guidance Section: Usually the First Step</h2>
+        <h2>The Family Guidance Section: When the Judge Refers You</h2>
         <p>
-          For most Muslim couples, the divorce goes through the <strong>Family Guidance Section</strong> (Dar al-Tawjeh al-Asari), attached to the court complex, before a judge hears it. Under the 2005 law this referral was mandatory for most claims. Under Article 8 of Federal Decree-Law No. 41 of 2024 the supervising judge refers the spouses where the judge considers it useful, and in practice many Muslim divorce cases in Dubai and Abu Dhabi, uncontested and contested alike, still start there. Urgent matters, such as temporary maintenance or custody orders, are not referred. For the wider process, see our <a href="/en/divorce-in-uae/">divorce in UAE guide</a>.
+          The <strong>Family Guidance Section</strong> (Dar al-Tawjeh al-Asari) is a counselling and settlement service attached to the courts. Under Article 8 of Federal Decree-Law No. 41 of 2024, before a case goes to the judge, the supervising judge may refer the spouses to Family Guidance if a settlement seems feasible. It is not compulsory, and the law sets no fixed period for it. Under the 2005 law referral was mandatory for most claims. Urgent and temporary matters, such as temporary maintenance or custody orders, and cases where reconciliation is not foreseeable, such as cases to prove a marriage or prove a divorce, are not referred. For the wider process, see our <a href="/en/divorce-in-uae/">divorce in UAE guide</a>.
         </p>
         <p>
-          There is no statutory time limit for Family Guidance, and the stage usually takes a few weeks. Court-appointed family counsellors meet with the spouses, together or separately, and attempt to identify and resolve the underlying issues. The goal is reconciliation. In cases involving clear harm, or where both spouses are plainly decided, the counsellors may issue the non-reconciliation certificate more quickly. The 60-day limit you may read about belongs to a later stage: in a contested harm claim the court appoints two arbitrators, and Article 72 of the 2024 law gives them up to 60 days from their appointment to report (the old law allowed 90).
+          If the spouses settle, the agreement is recorded in a report signed by them and the counsellor and approved by the supervising judge; it then has the force of an enforceable writ and cannot be appealed unless it contradicts the law (Article 8). If they do not settle, the case goes on to the court. The 60-day limit you may read about belongs to a later stage: in a contested harm claim the court appoints two arbitrators, and Article 72 gives them up to 60 days from their appointment to report (the old law allowed 90).
         </p>
         <div class="info-box info-box--info">
           <h3>What happens at Family Guidance sessions</h3>
-          <p>A trained family counsellor meets the couple. You will be asked about the marriage history, the reasons for seeking divorce, whether children are involved, and whether there are financial disputes. You are not in court; these sessions are confidential and not adversarial. The counsellor does not decide anything. If reconciliation fails, a non-reconciliation certificate is issued. This certificate has a short validity, commonly reported at around three months, so you must file your court petition before it expires.</p>
+          <p>A family counsellor meets the spouses to go through the rights and duties of each and to look for an amicable settlement. You are not in court, and the counsellor does not decide anything. In Abu Dhabi, the Judicial Department says a family case is registered through its e-services, sessions can be held by video call, and the requests are referred to the competent court, at the request of either spouse, when no settlement is reached.</p>
         </div>
         <p>
-          If your spouse refuses to attend the Family Guidance Section, you can apply to the court for assistance in compelling attendance. Courts take non-attendance seriously. An obstinate spouse who repeatedly fails to appear can result in the Family Guidance Section issuing a default non-reconciliation certificate, allowing the case to proceed.
+          If your spouse will not take part, no settlement can be reached and the matter moves on to the court; ask the Family Guidance office or your lawyer how that is recorded in your emirate. Our <a href="/en/family-guidance-section-uae/">Family Guidance Section guide</a> covers the practical steps.
         </p>
       </section>
 
@@ -385,7 +297,7 @@ const faqItems = [
       <section class="content-section">
         <h2>Financial Rights in Sharia Divorce: What the Wife is Owed</h2>
         <p>
-          Islamic law provides the wife with structured financial protections on divorce. These are not discretionary; they are legal obligations that the husband owes and that UAE courts enforce through the Execution Court if necessary. Our <a href="/en/wife-rights-after-divorce-uae/">wife rights after divorce UAE guide</a> sets these out in full.
+          Islamic law gives the wife defined financial rights on divorce. They are legal obligations that the husband owes and that UAE courts enforce through the execution judge if necessary. Our <a href="/en/wife-rights-after-divorce-uae/">wife rights after divorce UAE guide</a> sets these out in full.
         </p>
 
         <div class="table-wrapper">
@@ -409,20 +321,20 @@ const faqItems = [
           </table>
         </div>
 
-        <h3>Mahr: the most commonly litigated financial right</h3>
+        <h3>Mahr: when it falls due</h3>
         <p>
-          Mahr is the gift specified in the marriage contract. It has two components: prompt mahr (mu'ajjal), which falls due on consummation of the marriage or at divorce if not yet paid, and deferred mahr (mu'ajjal), traditionally payable on death or divorce. Under Federal Decree-Law No. 41 of 2024, deferred mahr falls due immediately and in full upon divorce: any original deferral agreement is extinguished. The amount is fixed in the nikah contract and is enforced as a privileged debt.
+          Mahr (the dowry) is the property the husband pays the wife under the marriage contract, and it is hers (Article 45). The spouses can agree to defer all or part of it; if they agreed no deferral and set no time, it is due on request (Article 46). Whatever was agreed, Article 46 says the dowry becomes due on irrevocable separation or the death of a spouse. A revocable talaq does not end the marriage until the iddah expires (Article 59), so the deferred dowry falls due when the iddah ends without a take-back, or at once on a third talaq or a khula'. The full dowry is confirmed by intercourse, valid seclusion or death, and a wife divorced before intercourse gets half the specified dowry (Article 47).
         </p>
         <p>
-          If the husband has dissipated assets to avoid mahr payment, the Execution Court has a full toolkit: bank account freeze, salary garnishment up to 50%, travel ban, and attachment of real estate. A travel ban for mahr enforcement is available within days of an Execution Court order once the judgment is final. For full mahr enforcement strategy, see our <a href="/en/mahr-divorce-uae/">mahr divorce UAE guide</a>.
+          If the husband does not pay a judgment for the dowry, the wife applies to the execution judge, who can use the enforcement measures in the Civil Procedure Code. For enforcement in practice, see our <a href="/en/mahr-divorce-uae/">mahr divorce UAE guide</a> and our guide to <a href="/en/unpaid-alimony-enforcement-uae/">unpaid alimony enforcement</a>.
         </p>
 
         <h3>Iddah: what it means and what it costs the husband</h3>
         <p>
-          The iddah is the mandatory waiting period after divorce. For a divorced woman (not pregnant): three lunar months. For a pregnant divorcee: until she gives birth (however long that takes). For a widow: four months and ten days. The iddah serves as the determination period for paternity of any child born after divorce. During the iddah period, the husband must maintain the wife (nafaqa al-iddah) and provide suitable housing. He cannot force her to leave the marital home.
+          The iddah is the waiting period after separation during which a woman may not remarry (Article 81). After a divorce it applies only if the marriage was consummated or there was valid seclusion (Article 82). For a woman who menstruates it lasts three periods of purity; for one past menopause or who has never menstruated, three lunar months (Article 84); for a pregnant woman it ends with the birth or a miscarriage (Article 85). A widow who is not pregnant observes four months and ten days (Article 86). For a court divorce, the iddah runs from the date the judgment becomes final (Article 83).
         </p>
         <p>
-          For a revocable talaq (first or second): the husband can retract the divorce during iddah and resume the marriage. For an irrevocable talaq or khula': no retraction is possible. The iddah maintenance obligation applies in all cases regardless of revocability. See our dedicated <a href="/en/iddah-waiting-period-uae/">iddah waiting period UAE guide</a>.
+          Iddah maintenance is due after a revocable divorce. After an irrevocable divorce it is due only if she is pregnant, until the birth, and there is none after khula' or death (Article 101). In all cases she may live in the marital home during the iddah, or in a suitable home if the marital home is unsuitable. During the iddah of a revocable talaq the husband can take her back (Article 61); after an irrevocable talaq or khula' he cannot. See our dedicated <a href="/en/iddah-waiting-period-uae/">iddah waiting period UAE guide</a>.
         </p>
       </section>
 
@@ -433,17 +345,17 @@ const faqItems = [
           Islamic law distinguishes between hadhana (physical care and upbringing) and wilaya (legal guardianship). These are separate concepts that the 2024 law preserves.
         </p>
         <p>
-          <strong>Hadhana</strong> default under Federal Decree-Law No. 41 of 2024: custody now continues to age 18 for both boys and girls, a major change from the old split of roughly 11 for boys and 13 for girls under the 2005 law. A child aged 15 or older may choose which parent to live with where the court finds it in the child's best interest, with narrow exceptions for children who have a serious illness or condition. The mother can still lose hadhana if she becomes unfit or relocates in a way contrary to the child's interests, and the best-interests test governs throughout.
+          <strong>Hadhana</strong> under Federal Decree-Law No. 41 of 2024: after separation custody goes first to the mother, then the father, then the maternal and paternal grandmothers, and the court may depart from that order in the child's interest (Article 114). Custody continues to age 18, and beyond it for a disabled child (Article 123); from 15 the child may choose which parent to live with unless the child's interest requires otherwise (Article 122). A custodian must meet the conditions in Article 113, and custody lapses if a condition is lost or if, for example, the custodian moves somewhere with the intention of residence where the child's interests cannot be met (Article 115).
         </p>
         <p>
-          <strong>Wilaya</strong> (legal guardianship) generally remains with the father. This means major decisions about education, travel, medical procedures, and property are made by the father even where the mother has physical care. This creates practical tensions in international cases: a mother with hadhana cannot take the child abroad without the father's consent as wilaya-holder.
+          <strong>Wilaya</strong> (guardianship) generally remains with the father, who handles the child's affairs, discipline and education, but a custodian mother has educational guardianship (Article 112), and disputes go to the Judge of Summary Matters by order on petition. Travel is the usual flashpoint: a custodial parent may take the child abroad with the other parent's written approval, and if that is refused the court can authorise travel for periods totalling up to 60 days a year, with a guarantee of return, or longer for the child's benefit, treatment or a necessity (Article 116). The guardian may keep the child's passport except when it is needed for travel (Article 117).
         </p>
         <p>
-          <strong>Child support (nafaqa al-awlad)</strong> is the father's obligation regardless of which parent has physical care. The amount is set by the court based on the father's income and the child's reasonable needs, and law firms report that backdated maintenance can be claimed only for the preceding two years. For complex custody situations including relocation and international cases, see our <a href="/en/child-custody-uae/">child custody UAE guide</a>.
+          <strong>Child maintenance (nafaqat al-awlad)</strong> is the father's obligation regardless of which parent has physical care (Article 106). The court sets it from his means and the child's needs (Article 96), and a claim for a child's past maintenance cannot reach back more than one year before filing (Article 111). See our <a href="/en/child-support-uae/">child support UAE guide</a>, and for relocation and international cases, our <a href="/en/child-custody-uae/">child custody UAE guide</a>.
         </p>
         <div class="info-box info-box--warning">
           <h3>If you fear your spouse will take the children abroad</h3>
-          <p>If you are in divorce proceedings and believe your spouse may take your children to another country without your consent, apply immediately to the Personal Status Court for a travel restriction order on the children's passports. UAE courts act quickly on these applications. Once a travel restriction is in place, UAE immigration will not allow the children to depart without a court order lifting the restriction. Act before serving divorce papers if the risk is imminent, because once your spouse knows you are filing, they may act quickly.</p>
+          <p>If you are in divorce proceedings and believe your spouse may take your children to another country without your consent, speak to a lawyer at once about an urgent application to the court. Under Article 116 a custodial parent needs the other parent's written approval or the court's permission to travel with the child, and urgent and temporary applications are not sent to Family Guidance first (Article 8). Act before serving divorce papers if the risk is imminent. The UAE is not a party to the Hague Child Abduction Convention, so the return of a child taken abroad cannot be pursued through that route. See our <a href="/en/child-travel-consent-uae/">child travel consent guide</a>.</p>
         </div>
       </section>
 
@@ -451,13 +363,13 @@ const faqItems = [
       <section class="content-section">
         <h2>Recognition of UAE Sharia Divorces Abroad</h2>
         <p>
-          UAE Sharia divorces are generally well-recognised in Muslim-majority countries. Most Arab states (Egypt, Jordan, Saudi Arabia, Lebanon, Morocco, Tunisia) have reciprocal recognition frameworks or apply Islamic jurisprudence principles that render UAE Sharia decrees readily accepted. South Asian Muslim countries (Pakistan, Bangladesh) similarly recognise UAE Islamic divorces through their foreign judgment frameworks.
+          Whether another country accepts a UAE Sharia divorce is decided by that country's own law, not by the UAE. Procedures and conditions differ from country to country, so check with that country's consulate in the UAE or a lawyer there before you rely on the divorce at home, and especially before remarrying.
         </p>
         <p>
-          The practical step for each country is: obtain the UAE divorce certificate, have it attested by the UAE Ministry of Foreign Affairs (MOFA), have it legalised by the relevant country's embassy or consulate in UAE where that country requires it, translate it if needed, then file for registration with the relevant domestic authority. For Egyptian nationals: the Niyaba (public prosecutor) must be notified. For Jordanian nationals: registration at the Jordanian Personal Status Court. Your UAE lawyer should provide country-specific guidance on the home country registration step.
+          The first steps are the same almost everywhere: obtain the court's divorce judgment or certificate, have it certified and attested in the UAE, translate it if needed, then file it with the home-country registry. The UAE is not a party to the Hague Apostille Convention, so there is no UAE apostille: the chain is court or notary certification, attestation by the UAE Ministry of Foreign Affairs (MOFA), and then legalisation by the relevant embassy or consulate. For attestation steps, see our <a href="/en/divorce-certificate-attestation-uae/">UAE divorce certificate attestation guide</a>.
         </p>
         <p>
-          Western countries (UK, US, Germany, France) recognise UAE Sharia divorces if the procedural requirements are met: both parties were notified, the court had proper jurisdiction, and the divorce was not obtained by fraud. The main complication in Western recognition is the "natural justice" requirement, specifically whether the respondent had adequate notice and opportunity to participate. A UAE Sharia divorce obtained properly (with service on the respondent and their opportunity to attend, even if they chose not to) will be recognised. For attestation steps, see our <a href="/en/divorce-certificate-attestation-uae/">UAE divorce certificate attestation guide</a>.
+          For England and Wales, recognition of overseas divorces is governed by Part II of the Family Law Act 1986, and the tests depend on how the divorce was obtained and on the spouses' links to the UAE; our guide on how a <a href="/en/uae-divorce-recognised-uk/">UAE divorce is recognised in the UK</a> explains them. Elsewhere, a lawyer in the country concerned can tell you whether a UAE court divorce needs a separate recognition step.
         </p>
       </section>
 
