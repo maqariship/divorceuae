@@ -4,9 +4,9 @@ import LeadForm from '../../components/ui/LeadForm.astro';
 import FAQSection from '../../components/ui/FAQSection.astro';
 import Breadcrumb from '../../components/seo/Breadcrumb.astro';
 
-const title = 'Emergency Orders in UAE Divorce - Protecting Yourself and Your Children Immediately';
+const title = 'Emergency Court Orders in a UAE Divorce: Custody, Travel, Money';
 const description =
-  'UAE courts can issue emergency custody, travel ban, and asset freeze orders within 48-72 hours. This guide explains when to apply, how, and what to expect.';
+  'Urgent orders in a UAE divorce: temporary alimony, custody, child travel bans, passports, asset seizure and domestic violence protection, and the law behind each.';
 
 const hreflang = {
   en: 'https://divorceu.ae/en/emergency-orders-divorce-uae/',
@@ -19,75 +19,79 @@ const breadcrumbs = [
 ];
 
 const summaryCards = [
-  { label: 'Emergency Response Time', value: '48-72 hours', note: 'From urgent application to first order' },
-  { label: 'Court Fee', value: 'AED 300-500', note: 'Urgent motion filing fee' },
-  { label: 'Order Duration', value: '30-90 days', note: 'Until confirmed at main divorce hearing' },
+  { label: 'Family Guidance first?', value: 'Not required', note: 'Urgent and temporary orders are exempt (Art. 8, Decree-Law 41/2024)' },
+  { label: 'Temporary alimony', value: 'Enforceable at once', note: 'Muslim track, Art. 100; non-Muslims, Art. 10 of Cabinet Res. 122/2023' },
+  { label: 'Child travel abroad', value: 'Consent or permit', note: 'Art. 116; court-permitted trips up to 60 days a year in total' },
 ];
 
 const orderTypes = [
-  { icon: '👶', title: 'Emergency custody order', desc: 'Grants one parent temporary custody of children where there is documented risk. Travel ban on children applied simultaneously.' },
-  { icon: '✈️', title: 'Travel ban on children', desc: 'Prevents children from leaving the UAE at any border point or airport. Enforced by immigration within 24 hours of court order.' },
-  { icon: '🏦', title: 'Asset freeze order', desc: 'Prevents a spouse from transferring money, selling property, or dissipating marital assets during proceedings.' },
-  { icon: '🏠', title: 'Property restriction order', desc: 'Blocks registration of property transfers in the Dubai Land Department or equivalent emirate body.' },
-  { icon: '🛡️', title: 'Protection order (DV)', desc: 'Available under Federal Decree-Law No. 13 of 2024 on Combating Domestic Violence. Separate from divorce proceedings. Restrains contact, attendance at home or work.' },
-  { icon: '📋', title: 'Interim maintenance order', desc: 'Compels a spouse to pay maintenance pending the final divorce judgment. Enforceable against salary within 2-4 weeks.' },
+  { icon: '👶', title: 'Temporary custody and visitation order', desc: 'Settles where the children live and when the other parent sees them until the dispute is decided. For Muslims, urgent and temporary custody orders are not sent to Family Guidance first (Art. 8 of Federal Decree-Law No. 41 of 2024). At the Abu Dhabi Civil Family Court a judge can temporarily suspend joint custody or set temporary visitation (Art. 42 of the 2022 Regulation).' },
+  { icon: '✈️', title: 'Child travel ban', desc: 'Stops a child being taken abroad while a dispute runs. For non-Muslims, either parent can apply after the divorce to stop the child travelling for a temporary period (Art. 22 of Cabinet Resolution No. 122 of 2023). For Muslims, travel abroad already needs the other parent’s written approval or a court permit (Art. 116).' },
+  { icon: '🛂', title: 'Passport and documents order', desc: 'The guardian normally keeps the child’s passport and hands it over for travel; the court can order it kept by the custodian if the guardian obstinately refuses to hand it over when needed (Art. 117). The custodian keeps the child’s ID documents but may not use them for travel without the guardian’s or the court’s permit (Art. 124).' },
+  { icon: '🏦', title: 'Protective seizure of assets', desc: 'Asks the court to freeze money or property so it cannot be moved before a money claim is decided. Abu Dhabi’s civil regulation lists imposing or cancelling a protective seizure as a provisional order (Art. 42); in the other courts a precautionary attachment is requested under the Civil Procedure Code.' },
+  { icon: '🛡️', title: 'Protection order (domestic violence)', desc: 'Available under Federal Decree-Law No. 13 of 2024 on Protection from Domestic Violence, from the Public Prosecution or a court. Separate from the divorce case. Restrains contact and approaching the victim’s home, work or other set places.' },
+  { icon: '📋', title: 'Temporary maintenance order', desc: 'For Muslims, the court can order temporary maintenance for the wife and children while her maintenance case is heard, enforceable immediately by force of law (Art. 100). For non-Muslims it is requested after the divorce judgment and decided by an order on a petition (Art. 10 of Cabinet Resolution No. 122 of 2023).' },
 ];
 
 const urgencyApplicationSteps = [
-  { n: 1, title: 'Document the evidence', body: 'Before calling your lawyer, gather everything that shows the risk or urgency: photographs, medical reports, police reports, WhatsApp messages showing threats or plans to leave, bank statements showing money transfers abroad, school records, witness contact details. Courts need to see specific, documented evidence of threat - not general relationship breakdown.' },
-  { n: 2, title: 'Instruct a lawyer immediately', body: 'Emergency applications require a lawyer to prepare an affidavit (sworn statement) in Arabic setting out the grounds. This document is the foundation of your application. A lawyer experienced in urgent applications can prepare this within hours in a genuine emergency.' },
-  { n: 3, title: 'File the urgent motion', body: 'Your lawyer files the urgent motion (talab isti\'jali) with the Personal Status Court. The filing fee is AED 300-500 depending on the emirate. The court will assess whether to convene an emergency hearing the same day or the following day.' },
-  { n: 4, title: 'Emergency hearing', body: 'The judge reviews your evidence and affidavit. You may or may not need to attend in person - your lawyer often presents the application. For the most urgent matters (imminent risk of child removal, evidence of asset flight), courts can grant orders ex parte (without notifying the other party) at this stage.' },
-  { n: 5, title: 'Order issued and enforced', body: 'Once granted, emergency orders are communicated immediately to relevant authorities: immigration (for travel bans), banks (for asset freezes), and the Land Department (for property restrictions). Enforcement is typically effective within 24 hours of the order being issued.' },
-  { n: 6, title: 'Notify the other party', body: 'In most cases, the other party is notified of the emergency order and its contents. They have the right to apply for the order to be varied or set aside. You must attend any hearing called to review the order and be prepared to justify it with evidence.' },
+  { n: 1, title: 'Document the evidence', body: 'Before calling a lawyer, gather everything that shows the risk or urgency: photographs, medical reports, police reports, messages showing threats or plans to leave, bank statements showing money transfers abroad, school records and witness contact details. Courts need specific, documented evidence of a risk, not general relationship breakdown.' },
+  { n: 2, title: 'Get representation quickly', body: 'An urgent request is a written application in Arabic (English is possible at the Abu Dhabi Civil Family Court) setting out the facts and the order you want, with your evidence attached. You may file yourself, authorise your spouse, an in-law or a blood relative up to the fourth degree to appear for you, or instruct a lawyer licensed in the UAE (Arts. 6 and 8 of Federal Decree-Law No. 34 of 2022).' },
+  { n: 3, title: 'File with the right court', body: 'Where the law requires court permission, the request is made by an order on petition to the court where you live (Art. 6 of Federal Decree-Law No. 41 of 2024). Claims by a wife, child or custodian on alimony, custody or visitation can be filed where either party lives or works or where the marital home is (Art. 3). Fees depend on the emirate and the order: in Abu Dhabi the ADJD lists AED 100 for a Personal Status interim order, with alimony requests free, and AED 400 for a travel ban.' },
+  { n: 4, title: 'The judge decides on the papers', body: 'The judge decides on the request and the documents filed and may investigate or ask for more documents first (Art. 6). No federal law sets a general deadline. In Abu Dhabi, the ADJD says the judge issues an interim order by the next working day after the application is submitted.' },
+  { n: 5, title: 'Make sure the order is applied', body: 'A temporary maintenance decision under Art. 100 is enforceable immediately. For a travel ban or a seizure, ask your lawyer to confirm the order has actually reached the authorities that must apply it, rather than assuming it is active.' },
+  { n: 6, title: 'Expect a challenge', body: 'Any interested party may appeal an order on petition within one week (Art. 6). At the Abu Dhabi Civil Family Court either spouse can object to a temporary alimony decision under the usual rules for interim orders (Art. 22 of the 2022 Regulation). Keep your evidence ready to defend the order.' },
 ];
 
 const evidenceTypes = [
-  { type: 'For emergency custody / child abduction risk', items: ['WhatsApp/email messages discussing travel plans or threats to take children', 'Evidence of one-way flight bookings', 'School withdrawal letters or requests for school records', 'Passport location (if you know children\'s passports are with the other parent)', 'History of threats to leave the UAE with children', 'Previous unauthorized travel attempts'] },
-  { type: 'For asset freeze orders', items: ['Bank statements showing large transfers abroad', 'Evidence of property listing for quick sale', 'Business asset transfers to third parties', 'Evidence of cryptocurrency or cash movements', 'Communications discussing hiding money from proceedings', 'Sudden lifestyle changes inconsistent with claimed income'] },
-  { type: 'For protection orders (domestic violence)', items: ['Police reports or hospital records', 'Photographs of injuries', 'Witness statements from neighbors, family members', 'Medical certificates', 'Previous police call-out records', 'Text messages containing threats or abuse'] },
+  { type: 'For an urgent custody order or child removal risk', items: ['Messages or emails discussing travel plans or threats to take the children', 'Evidence of one-way flight bookings', 'School withdrawal letters or requests for school records', 'Where the children’s passports are, if you know', 'History of threats to leave the UAE with the children', 'Previous unauthorised travel attempts'] },
+  { type: 'For a protective seizure', items: ['Bank statements showing large transfers abroad', 'Evidence of a property listed for a quick sale', 'Business asset transfers to third parties', 'Evidence of cryptocurrency or cash movements', 'Messages about hiding money from the proceedings', 'Sudden lifestyle changes inconsistent with declared income'] },
+  { type: 'For a protection order (domestic violence)', items: ['Police reports or hospital records', 'Photographs of injuries', 'Statements from neighbours or family members who witnessed incidents', 'Medical certificates', 'Records of previous police call-outs', 'Messages containing threats or abuse'] },
 ];
 
 const faqItems = [
   {
     question: 'Can I get an emergency custody order without a lawyer?',
-    answer: 'Technically the court process allows self-representation, but in practice the emergency application process is procedurally complex and all documents must be in Arabic. A lawyer dramatically increases the chance of the court granting the order on the first application - delays in an emergency situation can mean children leave the country or assets disappear. If cost is an obstacle, speak to a lawyer about a fixed-fee emergency application rather than ruling out legal representation entirely.',
+    answer: 'Yes, you may file in person (Art. 52 of the Civil Procedure Code, Federal Decree-Law No. 42 of 2022), or authorise your spouse, an in-law or a blood relative up to the fourth degree to appear for you. In practice it is hard, because the request must set out the facts and the legal basis clearly and, outside the Abu Dhabi Civil Family Court, be in Arabic. A delay in an emergency can mean children leave the country or money disappears, so if cost is the obstacle, ask a lawyer for a fixed fee for the urgent application alone.',
+  },
+  {
+    question: 'Do I have to go through Family Guidance before asking for an urgent order?',
+    answer: 'No. Article 8 of Federal Decree-Law No. 41 of 2024 exempts urgent and temporary cases, and urgent or temporary orders on alimony, custody and guardianship, from referral to Family Guidance. Non-Muslim civil divorces under Federal Decree-Law No. 41 of 2022 are not referred to Family Guidance at all (Art. 3).',
   },
   {
     question: 'What evidence do I need for an emergency custody order?',
-    answer: 'The court needs to see a credible, specific threat to the child - not just a difficult co-parenting situation. Useful evidence includes: photographs, medical reports showing injuries or neglect, police reports, WhatsApp messages showing threats or plans to take children abroad, evidence of one-way flight bookings, school withdrawal requests, and witness statements. The more specific and documented the evidence, the more likely the court is to grant an order on an urgent basis. General allegations without documentation will not support an emergency order.',
+    answer: 'The court needs to see a credible, specific risk to the child, not just a difficult co-parenting situation. Useful evidence includes photographs, medical reports showing injuries or neglect, police reports, messages showing threats or plans to take the children abroad, one-way flight bookings, school withdrawal requests and witness statements. General allegations without documents rarely support an urgent order.',
   },
   {
     question: 'Can my spouse cancel the travel ban placed on our children?',
-    answer: 'Only through the court - not unilaterally. Your spouse must file an application with the same court to vary or lift the travel ban, setting out reasons why it should be removed. You will be notified of this application and have the right to oppose it. The court considers whether the circumstances that justified the ban have changed, whether proposed travel is to a safe destination, and whether adequate safeguards (undertakings, mirror orders in the destination country) are in place. Courts do grant temporary lifts for specific trips if appropriate conditions are met.',
+    answer: 'Only through the court. Your spouse has to apply to the court to lift or vary it, and you can oppose the application; an order on petition can also be appealed within one week (Art. 6 of Federal Decree-Law No. 41 of 2024). In Abu Dhabi, the ADJD says an interim travel ban continues until a party applies to the court to remove it. Courts can allow a specific trip with a guarantee that the child returns (Art. 116 for Muslims; Art. 21 of Cabinet Resolution No. 122 of 2023 for non-Muslims).',
   },
   {
-    question: 'What if my spouse has already left UAE with the children?',
-    answer: 'Act immediately - this becomes a child abduction matter. Contact your lawyer first, then report to the nearest police station and the Ministry of Justice International Cooperation Department, which handles cross-border child abduction. The UAE has bilateral treaties and Hague Convention-equivalent agreements with several countries. Speed is critical: the longer the child is in the destination country, the harder return becomes. Gather all evidence of the unauthorized removal and the children\'s last known location.',
+    question: 'What if my spouse has already left the UAE with the children?',
+    answer: 'Act immediately. Contact a lawyer and report the removal to the police. The UAE is not a party to the 1980 Hague Child Abduction Convention, so there is no treaty process to order the child’s return; recovery depends on the courts and law of the country the child was taken to. Inside the UAE, a custodian who travels with the child without the guardian’s or the court’s permission commits an offence punishable by imprisonment and/or a fine of AED 5,000 to AED 50,000 (Art. 252), prosecuted only on a complaint by the person concerned (Art. 255). See our international child abduction guide.',
   },
   {
-    question: 'How long does an asset freeze order last?',
-    answer: 'Asset freeze orders in divorce proceedings are typically linked to the main divorce case - the freeze continues until the court makes a final order on asset division, or until both parties reach a negotiated settlement that is recorded by the court. The frozen assets are not gone; they are held in place pending the outcome. If the case settles quickly, the freeze is lifted as part of the settlement. If the main proceedings take 12-24 months, the freeze remains in effect for that period, subject to any variation applications.',
+    question: 'How long does a protective seizure of assets last?',
+    answer: 'Until the court lifts it or the main claim is decided, and the person whose assets are seized can ask the court to cancel it. A seizure protects a claim that still has to be pursued: in Abu Dhabi, the ADJD says an urgent request made before the main case requires you to commit to filing the main case within 8 days. The assets are not lost; they are held in place pending the outcome.',
   },
   {
     question: 'Will an emergency order affect my divorce outcome?',
-    answer: 'Emergency orders are preliminary - they do not determine the final result of your divorce. However, the evidence gathered and presented to obtain emergency orders, and the behavior documented during the emergency proceedings, can influence the final judge\'s assessment of both parties. Courts form impressions of parental behavior from how parties conduct themselves throughout proceedings. Acting proportionately and with documented justification for every emergency application is advisable - emergency orders obtained without genuine grounds can reflect badly on the applicant.',
+    answer: 'Emergency orders are temporary and do not decide the final result. However, the evidence used to obtain them, and how each parent behaves while they are in force, can influence how the judge sees both parties later. Apply only where there are genuine, documented grounds; an order obtained without real grounds can reflect badly on the applicant.',
   },
   {
-    question: 'How fast can the Public Prosecution issue a domestic violence protection order?',
-    answer: 'Under Federal Decree-Law No. 13 of 2024 on Combating Domestic Violence, the Public Prosecution can issue a protection order quickly, often the same day a complaint is filed and assessed, without waiting for a full court hearing. The initial order can last up to 30 days and can be renewed once for a further period. If protection is still needed after that, the matter goes before the court, which can extend the order for up to six months. Because the prosecution route moves faster than a civil application, go to the nearest police station or Public Prosecution office first if you are in immediate danger.',
+    question: 'How fast can a domestic violence protection order be issued?',
+    answer: 'Under Federal Decree-Law No. 13 of 2024 on Protection from Domestic Violence, the Public Prosecution can issue a restraining order without waiting for a court trial. Published summaries of the law say a prosecution order lasts up to 30 days and can be extended for two further periods of the same length, after which the competent court can extend it for up to six months or until the judgment becomes final. If you are in immediate danger, go to the nearest police station or call the police first.',
   },
   {
     question: 'Can I get urgent maintenance before the divorce is finished?',
-    answer: 'Yes. You can apply for an interim (temporary) maintenance order that requires your spouse to pay support for you and the children while the divorce case is still running. These applications are heard on an urgent basis where a spouse has cut off financial support. If the maintenance is not paid, the order can be enforced through the execution court against salary and bank accounts. See our guide on enforcing unpaid alimony for how collection works once an order is in place.',
+    answer: 'Yes, in the Muslim track. Article 100 of Federal Decree-Law No. 41 of 2024 lets the court, at the wife’s request, order temporary maintenance for her and the children while her maintenance case is heard, enforceable immediately. For non-Muslims under the 2022 civil law, temporary alimony is requested after the divorce judgment, until the financial rights are decided (Art. 10 of Cabinet Resolution No. 122 of 2023). See our temporary alimony guide for the full procedure.',
   },
   {
     question: 'Does a UAE travel ban still work if the other country is not in the Hague Convention?',
-    answer: 'This is exactly why a preventative travel ban matters. The UAE is not a party to the 1980 Hague Convention on the Civil Aspects of International Child Abduction, so if a child is removed to a non-signatory country there is no automatic treaty mechanism to order the child returned. Return then depends on bilateral arrangements, the destination country\'s local family courts, and diplomatic channels, all of which are slow and uncertain. A UAE travel ban stops the removal at the border before it happens, which is far more reliable than trying to recover a child afterward.',
+    answer: 'This is exactly why a preventative travel ban matters. The UAE is not a party to the 1980 Hague Convention on the Civil Aspects of International Child Abduction, so if a child is removed abroad there is no treaty mechanism to order the child returned. Return then depends on the destination country’s courts and law, which is slow and uncertain. Stopping the removal before it happens is far more reliable than trying to recover a child afterwards.',
   },
   {
-    question: 'How quickly can I get an asset freeze if my spouse is moving money abroad?',
-    answer: 'Where you have concrete evidence of imminent asset flight, such as bank statements showing large outbound transfers or a property newly listed for a quick sale, the court can grant an urgent freeze within 48-72 hours, and in the most pressing cases on an ex parte basis before your spouse is notified. The freeze covers UAE bank accounts, property registrations, and identified assets. Speed matters: once funds leave the UAE, freezing them requires separate proceedings in the country they were sent to.',
+    question: 'How quickly can I get an asset seizure if my spouse is moving money abroad?',
+    answer: 'There is no fixed national deadline, and courts decide urgent requests on the papers you file. In Abu Dhabi, the ADJD says interim orders are issued by the next working day after the application. You will need concrete evidence of the risk, such as statements showing large outbound transfers or a property newly listed for a quick sale. Speed matters: once funds leave the UAE, freezing them needs separate proceedings in the country they were sent to.',
   },
 ];
 ---
@@ -98,6 +102,7 @@ const faqItems = [
   canonical="https://divorceu.ae/en/emergency-orders-divorce-uae/"
   {hreflang}
   lang="en"
+  lastmod="2026-10-12"
 >
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
     <Breadcrumb items={breadcrumbs} />
@@ -105,13 +110,13 @@ const faqItems = [
 
   <section class="hero-section">
     <div class="hero-inner">
-      <p class="hero-tag">Emergency Orders · UAE Divorce 2025</p>
+      <p class="hero-tag">Emergency Orders · UAE Divorce 2026</p>
       <h1>{title}</h1>
       <p class="hero-desc">
-        When a divorce situation becomes dangerous or urgent, UAE courts can act within 48-72 hours to protect children, freeze assets, and prevent a spouse from leaving the country. This guide explains what orders are available, what evidence courts require, the exact application process, and what happens after an order is granted.
+        When a separation turns urgent, you do not have to wait for the divorce judgment. UAE courts can make temporary orders on maintenance, custody, child travel and passports, and freeze assets, and the Public Prosecution can issue domestic violence restraining orders. This guide explains each order, the law behind it, the evidence courts look for and how to apply.
       </p>
       <div class="hero-meta">
-        <span>Updated: August 2026</span>
+        <span>Updated: October 2026</span>
         <span class="sep">·</span>
         <span>By Aleksi Suon, UAE Expat &amp; Legal Consultant</span>
       </div>
@@ -137,13 +142,13 @@ const faqItems = [
       <section class="content-section">
         <h2>What Are Interim and Emergency Orders in UAE Divorce?</h2>
         <p>
-          UAE Personal Status Courts can grant interim orders - temporary orders made before the final divorce judgment - to protect parties and children during the proceedings. Emergency orders are the most urgent subset: orders granted rapidly, sometimes on the same day as application, where there is an immediate risk.
+          They are temporary court orders that protect a spouse, the children or the family's money while the main case is decided. Federal Decree-Law No. 41 of 2024, the personal status law for Muslims, treats them as a separate category: urgent and temporary cases, and urgent or temporary orders on alimony, custody and guardianship, are not referred to Family Guidance first (Article 8). Where the law requires the court's permission, you apply by an order on petition to the court where you live (Article 6).
         </p>
         <p>
-          Interim orders operate on a lower evidential threshold than final orders. The court applies a "balance of probabilities" standard: is it more likely than not that the risk is real and that the order is necessary? This lower bar means courts can act quickly without a full trial - but the order is temporary and must be confirmed (or varied) when the full case is heard.
+          Non-Muslims have parallel tools. Under Cabinet Resolution No. 122 of 2023, the executive regulation of Federal Decree-Law No. 41 of 2022, a divorced wife can ask for temporary alimony (Article 10), a parent can ask the judge to allow or refuse a child's trip abroad during joint custody (Article 21), and either parent can ask the court to stop the child travelling for a temporary period after the divorce (Article 22). In Abu Dhabi, Article 42 of the 2022 Regulation under Abu Dhabi Law No. 14 of 2021 lists the provisional orders the Civil Family Court can make, from temporary alimony and housing to a child travel ban and a protective seizure.
         </p>
         <p>
-          The key types of emergency and interim orders available in UAE divorce proceedings are:
+          No federal law sets a general deadline for deciding these requests, and every order is temporary: it lasts until the court lifts or replaces it, or until the final judgment. The main types are:
         </p>
         <div class="orders-grid">
           {orderTypes.map((order) => (
@@ -159,122 +164,112 @@ const faqItems = [
       </section>
 
       <section class="content-section">
-        <h2>Emergency Custody Orders - Protecting Your Children</h2>
+        <h2>Emergency Custody Orders: Protecting Your Children</h2>
         <p>
-          An emergency custody order transfers temporary physical custody of children to one parent where there is documented evidence of risk. Courts can grant these within 48-72 hours in genuine emergencies, and in extreme cases (imminent international removal), within hours on an ex parte basis (without hearing from the other side first).
+          An urgent custody order settles where the children live, or limits the other parent's time with them, until the court can decide the dispute properly. Courts act on documented risk: violence or abuse against the child, serious neglect, addiction affecting care, or a genuine threat to take the child out of the UAE. General parenting disagreements are dealt with in the ordinary case.
         </p>
         <p>
-          The risk that courts respond to fastest is the threat of children being taken out of UAE jurisdiction without consent. If you have concrete evidence - flight bookings, passport in the other parent's possession, messages about leaving - the court can issue a travel ban simultaneously with or even before the custody order, communicated to immigration within 24 hours.
-        </p>
-        <h3>What "risk to the child" means in practice</h3>
-        <p>
-          Courts will not grant emergency custody orders based on general parenting disagreements or normal relationship conflict. The evidence must show a specific, credible risk: domestic violence against the child, child abuse or neglect, substance abuse affecting parental capacity, or a genuine and documented threat to remove the child from UAE jurisdiction.
-        </p>
-        <p>
-          Where one parent's conduct is concerning but not at the emergency threshold, the correct application is an urgent (but not ex parte) interim order with a short hearing date - typically within 1-2 weeks rather than 48-72 hours.
+          The legal test depends on your track. For Muslims, custody after separation goes first to the mother, then the father and then the grandmothers, but the court may depart from that order in the child's interest (Article 114 of Federal Decree-Law No. 41 of 2024), and a custodian who no longer meets the conditions in Article 113, for example because of addiction or a dangerous disease, can lose custody (Article 115). For non-Muslims under Federal Decree-Law No. 41 of 2022, custody is joint and either parent can ask the court to decide a disputed custody issue in the child's best interest (Article 10). At the Abu Dhabi Civil Family Court, the judge can temporarily suspend joint custody while a request to remove a parent is decided (Article 32 of the 2022 Regulation), and a risk of domestic violence or abuse is a listed ground for removal (Article 33).
         </p>
         <h3>Interim custody while the divorce is running</h3>
         <p>
-          Most custody disputes do not start as same-day emergencies. They start as a practical question: who do the children live with, and who decides day-to-day matters, while the divorce case works its way through the court over many months? For this the court can make an interim custody order that fixes living arrangements, a visitation schedule, and school and medical decision-making until the final judgment. This order is separate from an emergency order and is granted after a short hearing where both parents can be heard.
+          Most custody disputes do not start as same-day emergencies. They start as a practical question: who do the children live with, and when does the other parent see them, while the divorce case works its way through the court? For this the court can make a temporary custody and visitation order that holds until the final judgment, after hearing both parents.
         </p>
         <p>
-          Under Federal Decree-Law No. 41 of 2024 on Personal Status, the framework for custody now generally continues to age 18, and the child's own view is given more weight as they get older. An interim order made early in the case tends to shape the status quo the final judge sees, so it is worth getting the arrangement right at the interim stage rather than treating it as a placeholder. If your circumstances change during the case, for example a parent relocating within the UAE or a school move, you apply to vary the interim order rather than waiting for the final hearing. For how the court weighs custody and guardianship over the longer term, see our <a href="/en/child-custody-uae/">child custody in the UAE guide</a>.
+          Under Federal Decree-Law No. 41 of 2024, custody now continues to age 18 for boys and girls (Article 123), and at 15 a child may choose which parent to live with unless the child's interest requires otherwise (Article 122). An interim order made early in the case tends to shape the status quo the final judge sees, so it is worth getting the arrangement right at the interim stage rather than treating it as a placeholder. If circumstances change during the case, for example a move within the UAE or a new school, you apply to vary the interim order rather than waiting for the final hearing. For how the court weighs custody and guardianship over the longer term, see our <a href="/en/child-custody-uae/">child custody in the UAE guide</a>.
         </p>
       </section>
 
       <section class="content-section">
-        <h2>Asset Freeze Orders - Preventing Financial Dissipation</h2>
+        <h2>Protective Seizure: Stopping Money Being Moved</h2>
         <p>
-          If you have evidence that your spouse is moving money out of the UAE, selling assets at undervalue, or otherwise dissipating marital property before the divorce is finalized, you can apply for an asset freeze order. Courts take asset dissipation seriously - it directly undermines the court's ability to achieve a fair financial outcome.
+          If you have evidence that your spouse is moving money out of the UAE, selling assets cheaply or otherwise draining property before a money claim is decided, you can ask the court to seize it as a protective measure. At the Abu Dhabi Civil Family Court, imposing or cancelling a protective seizure is one of the listed provisional orders (Article 42 of the 2022 Regulation), and a final judgment can also include a protective seizure or a travel ban to secure its enforcement (Article 48). In the other courts the request is made as a precautionary attachment under the Civil Procedure Code, Federal Decree-Law No. 42 of 2022.
         </p>
         <p>
-          An asset freeze order can cover:
+          A seizure can target:
         </p>
         <ul class="checklist">
-          <li>UAE bank accounts - banks receive direct notification and freeze movements above a specified threshold</li>
-          <li>Dubai Land Department property - transfer registrations are blocked pending the court's final order</li>
-          <li>Other UAE property registers (Abu Dhabi, Sharjah, Ajman) via the relevant authority</li>
-          <li>Business interests where the court can notify relevant registries</li>
-          <li>Specific assets identified in the affidavit (vehicles, investments, jewelry of known value)</li>
+          <li>Bank accounts held in the UAE</li>
+          <li>Real estate registered in the UAE</li>
+          <li>Shares and business interests registered in the UAE</li>
+          <li>Specific assets you can identify, such as vehicles or investments</li>
+          <li>Money a third party, such as an employer, owes your spouse</li>
         </ul>
         <p>
-          The freeze does not transfer ownership - it simply prevents disposal. Assets remain under the existing holder's control for day-to-day use (living in a frozen property, operating a frozen business account for legitimate expenses), but major transactions require court approval.
+          A seizure does not transfer ownership; it stops the asset being disposed of while the claim is decided. The person whose assets are seized can ask the court to lift or vary the order.
         </p>
         <div class="info-box info-box--warning">
           <h3>Cryptocurrency and overseas assets</h3>
-          <p>UAE courts can order disclosure of cryptocurrency holdings and overseas bank accounts, but enforcement against foreign assets requires parallel proceedings in the relevant country. Mention any known overseas assets to your lawyer at the first consultation - early action increases the chance of effective freezing.</p>
+          <p>A UAE order works on assets the UAE courts can reach. Freezing money or property abroad usually needs separate proceedings in the country where it is held. Mention any known overseas assets to your lawyer at the first consultation, because early action improves the chance of protecting them.</p>
         </div>
       </section>
 
       <section class="content-section">
         <h2>Travel Bans in Divorce Cases</h2>
         <p>
-          UAE courts can place a travel ban on a spouse or on children. This ban is enforced at all UAE border points, airports, and land crossings - it applies regardless of the nationality of the person named and regardless of whether they hold a UAE residence visa or visit visa.
+          A court can stop a child, and in money disputes a spouse, from leaving the UAE. The rules for children differ by track.
         </p>
         <p>
-          Travel bans on children are the most common emergency measure in high-conflict divorce cases. They are placed preventatively - you do not need to wait for an actual removal attempt. The standard for obtaining a travel ban on children is evidence that removal risk exists, not proof that removal is certain.
+          For Muslims, the custodial parent may travel abroad with the child only with the other parent's written approval (Article 116 of Federal Decree-Law No. 41 of 2024). Without it, the court may authorise trips totalling no more than 60 days a year, with a guarantee of the child's return, and longer if the trip is for the child's benefit, treatment or another necessity, after hearing the other parent. The guardian keeps the child's passport except when it is needed for travel (Article 117). Travelling with the child without the guardian's or the court's permission, or misusing the child's documents, is an offence punishable by imprisonment and/or a fine of AED 5,000 to AED 50,000 (Article 252), prosecuted only on a complaint by the person concerned and ended if that complaint is withdrawn before a final judgment (Article 255).
         </p>
         <p>
-          Travel bans on a spouse (as opposed to children) are less common and require stronger justification - typically evidence of flight risk combined with a financial claim that would be frustrated if the spouse left the jurisdiction. These are granted more sparingly.
+          For non-Muslims under Federal Decree-Law No. 41 of 2022, neither parent may take the child abroad by a unilateral decision during joint custody; if the other objects, the judge decides and can require guarantees of return (Article 21 of Cabinet Resolution No. 122 of 2023). After the divorce either parent can ask the court to stop the child travelling for a temporary period, stating the objection (Article 22). Abu Dhabi's Civil Family Court applies the same approach (Articles 37 and 38 of its 2022 Regulation). Our <a href="/en/child-travel-consent-uae/">child travel consent guide</a> covers the consent letter, the court permit and passports in detail.
         </p>
         <p>
-          A travel ban remains in force until the court lifts it. Either party can apply to vary or lift the ban - for example, to allow a child to travel for a specific school trip or family event, with the other parent's consent or on terms set by the court. Courts frequently grant temporary lifts for specific travel if the applicant demonstrates the trip is genuine, the destination is safe, and there are adequate safeguards against non-return.
+          A travel ban on a spouse is usually tied to a money claim, such as unpaid maintenance, and is decided on its own facts. In Abu Dhabi, the ADJD lists a travel ban request at AED 400 and says an interim travel ban stays in place until a party applies to the court to remove it.
         </p>
         <h3>Why the travel ban matters more here: the Hague gap</h3>
         <p>
-          A travel ban on a child is preventative for a reason that is specific to the UAE. The UAE is not a signatory to the 1980 Hague Convention on the Civil Aspects of International Child Abduction. In Hague member states, a parent whose child is wrongfully taken abroad can use a fast treaty process to seek the child's return. That mechanism does not automatically apply to or from the UAE. If a child is removed to a country that is also outside the Convention, recovery depends on any bilateral agreement between the two states, the local family courts in the destination country, and diplomatic contact through the Ministry of Justice, none of which is quick or guaranteed.
+          A travel ban on a child is preventative for a reason specific to the UAE. The UAE is not a party to the 1980 Hague Convention on the Civil Aspects of International Child Abduction. In member states, a parent whose child is wrongfully taken abroad can use a treaty process to seek the child's return. That process is not available to or from the UAE, so recovering a child depends on the courts and law of the country the child was taken to, which is neither quick nor certain.
         </p>
         <p>
-          The practical consequence is simple: stopping removal at the UAE border is far more effective than trying to reverse it afterward. A travel ban registered with immigration flags the child at every exit point, so a parent cannot lawfully take them out of the country while proceedings continue. If you are worried a removal is being planned, treat it as urgent and apply before any attempt is made, not after. Our guides on <a href="/en/travel-ban-divorce-uae/">travel bans during divorce</a> and <a href="/en/international-child-abduction-uae/">international child abduction from the UAE</a> set out both the preventative and the recovery routes in more detail.
+          The practical consequence is simple: stopping removal at the border is far more effective than trying to reverse it afterwards. If you are worried a removal is being planned, treat it as urgent and apply before any attempt is made, not after. Our guides on <a href="/en/travel-ban-divorce-uae/">travel bans during divorce</a> and <a href="/en/international-child-abduction-uae/">international child abduction from the UAE</a> set out both the preventative and the recovery routes in more detail.
         </p>
       </section>
 
       <section class="content-section">
         <h2>Domestic Violence Protection Orders</h2>
         <p>
-          Protection orders are governed by <strong>Federal Decree-Law No. 13 of 2024 on Combating Domestic Violence</strong>, which replaced the earlier Federal Decree-Law No. 10 of 2019. The 2024 law widened the definition of domestic violence to cover physical, psychological, sexual, and economic harm between family members, and strengthened the tools available to protect victims. Protection is available to any person in the UAE regardless of nationality or visa status, and a protection order is separate from divorce proceedings: you can seek one before, during, or without any divorce case.
+          Protection orders are governed by <strong>Federal Decree-Law No. 13 of 2024 on Protection from Domestic Violence</strong>, which replaced the 2019 domestic violence law. A protection order is separate from divorce proceedings: you can seek one before, during or without any divorce case.
         </p>
         <p>
-          A protection order can restrain the respondent from:
+          According to published summaries of the law, a restraining order can require the respondent to:
         </p>
         <ul class="checklist">
-          <li>Approaching the applicant within a specified distance</li>
-          <li>Attending the applicant's home, workplace, or children's school</li>
-          <li>Contacting the applicant directly or through third parties</li>
-          <li>Publishing any material about the applicant</li>
-          <li>Damaging or disposing of property belonging to the applicant</li>
+          <li>Stop contacting the victim by any means, directly or through others</li>
+          <li>Stay away from the victim's home, workplace, school or other places named in the order</li>
+          <li>Not damage the victim's property or personal belongings</li>
+          <li>Pay financial support and medical expenses</li>
+          <li>Attend social or psychological counselling</li>
         </ul>
         <h3>How fast a protection order can be issued</h3>
         <p>
-          The fastest route runs through the Public Prosecution rather than a civil filing. Under the 2024 law, the Public Prosecution can issue a protection order once a complaint is made and assessed, without waiting for a full court trial. The initial order can last up to 30 days and can be renewed. If protection is still required beyond the prosecution-issued period, the matter is referred to the competent court, which can extend the order for a longer period, understood to be up to six months. Exact procedural timelines and the article numbers governing renewal are best confirmed with your lawyer against the current text of the law, as implementing details can be refined by regulation.
+          The fastest route runs through the Public Prosecution rather than a civil filing, because the prosecution can issue a restraining order without waiting for a court trial. Published summaries of the 2024 law say a prosecution order lasts up to 30 days and can be extended for two further periods of the same length, after which the competent court can extend it for up to six months or until the judgment becomes final. Confirm the current periods with your lawyer against the official text.
         </p>
         <p>
-          Breaching a protection order is a criminal offense. The respondent can be arrested and prosecuted, and repeated or aggravated breaches carry heavier penalties under the 2024 law. This is one of the strongest protective mechanisms available and should be used immediately where there is genuine risk of harm.
-        </p>
-        <p>
-          In an immediate danger situation, go to the nearest police station first. Police can put interim protection measures in place and refer the file to the Public Prosecution the same day while a formal order is processed. For how protection orders interact with a divorce filing and what they mean for custody and fault, see our guide on <a href="/en/domestic-violence-divorce-uae/">domestic violence and divorce in the UAE</a>.
+          Breaching a restraining order is a criminal offence that can lead to imprisonment and a fine. In an immediate danger situation, go to the nearest police station or call the police first. For how protection orders interact with a divorce filing, custody and fault, see our guide on <a href="/en/domestic-violence-divorce-uae/">domestic violence and divorce in the UAE</a>.
         </p>
       </section>
 
       <section class="content-section">
         <h2>Emergency and Interim Maintenance Orders</h2>
         <p>
-          A common trigger for urgent action is money rather than safety. When one spouse controls the household finances and cuts off support after separation, the other spouse and the children can be left without funds while the divorce case, which may run for a year or more, works through the court. You do not have to wait for the final judgment to fix this.
+          A common trigger for urgent action is money rather than safety. When one spouse controls the household finances and cuts off support after separation, the other spouse and the children can be left without funds while the case runs. You do not have to wait for the final judgment to fix this.
         </p>
         <p>
-          An interim maintenance order requires the paying spouse to provide support during the proceedings. It can cover the spouse's own maintenance, child maintenance, and housing costs, set at a level the court considers reasonable against the payer's income and the family's standard of living. Because the need is immediate, these applications are dealt with quickly, and the court can fix a temporary figure that runs until the final maintenance award replaces it.
+          For Muslims, Article 100 of Federal Decree-Law No. 41 of 2024 lets the court, at the wife's request and during the hearings of her maintenance case, order temporary maintenance for her and the children from the respondent, and that decision is enforceable immediately by force of law. For non-Muslims under Federal Decree-Law No. 41 of 2022, the divorced wife can ask for temporary alimony after the divorce judgment until her financial rights are decided, with both spouses' monthly income and six months of account statements; the court decides by an order on a petition and may refuse if she has a job or fixed income covering her basic needs (Article 10 of Cabinet Resolution No. 122 of 2023). Abu Dhabi's Civil Family Court has the same rule (Article 21 of its 2022 Regulation) and can also order temporary housing or the reconnection of utilities (Article 42). Our guide to <a href="/en/temporary-alimony-uae/">temporary alimony in the UAE</a> sets out the forms and evidence for each court.
         </p>
         <p>
-          The order is only as useful as its enforcement. If the spouse ignores it, you take the order to the execution court, which can attach salary directly through the employer and freeze bank accounts until the arrears are cleared. A travel ban can also attach to unpaid maintenance where a payer tries to leave the country owing money. For the step-by-step collection process, see our guide on <a href="/en/unpaid-alimony-enforcement-uae/">enforcing unpaid alimony in the UAE</a>.
+          The order is only as useful as its enforcement. If the spouse ignores it, you take it to the execution court, which can deduct from salary, attach bank accounts and, where justified, ban the debtor from travelling. In the Muslim track, maintenance due from the date the claim was filed is a privileged debt that ranks ahead of the payer's other debts (Article 98). For the step-by-step collection process, see our guide on <a href="/en/unpaid-alimony-enforcement-uae/">enforcing unpaid alimony in the UAE</a>.
         </p>
         <div class="info-box info-box--info">
           <h3>Keep proof of what stopped</h3>
-          <p>Bank records showing regular transfers that suddenly ended, unpaid school or rent invoices, and messages where support was refused all help the court set an interim figure fast. Bring these to the first consultation rather than reconstructing them later.</p>
+          <p>Bank records showing regular transfers that suddenly ended, unpaid school or rent invoices, and messages where support was refused all help the court set a temporary figure. Bring these to the first consultation rather than reconstructing them later.</p>
         </div>
       </section>
 
       <section class="content-section">
-        <h2>How to Apply for an Emergency Order - The Fast-Track Process</h2>
+        <h2>How to Apply for an Urgent Order, Step by Step</h2>
         <div class="step-list">
           {urgencyApplicationSteps.map((step) => (
             <div class="step-item">
@@ -300,42 +295,47 @@ const faqItems = [
       </section>
 
       <section class="content-section">
-        <h2>After You Get the Emergency Order - Next Steps</h2>
+        <h2>After You Get the Emergency Order: Next Steps</h2>
         <p>
-          Obtaining the emergency order is the beginning, not the end. The order is temporary and must be maintained through the main divorce proceedings. Failing to manage the post-order period properly can result in the order being set aside on the other party's application.
+          Obtaining the order is the beginning, not the end. It is temporary and has to be defended until the main case is decided, and mishandling the period after it can lead to the order being lifted on the other party's application.
         </p>
-        <h3>Keep your evidence organized</h3>
+        <h3>Keep your evidence organised</h3>
         <p>
-          Every incident, communication, or development that relates to the grounds for the emergency order should be documented and preserved. Your lawyer will need this to justify maintaining the order when the main case comes before the court.
+          Every incident, message or development that relates to the grounds for the order should be documented and kept. Your lawyer will need this to justify keeping the order in place when the main case comes before the court.
         </p>
-        <h3>Respond promptly to counter-applications</h3>
+        <h3>Respond promptly to challenges</h3>
         <p>
-          Your spouse has the right to apply to vary or discharge the emergency order. When this happens, you will receive notice of a hearing date. Attend with your lawyer and be prepared to justify the order with the evidence. Courts do not look favorably on parties who cannot substantiate emergency orders at a review hearing.
+          Your spouse can challenge the order: an order on petition can be appealed within one week (Article 6 of Federal Decree-Law No. 41 of 2024), and either side can ask the court to vary or lift a temporary order. Attend any hearing with your lawyer and be ready to support the order with evidence.
         </p>
         <h3>Coordinate with your divorce proceedings</h3>
         <p>
-          The interim orders must feed into the main divorce proceedings. The court that granted the emergency order will eventually hear the full case, and the final orders on custody, finances, and property will supersede the interim ones. Your lawyer should ensure continuity between the emergency application and the main case strategy.
+          Temporary orders feed into the main case, and the final orders on custody, finances and property replace them. In Abu Dhabi, the ADJD says an urgent request made before the main case requires you to commit to filing the main case within 8 days, so plan both together.
         </p>
         <div class="info-box info-box--info">
           <h3>Cost of emergency applications</h3>
-          <p>Court filing fee is AED 300-500. Your lawyer's fee for an emergency application - including affidavit preparation, court attendance, and post-order coordination - is typically AED 3,000-8,000. This is separate from the ongoing divorce retainer fee. In genuine emergencies, speed matters more than cost - act first and manage the budget conversation once the immediate risk is addressed.</p>
+          <p>Court fees depend on the emirate and the order. In Abu Dhabi the ADJD lists AED 100 for a Personal Status interim order, with alimony requests free of charge, AED 300 for a general application and AED 400 for a travel ban; check the fee shown when you file elsewhere. Lawyers' fees for an urgent application are not regulated, so ask for a fixed quote that covers drafting, attendance and any challenge.</p>
         </div>
       </section>
 
-      <section class="content-section">
-        <h2>Frequently Asked Questions</h2>
-        <FAQSection items={faqItems} />
-      </section>
+      <FAQSection items={faqItems} />
 
       <div class="cta-box">
         <h2>If You Are in an Urgent Situation, Act Now</h2>
-        <p>Emergency applications in UAE divorce require experienced lawyers who can move fast. A 30-minute consultation will tell you what orders are available, what evidence you need, and whether your situation qualifies for the emergency track.</p>
+        <p>Urgent applications in a UAE divorce need a lawyer who can move fast. A short consultation will tell you which orders are available, what evidence you need and whether your situation qualifies for an urgent request.</p>
         <LeadForm source="emergency-orders-divorce-uae" />
       </div>
 
       <section class="content-section">
         <h2>Related Guides</h2>
         <div class="related-grid">
+          <a href="/en/temporary-alimony-uae/" class="related-card">
+            <span class="related-title">Temporary Alimony in the UAE</span>
+            <span class="related-desc">Support for you and the children while the case runs</span>
+          </a>
+          <a href="/en/child-travel-consent-uae/" class="related-card">
+            <span class="related-title">Child Travel Consent UAE</span>
+            <span class="related-desc">Consent letters, court permits and the child's passport</span>
+          </a>
           <a href="/en/travel-ban-divorce-uae/" class="related-card">
             <span class="related-title">Travel Ban During Divorce in the UAE</span>
             <span class="related-desc">Spouse and child travel bans, passports, and how to lift a ban</span>
@@ -344,21 +344,13 @@ const faqItems = [
             <span class="related-title">Child Custody UAE</span>
             <span class="related-desc">How UAE courts decide custody and visitation rights</span>
           </a>
-          <a href="/en/divorce-timeline-uae/" class="related-card">
-            <span class="related-title">Divorce Timeline UAE</span>
-            <span class="related-desc">Stage-by-stage timeline from filing to final decree</span>
+          <a href="/en/domestic-violence-divorce-uae/" class="related-card">
+            <span class="related-title">Domestic Violence and Divorce</span>
+            <span class="related-desc">Protection orders, evidence and your rights</span>
           </a>
-          <a href="/en/contested-vs-uncontested-divorce-uae/" class="related-card">
-            <span class="related-title">Contested vs. Uncontested Divorce</span>
-            <span class="related-desc">Which type of case you have and what it means for you</span>
-          </a>
-          <a href="/en/divorce-lawyer-dubai/" class="related-card">
-            <span class="related-title">Divorce Lawyer Dubai</span>
-            <span class="related-desc">How to find and instruct a UAE family lawyer</span>
-          </a>
-          <a href="/en/documents-for-divorce-uae/" class="related-card">
-            <span class="related-title">Documents for Divorce UAE</span>
-            <span class="related-desc">Complete list of what you need to file your case</span>
+          <a href="/en/unpaid-alimony-enforcement-uae/" class="related-card">
+            <span class="related-title">Unpaid Alimony in the UAE</span>
+            <span class="related-desc">Execution files, salary deduction and travel bans</span>
           </a>
         </div>
       </section>

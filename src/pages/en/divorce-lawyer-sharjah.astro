@@ -6,7 +6,7 @@ import Breadcrumb from '../../components/seo/Breadcrumb.astro';
 
 const title = 'Divorce Lawyer Sharjah: Sharjah Family Court Guide 2026';
 const description =
-  'Looking for a divorce lawyer in Sharjah? How the Sharjah Personal Status Court works, the step-by-step process, documents, costs, and the key differences from Dubai and Abu Dhabi for expats and UAE nationals.';
+  'Divorce lawyer in Sharjah and the Sharjah family court: location, hours, how cases run under Sharjah’s own judiciary, documents, fees and Dubai differences.';
 
 const hreflang = {
   en: 'https://divorceu.ae/en/divorce-lawyer-sharjah/',
@@ -17,55 +17,17 @@ const breadcrumbs = [
   { name: 'Divorce Lawyer Sharjah', url: 'https://divorceu.ae/en/divorce-lawyer-sharjah/' },
 ];
 
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Where do I file for divorce in Sharjah?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Divorce cases in Sharjah are filed at the Sharjah Personal Status Court, which sits inside the Sharjah Courts complex run by the Sharjah Judicial Department. Branch courts serve the eastern and central regions, including Kalba, Khorfakkan and Al Dhaid. For Emiratis, cases usually pass through the Family Guidance and Reconciliation section first. Expats file in the emirate of their registered residence, so if you live in Sharjah you file in Sharjah regardless of where the marriage took place.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is divorce harder to get in Sharjah than in Dubai?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Sharjah courts apply the same UAE federal personal status laws as Dubai, but Sharjah is known for a more conservative interpretation in day-to-day practice. Reconciliation is emphasised more strongly and a wife-initiated khula can take more sessions to conclude. The legal framework is identical, however. Muslim cases follow Federal Decree-Law No. 41 of 2024 and non-Muslim expat cases can use the civil law, Federal Decree-Law No. 41 of 2022.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How much does a divorce lawyer cost in Sharjah?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Divorce lawyer fees in Sharjah are broadly similar to Dubai: AED 3,000 to 8,000 for an uncontested mutual consent divorce, AED 8,000 to 25,000 for a contested divorce without children, and AED 20,000 to 50,000 or more for contested cases involving custody. Some Sharjah lawyers charge less than their Dubai counterparts because of lower overhead.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can an expat divorce in Sharjah if married in another country?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. If you are registered as a resident in Sharjah, you file for divorce in Sharjah regardless of where you married. Your foreign marriage certificate must be officially translated into Arabic and attested by your home country and the UAE Ministry of Foreign Affairs before the court can process it. Your lawyer handles this.',
-      },
-    },
-  ],
-};
-
 const differences = [
+  { factor: 'Court system', sharjah: 'Sharjah’s own judiciary since 2025 (Law No. 7 of 2025 on the Regulation of Judicial Authority); top court is the Sharjah Court of Cassation', dubai: 'Dubai Courts, Dubai’s own local judiciary' },
   { factor: 'Muslim divorce law', sharjah: 'Federal Decree-Law No. 41 of 2024 (same federal law as all UAE)', dubai: 'Same federal law' },
-  { factor: 'Non-Muslim civil law', sharjah: 'Federal Decree-Law No. 41 of 2022, applied through the ordinary Personal Status Court', dubai: 'Same civil law, applied through the Dubai Personal Status Court (the DIFC Courts do not hear divorces)' },
-  { factor: 'Reconciliation emphasis', sharjah: 'Strong; multiple sessions common before a case proceeds', dubai: 'Usual first step when the judge refers the case; typically 1 to 3 sessions' },
-  { factor: 'Khula (wife-initiated)', sharjah: 'Granted but may take longer; more sessions typical', dubai: 'Processed faster in practice; more liberal interpretation' },
-  { factor: 'Dedicated non-Muslim court', sharjah: 'No standalone civil family court; cases heard in Arabic', dubai: 'Non-Muslim cases heard at the Personal Status Court in Arabic; the DIFC Courts are not a family court' },
+  { factor: 'Non-Muslim civil law', sharjah: 'Federal Decree-Law No. 41 of 2022, heard by the Sharjah Courts', dubai: 'Same civil law, heard by the Dubai Courts (the DIFC Courts do not hear divorces)' },
+  { factor: 'Family Guidance', sharjah: 'At the judge’s discretion in Muslim cases (Art. 8, 41/2024); civil divorces under 41/2022 are not referred (Art. 3)', dubai: 'Same rules' },
+  { factor: 'Khula (wife-initiated)', sharjah: 'Same federal rules (Arts. 65 to 68, 41/2024)', dubai: 'Same federal rules' },
+  { factor: 'English-language civil family court', sharjah: 'None announced; proceedings in Arabic', dubai: 'None; the DIFC Courts are not a family court. Abu Dhabi is the emirate with an English-language Civil Family Court' },
 ];
 
 const lawyerChecklist = [
-  'Licensed by the Sharjah Legal Affairs Department; verify the Bar registration number',
+  'Licensed to appear before the Sharjah courts; ask for the licence or roll registration number and check it',
   'Specialist in Personal Status law, not a general commercial lawyer',
   'Fluent in your language or provides a dedicated interpreter, not just a paralegal',
   'Transparent about fee structure, whether per-hearing billing or a fixed fee',
@@ -77,39 +39,43 @@ const lawyerChecklist = [
 const faqItems = [
   {
     question: 'Which court handles divorce in Sharjah?',
-    answer: 'Divorce is decided by the Sharjah Personal Status Court, a first-instance court inside the Sharjah Courts complex operated by the Sharjah Judicial Department (SJD). Sharjah runs its own judiciary rather than sitting under the federal court network. Branch courts in the eastern region, such as Khorfakkan and Kalba, hear cases for residents of those areas. First-instance rulings can be appealed to the Sharjah Court of Appeal, and a final point of law can reach the Court of Cassation.',
+    answer: 'Family cases are heard by the Sharjah Courts, which now belong to Sharjah’s own judiciary rather than the federal court system. An Emiri Decree of 23 October 2024 created the Sharjah Judicial Department, and Law No. 7 of 2025 on the Regulation of Judicial Authority took effect in June 2025. The Sharjah Judiciary Platform lists the address as the Al Layyah (Al Khan) area, near Khalid Port. First-instance rulings can be appealed to the Court of Appeal, and points of law go to the Sharjah Court of Cassation, which held its first session on 7 July 2025.',
+  },
+  {
+    question: 'What are the Sharjah family court’s working hours?',
+    answer: 'The Sharjah Judiciary Platform, the official site of Sharjah’s Judicial Council, Judicial Department and Public Prosecution, lists working hours of Monday to Thursday, 7:30 am to 3:30 pm. Individual counters and courts outside Sharjah city may keep different hours, and many procedures can now be done online through the platform, so check before you travel.',
   },
   {
     question: 'Does the 2024 personal status law change divorce in Sharjah?',
-    answer: 'Yes. Federal Decree-Law No. 41 of 2024 on Personal Status replaced the older Law No. 28 of 2005 for Muslim family matters across the UAE, Sharjah included. In practical terms it makes referral to Family Guidance a decision for the judge (under the 2005 law it was mandatory), caps the arbitrators\' period in contested harm cases at 60 days from their appointment (it was 90), continues child custody to the age of 18 for boys and girls, and lets a child aged 15 or older choose which parent to live with. Individual article numbers under the new law are still settling in practice, so confirm any specific clause with your lawyer.',
+    answer: 'Yes. Federal Decree-Law No. 41 of 2024 on Personal Status replaced the older Law No. 28 of 2005 for Muslim family matters across the UAE, Sharjah included, from 15 April 2025. It makes referral to Family Guidance a decision for the judge (Article 8; under the 2005 law it was mandatory), caps the arbitrators’ period in contested harm cases at 60 days from their appointment (Article 72; it was 90), continues custody to the age of 18 for boys and girls (Article 123), and lets a child aged 15 or older choose which parent to live with unless the child’s interest requires otherwise (Article 122).',
   },
   {
     question: 'Can non-Muslim expats use civil divorce law in Sharjah?',
-    answer: 'Non-Muslim residents can rely on Federal Decree-Law No. 41 of 2022 on Civil Personal Status, which allows no-fault divorce, equal treatment of both parents on custody, and discretionary division of assets. The difference in Sharjah is the venue: unlike Abu Dhabi, which built a dedicated Civil Family Court that works in English, Sharjah hears these cases through its ordinary Personal Status Court in Arabic. A local lawyer and a licensed translator therefore matter more.',
+    answer: 'Yes. Non-Muslim foreigners resident in the UAE fall under Federal Decree-Law No. 41 of 2022 on Civil Personal Status unless one spouse insists on the law of their home country (Article 1). Either spouse can ask for a divorce without proving harm (Articles 7 and 8), custody is joint and equal (Article 10), and the court decides alimony on application after the divorce (Article 9). There is no automatic 50/50 split of assets. The difference in Sharjah is the venue: unlike Abu Dhabi, which runs a Civil Family Court that can work in English, Sharjah hears these cases in Arabic, so a local lawyer and a licensed translator matter more.',
   },
   {
     question: 'Is there a reconciliation period I have to wait through in Sharjah?',
-    answer: 'Not a fixed one. Most Muslim cases in Sharjah still start at the Family Guidance and Reconciliation section, which tries to settle or reconcile the couple, but under the 2024 law the judge decides whether to refer a case (under the 2005 law it was mandatory), and there is no statutory time limit for this stage. Sharjah takes it seriously and several sessions over a few weeks are common, especially for Emirati families. Once reconciliation genuinely fails, the section issues a certificate that lets the court case go ahead. A separate 60-day limit applies to arbitrators in contested harm cases, counted from their appointment (it was 90 days under the old law).',
+    answer: 'No fixed one. In Muslim cases the supervising judge may refer the couple to Family Guidance if a settlement looks feasible (Article 8 of Federal Decree-Law No. 41 of 2024), and the law sets no minimum period for that stage. Urgent and temporary orders on alimony and custody, and cases to prove a divorce, are not referred. A settlement reached there is signed, approved by the judge and enforceable. Civil divorces of non-Muslims under Federal Decree-Law No. 41 of 2022 are not referred at all (Article 3). A separate 60-day limit applies to arbitrators in contested harm cases, counted from their appointment (Article 72).',
   },
   {
     question: 'Do I need a lawyer for divorce in Sharjah?',
-    answer: 'Technically you can represent yourself, but practically it is very difficult, especially for expats. All court proceedings and documents must be in Arabic, and Personal Status courts have procedural rules that require expertise to follow correctly. For contested cases or cases involving children, a licensed Sharjah lawyer is essential. Even for uncontested divorce, a lawyer significantly reduces the risk of procedural errors that delay the case.',
+    answer: 'You may appear in person (Article 52 of the Civil Procedure Code, Federal Decree-Law No. 42 of 2022), but it is hard in practice, especially for expats, because proceedings and filings are in Arabic. If you do use representation, only lawyers licensed in the UAE can appear for you (Article 6 of Federal Decree-Law No. 34 of 2022), and foreign lawyers cannot appear in family proceedings (Article 10). For contested cases or cases involving children, a licensed family lawyer is strongly advisable.',
   },
   {
     question: 'How long does divorce take in Sharjah?',
-    answer: 'An uncontested mutual consent divorce in Sharjah takes 1 to 3 months including any Family Guidance sessions. A contested divorce with disputes over assets, alimony, or custody typically takes 6 to 18 months. Cases involving complex international asset issues or disputes over applicable law can run 2 years or more. Sharjah courts are slightly slower than Dubai on average because of the stronger emphasis on reconciliation.',
+    answer: 'There is no official published timeline. As an indicative guide only, an uncontested divorce with a signed settlement can finish within a few months, while contested cases over money or custody often take a year or more, longer if experts are appointed or the judgment is appealed. The appeal window is 30 days (Article 9 of Federal Decree-Law No. 41 of 2024).',
   },
   {
-    question: 'What is the Sharjah Family Guidance Centre?',
-    answer: 'The Sharjah Family Guidance and Reconciliation section is where most Muslim divorce cases in Sharjah start when the judge refers them; under the old 2005 law it was a mandatory step before a case could proceed to court. Its function is to attempt reconciliation between spouses. For UAE nationals especially, this step is taken seriously and multiple sessions may be required. If reconciliation genuinely fails, the section issues a certificate allowing the court case to proceed. Expats may also be referred here depending on the case type.',
+    question: 'What is the Sharjah Family Guidance section?',
+    answer: 'It is the family guidance service attached to the Sharjah courts, where a counsellor tries to help the spouses settle. Under the 2024 law a Muslim case goes there only if the supervising judge refers it (Article 8); under the old 2005 law referral was mandatory. If the spouses settle, the agreement is recorded, approved by the judge and enforceable; if not, the case returns to court. Muslim expats can be referred; civil divorces of non-Muslims under the 2022 law are not.',
   },
   {
-    question: 'Does Sharjah law allow non-Muslim expats to divorce under home country law?',
-    answer: 'UAE law applies to residents by default, but non-Muslim expats can use the civil track under Federal Decree-Law No. 41 of 2022 rather than their home country law. Non-Muslim expats in Sharjah use the civil law through the ordinary Personal Status Court, or in some circumstances the Dubai Courts where residence and the facts support it. The DIFC Courts are not an option in either emirate, because they do not hear divorce cases.',
+    question: 'Does Sharjah law allow expats to divorce under home country law?',
+    answer: 'Yes, within limits. The 2024 law applies to non-UAE citizens unless one of them insists on applying his or her own law (Article 1(3) of Federal Decree-Law No. 41 of 2024), and the 2022 civil law applies to non-Muslim foreigners unless one adheres to the law of their home country (Article 1 of Federal Decree-Law No. 41 of 2022). Take advice before relying on a foreign law, because it can change rights on divorce, custody and money. The DIFC Courts are not an option, because they do not hear divorce cases.',
   },
   {
     question: 'Will my Sharjah divorce be recognised in my home country?',
-    answer: 'A UAE court divorce decree from any emirate is a legally valid document with an official court stamp. Recognition abroad requires legalisation through the UAE Ministry of Foreign Affairs, a certified translation from Arabic, and, depending on your country, registration with your embassy or home country civil register. Your lawyer can prepare this package. Most European, North American, and Commonwealth countries recognise UAE divorce decrees through this process.',
+    answer: 'That depends on your home country’s rules, not on Sharjah. To use the judgment abroad you normally need a certified copy, attestation by the UAE Ministry of Foreign Affairs, legalisation by your country’s embassy and a certified translation from Arabic. The UAE is not a party to the Hague Apostille Convention, so there is no UAE apostille. Some countries then require registration with a civil registry or a separate recognition step.',
   },
 ];
 ---
@@ -120,9 +86,8 @@ const faqItems = [
   canonical="https://divorceu.ae/en/divorce-lawyer-sharjah/"
   {hreflang}
   lang="en"
+  lastmod="2026-10-12"
 >
-  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
     <Breadcrumb items={breadcrumbs} />
   </div>
@@ -132,9 +97,9 @@ const faqItems = [
       <p class="hero-tag">Divorce Guide · Sharjah 2026</p>
       <h1>{title}</h1>
       <p class="hero-desc">
-        Divorcing in Sharjah follows UAE federal personal status law, the same framework used in Dubai and Abu Dhabi, but with a stronger emphasis on reconciliation and no dedicated non-Muslim court. This guide covers how the Sharjah Personal Status Court works, the step-by-step process, documents and costs, and the key differences you need to know as an expat or UAE national.
+        Divorcing in Sharjah follows the UAE’s federal personal status laws, the same ones used in Dubai and Abu Dhabi, but the courts now belong to Sharjah’s own judiciary and there is no English-language civil family court. This guide covers where the Sharjah family court is, its hours, how cases are handled, the step-by-step process, documents and costs, and how Sharjah differs from Dubai and Abu Dhabi.
       </p>
-      <p class="hero-author">By <strong>Aleksi Suon</strong> · UAE Expat &amp; Legal Consultant · divorceu.ae</p>
+      <p class="hero-author">By <strong>Aleksi Suon</strong> · UAE Expat &amp; Legal Consultant · Updated October 2026</p>
     </div>
   </section>
 
@@ -145,24 +110,37 @@ const faqItems = [
         <h2>Quick summary of divorcing in Sharjah</h2>
         <p>
           Divorce in Sharjah is governed by <strong>UAE federal personal status law</strong>: the Muslim track under <strong>Federal Decree-Law No. 41 of 2024</strong> and the non-Muslim civil track under <strong>Federal Decree-Law No. 41 of 2022</strong>.
-          File at the <strong>Sharjah Personal Status Court</strong> under the Sharjah Judicial Department if you are a Sharjah resident.
-          Most Muslim cases start at the Family Guidance section when the judge refers them (it was mandatory under the old 2005 law).
-          Lawyer fees: <strong>AED 3,000 to 50,000+</strong> depending on complexity.
-          Timeline: <strong>1 to 3 months</strong> uncontested; <strong>6 to 18+ months</strong> contested.
+          Cases are heard by the <strong>Sharjah Courts</strong>, part of Sharjah’s own judiciary since 2025, in the Al Layyah (Al Khan) area near Khalid Port; listed hours are Monday to Thursday, 7:30 am to 3:30 pm.
+          In Muslim cases the judge may refer you to Family Guidance first; it is no longer mandatory, and civil divorces of non-Muslims are not referred.
+          Lawyer fees vary widely with complexity (indicative ranges below).
+          Appeals must be filed within <strong>30 days</strong> of the judgment.
         </p>
       </div>
 
       <section class="content-section">
-        <h2>The Sharjah Personal Status Court and the Judicial Department</h2>
+        <h2>Sharjah family court: where it is, hours and how cases are handled</h2>
         <p>
-          Sharjah runs its own judiciary through the Sharjah Judicial Department (SJD), which is separate from the federal court network that covers some other emirates. Divorce and family matters are decided by the Personal Status Court, one of the first-instance courts inside the Sharjah Courts complex. Branch courts serve the central and eastern regions, including Kalba, Khorfakkan, Dibba Al Hisn and Al Dhaid. If you live in one of those areas, your case is usually heard at the branch that covers your residence rather than in Sharjah city.
+          Sharjah family cases are heard by the Sharjah Courts, which since 2025 belong to the emirate's own judiciary rather than the federal court system. The Sharjah Judiciary Platform, the official site of Sharjah's Judicial Council, Judicial Department and Public Prosecution, gives the address as the <strong>Al Layyah (Al Khan) area, near Khalid Port, Sharjah</strong>, and the working hours as <strong>Monday to Thursday, 7:30 am to 3:30 pm</strong>. Individual counters and courts outside Sharjah city can keep different hours, so check the platform or call before you go.
+        </p>
+        <h3>Who runs the Sharjah courts now</h3>
+        <p>
+          Sharjah used to sit inside the federal judiciary run by the Ministry of Justice. That changed in stages. An Emiri Decree of 23 October 2024 created the Sharjah Judicial Department, Sharjah's Law No. 7 of 2025 on the Regulation of Judicial Authority took effect in June 2025, and the Sharjah Court of Cassation, now the emirate's highest court, held its first session on 7 July 2025. Some older pages, including the federal government portal's page on the judiciary, still list Sharjah under the federal courts, so do not rely on them for where to file or appeal.
         </p>
         <p>
-          The court works entirely in Arabic. Every foreign document, from your marriage certificate to bank statements used in a financial claim, has to be translated by a licensed legal translator and attested before a judge will accept it. SJD has moved much of its case management online, so filing, fee payment, hearing notices and judgment copies are increasingly handled through the department's electronic services and smart apps, though in-person hearings still happen for contested matters.
+          In June 2025 the Sharjah Judicial Council decided to set up a Family Court as a specialised court, and approved a fund to pay urgent alimony where it cannot be collected from the person who owes it; the fund later recovers the money from that person. Separately, a court can order <a href="/en/temporary-alimony-uae/">temporary alimony</a> while a maintenance case is heard. In December 2025 the Council approved two Courts of Appeal, in Kalba and Al Dhaid. We have not found an official announcement of the date each of these started work, so ask the court or your lawyer which circuit handles your case.
         </p>
+        <h3>Can you file in Sharjah?</h3>
         <p>
-          A first-instance judgment can be appealed to the Sharjah Court of Appeal, and a final point of law can go to the Court of Cassation. For most uncontested divorces the case never leaves the first-instance Personal Status Court.
+          It depends on who files. As a general rule a case goes to the court where the respondent lives or works. A wife, a child, a parent or a custodian bringing a claim for divorce, khula, alimony, custody or visitation can also file where either party lives or works, or where the marital home is (Article 3 of Federal Decree-Law No. 41 of 2024). So a wife living in Sharjah can usually file in Sharjah even if her husband lives in Dubai. Where you married does not decide it.
         </p>
+        <h3>How a family case is handled</h3>
+        <ul class="doc-list">
+          <li><strong>Filing online or in person.</strong> The Sharjah Judiciary Platform (sjd.ae), launched in January 2026, offers digital court services for personal status cases, alongside civil, commercial, labour and execution cases, so many procedures no longer need a visit. Lawyers and typing centres can still file for you.</li>
+          <li><strong>The law applied.</strong> Sharjah applies the federal family laws: Federal Decree-Law No. 41 of 2024 for Muslims and Federal Decree-Law No. 41 of 2022 for non-Muslims. Procedure follows the Civil Procedure Code, Federal Decree-Law No. 42 of 2022, which allows registration, service, hearings and judgments to be done wholly or partly by remote means (Article 330), and any party may ask for a hearing in person (Article 333).</li>
+          <li><strong>Family Guidance.</strong> In a Muslim case the supervising judge may refer you to Family Guidance first, but only if a settlement looks feasible (Article 8 of the 2024 law). Urgent and temporary orders on alimony and custody, and cases to prove a divorce, are not referred. Civil divorces of non-Muslims under the 2022 law go straight to court (Article 3). See our guide to the <a href="/en/family-guidance-section-uae/">Family Guidance section</a>.</li>
+          <li><strong>Language.</strong> Hearings and filings are in Arabic, so foreign documents need a legal translation. We have found no announcement of an English-language civil family court in Sharjah like the one Abu Dhabi runs.</li>
+          <li><strong>Appeals.</strong> You have 30 days to appeal a personal status judgment (Article 9 of the 2024 law), counted from the day after the judgment if you attended, or from the day after you were notified if you did not (Article 10). Appeals go to the Court of Appeal and, on points of law, to the Sharjah Court of Cassation.</li>
+        </ul>
       </section>
 
       <section class="content-section">
@@ -171,10 +149,10 @@ const faqItems = [
           Which law governs your divorce in Sharjah depends on the religion and nationality of the spouses, not on where you live inside the emirate.
         </p>
         <p>
-          Muslim couples, and cases where at least one spouse is a Muslim UAE national, are dealt with under the federal Muslim personal status framework. This was overhauled by <strong>Federal Decree-Law No. 41 of 2024 on Personal Status</strong>, which replaced the older Law No. 28 of 2005 and applies across the UAE including Sharjah. Under the new law a divorce request usually passes through Family Guidance if the judge refers it (referral was mandatory under the 2005 law), with no fixed statutory period for that stage; in contested harm cases, the arbitrators appointed by the court have up to 60 days from their appointment (it was 90). Custody of children continues to the age of 18 for boys and girls, and a child aged 15 or older can choose which parent to live with. Specific article numbers under the 2024 law are still being tested in practice, so treat any single clause reference as indicative and confirm it with your lawyer.
+          <strong>Federal Decree-Law No. 41 of 2024 on Personal Status</strong>, in force since 15 April 2025, replaced the older Law No. 28 of 2005 across the UAE, Sharjah included. It applies to UAE citizens where both spouses or one of them is Muslim, and to foreign couples unless one spouse insists on applying his or her own law (Article 1). Under it the judge may refer a divorce case to Family Guidance (Article 8; referral was mandatory under the 2005 law), with no fixed statutory period for that stage; in contested harm cases the arbitrators appointed by the court have up to 60 days from their appointment (Article 72; it was 90). Custody of children continues to the age of 18 for boys and girls (Article 123), and a child aged 15 or older can choose which parent to live with unless the child's interest requires otherwise (Article 122).
         </p>
         <p>
-          Non-Muslim expatriates can rely on <strong>Federal Decree-Law No. 41 of 2022 on Civil Personal Status</strong>, the UAE's civil family law. It allows no-fault divorce, meaning either spouse can end the marriage without proving harm, equal treatment of both parents in custody, and division of assets on a discretionary basis. In Sharjah this civil track is applied through the same Personal Status Court rather than a separate dedicated civil family court, which is the main practical difference from Abu Dhabi.
+          Non-Muslim expatriates can rely on <strong>Federal Decree-Law No. 41 of 2022 on Civil Personal Status</strong>, the UAE's civil family law, unless one spouse adheres to the law of their home country (Article 1). Either spouse can end the marriage without proving harm (Articles 7 and 8), custody is a joint and equal right of both parents (Article 10), and the court decides alimony on application after the divorce (Article 9). There is no automatic 50/50 split of assets. In Sharjah this civil track is heard by the ordinary Sharjah Courts in Arabic rather than a separate English-language civil family court, which is the main practical difference from Abu Dhabi. Our <a href="/en/non-muslim-divorce-uae/">non-Muslim divorce guide</a> covers the civil track in detail.
         </p>
       </section>
 
@@ -199,33 +177,33 @@ const faqItems = [
       <section class="content-section">
         <h2>How Sharjah differs from Dubai and Abu Dhabi</h2>
         <p>
-          All three emirates apply the same two federal laws, so the rules on paper are identical. The difference is in the venue and the local practice.
+          For Muslim couples all three emirates apply the same federal law, Federal Decree-Law No. 41 of 2024, so the rules on paper are identical. The differences are the court system, the venue for non-Muslims and local practice.
         </p>
         <p>
-          Abu Dhabi went furthest in building infrastructure for non-Muslims: it opened a dedicated Civil Family Court that hears non-Muslim cases in English and Arabic and has published its own procedures for civil marriage and divorce. Dubai hears non-Muslim divorces at the Dubai Courts Personal Status Court. The English-language DIFC Courts are sometimes described as an alternative, but they have no family jurisdiction and cannot grant a divorce. Sharjah has no standalone civil family court. Non-Muslim residents in Sharjah still access the civil law, but through the ordinary Personal Status Court and in Arabic, which makes a competent local lawyer and translator more important.
+          All three now run their own local judiciaries: Abu Dhabi through the Abu Dhabi Judicial Department, Dubai through the Dubai Courts, and Sharjah through its Judicial Department since 2025. Abu Dhabi went furthest for non-Muslims: under Abu Dhabi Law No. 14 of 2021 it runs a <a href="/en/family-court-abu-dhabi/">Civil Family Court</a> with bilingual Arabic and English forms and proceedings. Dubai hears non-Muslim divorces in the Dubai Courts. The English-language DIFC Courts are sometimes described as an alternative, but they have no family jurisdiction and cannot grant a divorce. Sharjah has no separate civil family court for non-Muslims. Non-Muslim residents in Sharjah still use the federal civil law, but before the ordinary Sharjah Courts and in Arabic, which makes a competent local lawyer and translator more important.
         </p>
         <p>
-          Sharjah is also the most socially conservative of the three in day-to-day practice. Reconciliation is pushed harder, counsellors take the process seriously, and a wife-initiated khula can take more sessions to conclude than an equivalent case in Dubai. None of this changes your legal rights; it changes how long and how carefully the process runs. If your circumstances would clearly be simpler under the Dubai route, read our Dubai <a href="/en/family-court-dubai/">family court guide</a> before deciding where you are actually resident for filing purposes.
+          Local practice also differs from court to court, for example in how often judges refer Muslim cases to Family Guidance and how many sessions a contested case needs. None of this changes your legal rights. Where you can file is decided by residence, work and the marital home (Article 3 of the 2024 law), not by preference, so if you are weighing Sharjah against Dubai, read our <a href="/en/family-court-dubai/">Dubai family court guide</a> and check where you can actually file.
         </p>
       </section>
 
       <section class="content-section">
         <h2>The divorce process in Sharjah, step by step</h2>
         <ol class="steps">
-          <li><strong>Reconciliation referral.</strong> Most cases start at the Family Guidance and Reconciliation section attached to the court. A counsellor meets the spouses, separately or together, and tries to settle or reconcile. If reconciliation fails, the section issues a referral letter that lets the case proceed.</li>
-          <li><strong>Filing the claim.</strong> Your lawyer registers the case at the Personal Status Court, pays the registration fee and submits the translated, attested documents.</li>
-          <li><strong>Notification and first hearing.</strong> The other spouse is formally served and the first hearing is scheduled. Uncontested cases where both sides sign an agreement can be concluded quickly here.</li>
-          <li><strong>Response and evidence.</strong> In a contested case the respondent files a defence. The court hears arguments over several sessions and may appoint experts for financial disclosure or for custody and welfare assessments.</li>
-          <li><strong>Judgment.</strong> The judge issues a ruling on the divorce itself and on connected claims such as alimony (nafaqa), the deferred dowry, custody and maintenance for the children.</li>
-          <li><strong>Appeal window.</strong> Either party can appeal to the Sharjah Court of Appeal within the statutory period, usually 30 days from the judgment. Our step-by-step <a href="/en/how-to-file-for-divorce-in-dubai/">filing guide for Dubai courts</a> mirrors most of these stages if you want a second worked example.</li>
-          <li><strong>Attestation.</strong> Once final, the decree is stamped and, if you need it recognised abroad, legalised through the Ministry of Foreign Affairs.</li>
+          <li><strong>Filing the claim.</strong> You or your lawyer register the case with the Sharjah Courts, online through the Sharjah Judiciary Platform or in person, pay the fee shown at registration and submit the translated, attested documents. Under the Civil Procedure Code the fee must be paid within 3 business days of the payment notice or the registration is void (Article 47).</li>
+          <li><strong>Family Guidance, if the judge refers you.</strong> In a Muslim case the supervising judge may refer the spouses to Family Guidance, where a counsellor tries to help them settle. A settlement is recorded, approved by the judge and enforceable; if there is none, the case goes back to court (Article 8 of the 2024 law). Civil divorces of non-Muslims are not referred.</li>
+          <li><strong>Service and first hearing.</strong> The other spouse is formally served, which can be by recorded call, SMS, email or smart applications as well as by hand (Article 9 of the Civil Procedure Code), and the first hearing is scheduled. Uncontested cases where both sides sign an agreement can be concluded quickly.</li>
+          <li><strong>Response and evidence.</strong> In a contested case the respondent files a defence, normally within 10 business days of service (Article 48 of the Civil Procedure Code). The court may hear the case over several sessions and appoint experts, for example on finances, or arbitrators in a harm case (up to 60 days from appointment, Article 72 of the 2024 law).</li>
+          <li><strong>Judgment.</strong> The judge rules on the divorce and on connected claims such as alimony (nafaqa), the deferred dowry, custody and child maintenance.</li>
+          <li><strong>Appeal window.</strong> Either party can appeal within 30 days (Article 9 of the 2024 law). Our step-by-step <a href="/en/how-to-file-for-divorce-in-dubai/">filing guide for Dubai courts</a> mirrors most of these stages if you want a second worked example.</li>
+          <li><strong>Using the judgment abroad.</strong> Once final, obtain a certified copy; for use abroad it is attested by the UAE Ministry of Foreign Affairs and legalised by the embassy of the country where you will use it. See our <a href="/en/divorce-certificate-attestation-uae/">divorce certificate attestation guide</a>.</li>
         </ol>
       </section>
 
       <section class="content-section">
-        <h2>Reconciliation comes first in Sharjah</h2>
+        <h2>Reconciliation in Sharjah: when Family Guidance applies</h2>
         <p>
-          The reconciliation stage is not a formality in Sharjah. The Family Guidance and Reconciliation section is staffed by trained counsellors whose job is to explore whether the marriage can be saved, and for Emirati families in particular several sessions are common before a certificate to proceed is issued. Under the 2024 Muslim law the judge decides whether to refer a case to this section (it was mandatory under the 2005 law), and there is no fixed statutory period for it; sessions usually run over a few weeks, and the case moves forward if no agreement is reached. In contested harm cases a separate 60-day limit applies to the arbitrators the court appoints, counted from their appointment. Expats are frequently referred to the same section. Going in with a clear, documented position, and a lawyer who can present it in Arabic, shortens this stage considerably.
+          Family Guidance applies only if the judge refers a Muslim case to it. Under Article 8 of Federal Decree-Law No. 41 of 2024 the supervising judge may refer the spouses for an amicable settlement if he or she thinks it feasible; under the 2005 law this was mandatory. The law sets no fixed period for the stage. Urgent and temporary orders on alimony, custody and guardianship are exempt, and so are cases where reconciliation is not foreseeable, such as cases to prove a marriage or a divorce. If you settle, the agreement is signed by both spouses and the counsellor, approved by the judge and has the force of an execution writ. In contested harm cases a separate 60-day limit applies to the arbitrators the court appoints, counted from their appointment (Article 72). Civil divorces of non-Muslims under Federal Decree-Law No. 41 of 2022 are not referred at all (Article 3). Going in with a clear, documented position, and a lawyer who can present it in Arabic, helps either way.
         </p>
       </section>
 
@@ -233,7 +211,7 @@ const faqItems = [
         <h2>Documents you need and where to file</h2>
         <p>Prepare these before you approach the court:</p>
         <ul class="doc-list">
-          <li>Original and translated marriage certificate, attested by the issuing country and the UAE Ministry of Foreign Affairs</li>
+          <li>Original and translated marriage certificate; if issued abroad, certified in the issuing country, legalised by the UAE embassy there and attested by the UAE Ministry of Foreign Affairs (the UAE does not accept an apostille on its own)</li>
           <li>Emirates ID and passport copies, with residence visa pages, for both spouses</li>
           <li>Birth certificates for any children, translated and attested</li>
           <li>Proof of Sharjah residence, such as a tenancy contract or utility bill</li>
@@ -241,7 +219,7 @@ const faqItems = [
           <li>Any prenuptial or postnuptial agreement, if one exists</li>
         </ul>
         <p>
-          Filing is done at the Sharjah Personal Status Court, either directly by your lawyer, through an approved legal services typing centre, or via the SJD online portal. Non-Arabic documents must be translated by a licensed legal translator first; the court will reject uncertified translations.
+          Filing is done with the Sharjah Courts, either by your lawyer, through a typing centre, or online through the Sharjah Judiciary Platform, which covers personal status cases. Non-Arabic documents should be translated by a licensed legal translator first; an uncertified translation risks being rejected. If you live abroad, the case must name an elected domicile and a legal representative in the UAE (Article 44 of the Civil Procedure Code).
         </p>
       </section>
 
@@ -257,7 +235,7 @@ const faqItems = [
       <section class="content-section">
         <h2>When to hire a Sharjah-based family lawyer</h2>
         <p>
-          You are not legally required to use a lawyer, but a few situations make one close to essential in Sharjah. Hire local representation early if your case is contested, if children and custody are involved, if there are assets in more than one country, or if you and your spouse follow different personal status tracks, one Muslim and one non-Muslim. A Sharjah-based lawyer matters specifically because they know the individual Personal Status judges, the local reconciliation counsellors and the branch courts in the eastern region, which a Dubai-only firm may not.
+          You are not legally required to use a lawyer, but a few situations make one close to essential in Sharjah. Hire representation early if your case is contested, if children and custody are involved, if there are assets in more than one country, or if you and your spouse follow different personal status tracks, one Muslim and one non-Muslim. Only lawyers licensed in the UAE can represent you in court (Article 6 of Federal Decree-Law No. 34 of 2022), and a lawyer who regularly appears in the Sharjah Courts will know local practice and the new court structure, which a Dubai-only firm may not. You can also authorise your spouse, an in-law or a blood relative up to the fourth degree to appear for you (Article 8 of the same law).
         </p>
         <p>
           For a simple mutual-consent divorce with no children you may only need a lawyer to draft and file the agreement. For anything contested, engage one before the first reconciliation session, not after, because positions taken early shape the rest of the case. Our guide to <a href="/en/divorce-lawyer-fees-uae/">divorce lawyer fees in the UAE</a> explains how to compare quotes so you are not overcharged.
@@ -266,6 +244,9 @@ const faqItems = [
 
       <section class="content-section">
         <h2>Divorce Lawyer Fees in Sharjah</h2>
+        <p>
+          There is no official tariff for lawyers' fees. The ranges below are indicative market figures only; what you pay depends on the firm, the number of hearings, experts and whether there is an appeal.
+        </p>
         <div class="fee-grid">
           <div class="fee-card">
             <p class="fee-type">Uncontested / Mutual Consent</p>
@@ -285,11 +266,11 @@ const faqItems = [
           <div class="fee-card">
             <p class="fee-type">Khula (wife-initiated)</p>
             <p class="fee-amount">AED 5,000 to 15,000</p>
-            <p class="fee-detail">Slightly higher in Sharjah than Dubai due to more reconciliation sessions.</p>
+            <p class="fee-detail">Depends on whether the husband agrees the consideration or the court has to order khula (Article 66).</p>
           </div>
         </div>
         <p class="cost-note">
-          Beyond the lawyer's fee, budget for court and administrative costs. Court registration fees for a personal status case are modest, typically a few hundred dirhams, but translation and attestation of foreign documents commonly runs AED 1,000 to AED 3,000 depending on volume, and court-appointed experts in a contested financial or custody matter add more. A realistic all-in figure for a straightforward uncontested divorce in Sharjah is AED 6,000 to AED 12,000 including everything, while a contested custody case can pass AED 40,000 to AED 60,000 once expert and appeal costs are counted. For a full breakdown across the country, see our <a href="/en/divorce-cost-uae/">UAE divorce cost guide</a>.
+          Beyond the lawyer's fee, budget for court and administrative costs: the court fee, which is shown when you register the case and must be paid within 3 business days of the payment notice (Article 47 of the Civil Procedure Code), legal translation and attestation of foreign documents, which depend on how many pages you have, and the fees of any court-appointed expert in a contested financial or custody matter. Ask for a written estimate that lists each of these separately. For a full breakdown across the country, see our <a href="/en/divorce-cost-uae/">UAE divorce cost guide</a>.
         </p>
       </section>
 
@@ -363,6 +344,7 @@ const faqItems = [
 
   .content-section { margin-bottom: 2.5rem; }
   .content-section h2 { font-size: clamp(1.2rem, 2.5vw, 1.6rem); font-weight: 700; color: #0a1628; margin-bottom: 1rem; border-bottom: 2px solid #f3f4f6; padding-bottom: 0.5rem; }
+  .content-section h3 { font-size: 1.05rem; font-weight: 700; color: #0a1628; margin: 1.25rem 0 0.5rem; }
   .content-section p { font-size: 0.95rem; color: #374151; line-height: 1.8; margin: 0 0 1rem; }
   .content-section p:last-child { margin-bottom: 0; }
   .content-section a { color: #1d4ed8; text-decoration: underline; }

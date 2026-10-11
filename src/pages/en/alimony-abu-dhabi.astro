@@ -6,7 +6,7 @@ import Breadcrumb from '../../components/seo/Breadcrumb.astro';
 
 const title = 'Alimony in Abu Dhabi: Spousal and Temporary Maintenance 2026';
 const description =
-  'Alimony in Abu Dhabi explained: what the Civil Family Court and Personal Status Court award, temporary maintenance, the 25% income guide and enforcement.';
+  'Spousal maintenance (alimony) in Abu Dhabi: what the Civil Family Court and Personal Status Court award, temporary maintenance, the 25% income guide and enforcement.';
 
 const hreflang = {
   en: 'https://divorceu.ae/en/alimony-abu-dhabi/',
@@ -25,7 +25,7 @@ const schema = {
   author: { '@type': 'Person', name: 'Aleksi Suon', url: 'https://divorceu.ae/en/author/aleksi-suon/' },
   publisher: { '@type': 'Organization', name: 'Divorce UAE', url: 'https://divorceu.ae' },
   datePublished: '2026-09-21',
-  dateModified: '2026-09-25',
+  dateModified: '2026-10-12',
   inLanguage: 'en-AE',
   mainEntityOfPage: 'https://divorceu.ae/en/alimony-abu-dhabi/',
 };
@@ -39,12 +39,12 @@ const faqItems = [
   {
     question: 'Is the 25% of income per year of marriage rule guaranteed?',
     answer:
-      'No. The ADJD’s official English text of Article 18 of Resolution No. 8 of 2022 says the court and expert may be guided by no less than 25% of the husband’s last monthly income multiplied by the years of marriage. Summaries that describe it as “up to 25%” or a cap misread it. Under Article 18(2) the court can raise or lower the amount, so it is a starting guide, not a guaranteed figure and not a ceiling.',
+      'No. The ADJD’s official English text of Article 18 of the 2022 Regulation (ADJD Chairman’s Decision No. 8 of 2022) says that, when estimating the financial compensation due after divorce, the court and expert may be guided by a cash percentage of no less than 25% of the husband’s last monthly income multiplied by the years of marriage. Summaries that describe it as “up to 25%” or a cap misread it. Under Article 18(2) the court can raise or lower the amount, so it is a starting guide, not a guaranteed figure and not a ceiling.',
   },
   {
     question: 'Can I get temporary alimony in Abu Dhabi while my case is pending?',
     answer:
-      'Yes. For Muslims, Article 100 of Federal Decree-Law No. 41 of 2024 lets the court order temporary maintenance for the wife and children during a maintenance case, enforceable immediately. For non-Muslims, Article 21 of the 2022 Abu Dhabi regulation allows temporary alimony until financial rights are decided, backed by six months of account statements.',
+      'Yes. For Muslims, Article 100 of Federal Decree-Law No. 41 of 2024 lets the court, at the wife’s request, order temporary maintenance for her and the children while the maintenance case is heard, enforceable immediately by force of law. For non-Muslims, Article 21 of the 2022 Abu Dhabi regulation lets a divorced woman ask for temporary alimony until her financial rights are decided, backed by six months of account statements, decided by an interim order.',
   },
   {
     question: 'How long does alimony last in Abu Dhabi?',
@@ -81,19 +81,20 @@ const faqItems = [
   dir="ltr"
   hreflang={hreflang}
   schema={schema}
-  lastmod="2026-09-25"
+  lastmod="2026-10-12"
 >
   <header class="hero">
     <div class="container hero__inner">
       <div class="hero__content">
         <Breadcrumb items={breadcrumbs} lang="en" />
-        <h1 class="hero__h1">Alimony in Abu Dhabi: What You Can Claim in Each Court</h1>
-        <p class="byline">By Aleksi Suon, UAE Expat &amp; Legal Consultant · Updated September 2026</p>
+        <h1 class="hero__h1">Spousal Maintenance (Alimony) in Abu Dhabi: What You Can Claim in Each Court</h1>
+        <p class="byline">By Aleksi Suon, UAE Expat &amp; Legal Consultant · Updated October 2026</p>
         <p class="hero__sub">
-          Abu Dhabi has two family courts, and they treat money after divorce very differently. Here
-          is what each lets you claim, how temporary alimony works, how amounts are assessed and how
-          unpaid orders are enforced, with the article numbers behind each rule. For other emirates,
-          see our <a href="/en/alimony-uae/">alimony in the UAE</a> guide.
+          Spousal maintenance, usually called alimony, works differently in Abu Dhabi's two family
+          courts. Here is what the Civil Family Court and the Personal Status Court let you claim, how
+          temporary spousal support works while the case runs, how amounts are assessed and how unpaid
+          orders are enforced, with the article numbers behind each rule. For other emirates, see our
+          <a href="/en/alimony-uae/">alimony in the UAE</a> guide.
         </p>
         <ul class="hero__trust">
           <li>✓ Civil Family Court &amp; Personal Status Court</li>
@@ -111,9 +112,10 @@ const faqItems = [
   <main class="container main-content">
 
     <section class="section" aria-labelledby="snapshot-heading">
-      <h2 id="snapshot-heading">Alimony in Abu Dhabi: The Short Answer</h2>
+      <h2 id="snapshot-heading">Spousal Maintenance in Abu Dhabi: The Short Answer</h2>
       <p>
-        What you can claim depends first on which court hears your case. Non-Muslims go to the
+        What spousal maintenance (alimony) you can claim in Abu Dhabi depends first on which court
+        hears your case. Non-Muslims go to the
         <strong>Abu Dhabi Civil Family Court</strong>, which applies Abu Dhabi Law No. 14 of 2021 on
         Civil Marriage and its Effects and its 2022 regulation (ADJD Chairman Decision No. 8 of
         2022). Muslims go to the <strong>ADJD Personal Status Court</strong>, which applies Federal
@@ -143,7 +145,7 @@ const faqItems = [
         </div>
         <div class="stat-card">
           <span class="stat-num">AED 0</span>
-          <span class="stat-label">court fee for alimony cases at the ADJD (exempt)</span>
+          <span class="stat-label">court fee for alimony cases at the ADJD (exempt, per the ADJD FAQ)</span>
         </div>
         <div class="stat-card">
           <span class="stat-num">25%</span>
@@ -214,11 +216,13 @@ const faqItems = [
       <h2 id="benchmark-heading">The 25% Income Yardstick: What Article 18 Actually Says</h2>
       <p>
         The benchmark is real, but it is a guide the court may use, not a formula. Article 18
-        of the 2022 regulation lists three yardsticks for the court and the expert:
+        of the 2022 regulation, headed "Calculation Criteria for Estimating the Financial Rights
+        Arising from Divorce", lists three yardsticks the court and the expert may be guided by when
+        estimating and calculating the financial compensation due after divorce:
       </p>
       <ul class="checklist">
         <li><strong>Income:</strong> a cash percentage of no less than 25% of the husband’s last monthly income (salary certificate or last account statement, whichever is greater), multiplied by the years of marriage.</li>
-        <li><strong>Wealth:</strong> a share of the market or purchase value, whichever is greater, of his property and wealth, including real estate, shares, company interests, valuables and vehicles.</li>
+        <li><strong>Wealth:</strong> an in-kind or cash percentage (the text sets no figure) of the market or purchase value, whichever is greater, of his property and wealth, including real estate, shares, company interests, valuables and vehicles.</li>
         <li><strong>Joint account:</strong> any account the spouses shared, and what each put into it.</li>
       </ul>
       <p>
@@ -232,7 +236,8 @@ const faqItems = [
         <h3>Indicative illustration only</h3>
         <p>
           Last monthly income AED 40,000, marriage of 10 years: 25% of AED 40,000 is AED 10,000, and
-          10 years gives a reference figure of AED 100,000. The court may use another yardstick,
+          10 years gives a reference compensation figure of at least AED 100,000 on the income
+          yardstick. The court may use another yardstick,
           adjust the figure or order instalments. For fuller indicative scenarios, see our
           <a href="/en/alimony-calculator-uae/">alimony calculator</a>.
         </p>
@@ -256,9 +261,9 @@ const faqItems = [
             <tr><td>Maintenance during the marriage</td><td>Owed even if the wife is wealthy; past maintenance claimable for up to two years before filing</td><td>99</td></tr>
             <tr><td>Temporary maintenance</td><td>For the wife and children while a maintenance case is heard; enforceable immediately</td><td>100</td></tr>
             <tr><td>Iddah maintenance and housing</td><td>Maintenance after a revocable divorce, after an irrevocable one only if she is pregnant, and none after khul’; housing for the iddah in every case</td><td>101</td></tr>
-            <tr><td>Mut’a</td><td>If he divorces her by his own will without her request or fault: up to one year’s maintenance for a woman of her standing, instalments allowed</td><td>102</td></tr>
+            <tr><td>Mut’a</td><td>If, after a consummated valid marriage, he divorces her by his own will without her request or cause (or the separation was due to him): up to one year’s maintenance for a woman of her standing, instalments allowed</td><td>102</td></tr>
             <tr><td>Deferred mahr</td><td>Due when the separation becomes irrevocable, or on death</td><td>46</td></tr>
-            <tr><td>Children</td><td>The father maintains a child without money of their own and pays the custodial mother’s housing unless she owns a home</td><td>106, 119</td></tr>
+            <tr><td>Children</td><td>The father maintains a child without money of their own; whoever owes the child’s maintenance pays the custodian’s housing rent unless she owns a home she lives in or one is allotted to her</td><td>106, 119</td></tr>
           </tbody>
         </table>
         <p class="table-note">
@@ -278,7 +283,19 @@ const faqItems = [
       <h2 id="temporary-heading">Temporary Alimony in Abu Dhabi While the Case Is Pending</h2>
       <p>
         You can get temporary alimony in Abu Dhabi before the final decision: both courts can make an
-        interim order, and in both it can be enforced straight away.
+        interim order. In the Muslim track the law makes it enforceable immediately; in the civil
+        track it is an interim order that either spouse can object to.
+      </p>
+      <h3>Temporary maintenance while the case runs</h3>
+      <p>
+        Temporary spousal support is a stopgap, not the final award. In the Personal Status Court the
+        wife asks for it during her maintenance case and it covers her and the children (Article 100
+        of Federal Decree-Law No. 41 of 2024). At the Civil Family Court it comes after the divorce
+        judgment and lasts until the post-divorce financial rights are decided (Article 21 of the 2022
+        Regulation). Non-Muslims whose case is heard under the federal civil law outside Abu Dhabi have
+        a similar route under Article 10 of Cabinet Resolution No. 122 of 2023. For the full
+        procedure in every emirate, forms, evidence and what happens if it is not paid, see our guide
+        to <a href="/en/temporary-alimony-uae/">temporary alimony in the UAE</a>.
       </p>
       <div class="two-col">
         <div class="info-box info-box--blue">
@@ -305,7 +322,9 @@ const faqItems = [
         track the divorce usually comes at the first hearing, so temporary alimony bridges the gap to
         the final financial order; urgent requests reach the judge the day after registration
         (Article 14). File the interim order form through the ADJD website or app, a typing centre or
-        a lawyer; alimony requests are fee-exempt.
+        a lawyer. The ADJD's FAQ and its interim order page say that interim orders in the Personal
+        Status Division cost AED 100 but alimony requests are free of charge; check the fee shown when
+        you file.
       </p>
       <h3>What evidence to bring</h3>
       <ul class="checklist">
@@ -315,10 +334,10 @@ const faqItems = [
       </ul>
       <h3>If he stops paying during the case</h3>
       <p>
-        A temporary order is enforceable at once, so unpaid amounts can go straight into an
-        enforcement file. In the Muslim track, Article 77 adds a second lever: a husband who refuses to
-        maintain his wife gets up to 30 days to pay (90 if he proves he cannot), after which the court
-        can grant her a divorce. In the civil track, temporary alimony may be refused if the wife has a
+        A Muslim-track temporary order is enforceable immediately (Article 100), so unpaid amounts can
+        go straight into an enforcement file. In the Muslim track, Article 77 adds a second lever: a
+        husband who refuses to maintain his wife gets up to 30 days to pay (up to 90 if he proves he
+        cannot), after which the court can divorce her from him. In the civil track, temporary alimony may be refused if the wife has a
         job or stable income covering her basic needs (Article 21). See also our
         <a href="/en/emergency-orders-divorce-uae/">emergency orders guide</a>.
       </p>
@@ -355,9 +374,10 @@ const faqItems = [
         In both courts the father carries the main duty to support the children, separate from
         anything paid to the mother. Under Article 106 of the 2024 law he maintains a child without
         money of their own: a daughter until she marries or works, a son until he reaches the age at
-        which his peers earn a living, or later while he studies successfully. He also pays the
-        custodial mother’s housing unless she owns a home (Article 119), and past child maintenance
-        can be claimed for one year at most (Article 111).
+        which his peers earn a living, or later while he studies successfully. Whoever owes the
+        child's maintenance also pays the custodian's housing rent unless she owns a home she lives in
+        or one is allotted to her (Article 119), and past child maintenance can be claimed for one
+        year at most (Article 111).
       </p>
       <p>
         At the civil court, Article 23 of the 2022 regulation obliges the father to keep paying the
@@ -421,9 +441,9 @@ const faqItems = [
         <div class="info-box info-box--gold">
           <h3>Personal Status Court orders</h3>
           <p>
-            Ongoing maintenance from the filing date is a priority debt; maintenance for the period
-            before the claim ranks as ordinary debt (Article 98). Law-firm readings of Article 324 of the Civil Procedure Law
-            say the usual AED 10,000 travel-ban minimum works differently for alimony.
+            Continuing maintenance due from the date the claim was filed is a privileged debt that
+            ranks ahead of other debts; maintenance for the period before that ranks as an ordinary
+            debt (Article 98). The ADJD lists a travel ban request at AED 400.
           </p>
         </div>
       </div>
@@ -485,7 +505,8 @@ const faqItems = [
           <h3>Go to court if there is no settlement</h3>
           <p>
             If you are referred and settle, the settlement is recorded and enforceable (Article 8);
-            otherwise the Personal Status Court hears the case, mostly by video according to the ADJD.
+            otherwise the Personal Status Court hears the case, and hearings can be held remotely
+            (Articles 330 and 331 of the Civil Procedure Code).
           </p>
         </li>
         <li>
