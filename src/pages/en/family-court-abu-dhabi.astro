@@ -1,0 +1,838 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import LeadForm from '../../components/ui/LeadForm.astro';
+import FAQSection from '../../components/ui/FAQSection.astro';
+import Breadcrumb from '../../components/seo/Breadcrumb.astro';
+
+const title = 'Family Court Abu Dhabi: Which Court, Fees, Case Status (2026)';
+const description =
+  'Abu Dhabi family courts explained: Personal Status Court or Civil Family Court, who goes where, fees, locations and hours, appeals and ADJD case status.';
+
+const hreflang = {
+  en: 'https://divorceu.ae/en/family-court-abu-dhabi/',
+};
+
+const breadcrumbs = [
+  { name: 'Home', url: 'https://divorceu.ae/en/' },
+  { name: 'Family Court Abu Dhabi', url: 'https://divorceu.ae/en/family-court-abu-dhabi/' },
+];
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  author: { '@type': 'Person', name: 'Aleksi Suon', url: 'https://divorceu.ae/en/author/aleksi-suon/' },
+  publisher: { '@type': 'Organization', name: 'Divorce UAE', url: 'https://divorceu.ae' },
+  datePublished: '2026-10-12',
+  dateModified: '2026-10-12',
+  inLanguage: 'en-AE',
+  mainEntityOfPage: 'https://divorceu.ae/en/family-court-abu-dhabi/',
+};
+
+const faqItems = [
+  {
+    question: 'Where is the family court in Abu Dhabi?',
+    answer:
+      'Both family courts belong to the Abu Dhabi Judicial Department (ADJD), whose head office is at 16 Al Nofal Street, Al Rawda, Abu Dhabi. The Civil Family Court for non-Muslims sits in the ADJD main court building next to Zayed Sports City. ADJD also runs courts in the Al Ain and Al Dhafra regions, and Family Guidance has branches in all three regions. Most hearings now take place by video, so read your notice before you travel.',
+  },
+  {
+    question: 'What are the Abu Dhabi court timings?',
+    answer:
+      'ADJD’s contact page lists customer reception from 8:00am to 2:20pm on weekdays, and its customer service centres in Abu Dhabi and Al Ain open from 8:00am. Courts are closed at weekends and on public holidays. Hours change, especially in Ramadan, so call ADJD on 600 599 799 before going.',
+  },
+  {
+    question: 'How do I check my case status with ADJD?',
+    answer:
+      'Sign in to the ADJD website or the AD Judicial app with UAE PASS and use the case inquiry service, which shows your files, their status, any requests and upcoming hearing dates. If your case does not appear, use the “Link Cases to MY UAE Pass Account” service. Notices and decisions also arrive by SMS and email, and ADJD’s INJAZ centres offer case inquiry in person.',
+  },
+  {
+    question: 'Is the Abu Dhabi Civil Family Court in English?',
+    answer:
+      'Largely, yes. Its forms and proceedings are bilingual in Arabic and English (Article 17 of Abu Dhabi Law No. 14 of 2021), and under Article 44 of the 2022 Regulation the judge may run the whole case in English when neither party speaks Arabic. Expats do not have to translate English documents into Arabic. The Personal Status Court works in Arabic, with an interpreter on request at AED 100 an hour.',
+  },
+  {
+    question: 'Can a Muslim expat divorce at the Abu Dhabi Civil Family Court?',
+    answer:
+      'Sometimes, and it is contested. The 2022 Regulation covers foreigners whose nationality is of a country that does not mainly apply Islamic law in family matters, and marriages held in such a country or concluded as civil marriages. In 2024 Abu Dhabi’s Court of Cassation refused jurisdiction over one Muslim couple in April and accepted it for another in October. Expect a jurisdiction objection and take advice before filing.',
+  },
+  {
+    question: 'How much does a divorce cost at the Abu Dhabi family court?',
+    answer:
+      'At the Civil Family Court the no-fault divorce application costs AED 5,000 (Article 13 of the 2022 Regulation). On the Muslim track, ADJD says fees follow the Abu Dhabi Judicial Fees Law and are shown to you when you register; alimony cases and Family Guidance files are exempt, and personal status interim orders cost AED 100. Lawyer and translation fees come on top.',
+  },
+  {
+    question: 'Can the ADGM Courts grant a divorce in Abu Dhabi?',
+    answer:
+      'No. The ADGM Courts serve the Abu Dhabi Global Market financial free zone and have no family jurisdiction, so they cannot divorce anyone, whatever your nationality or wherever you work. The same is true of the DIFC Courts in Dubai. Non-Muslims in Abu Dhabi divorce at the Abu Dhabi Civil Family Court, and Muslims at the ADJD Personal Status Court.',
+  },
+  {
+    question: 'Do I have to attend the Abu Dhabi family court in person?',
+    answer:
+      'Often not. ADJD says most hearings are held remotely by video link and that it will contact you if the court wants you there in person, and Family Guidance sessions run on Webex. Civil marriage ceremonies are in person. In a civil divorce the spouse who applied must attend the divorce hearing and confirm the wish to divorce (Article 14 of the 2022 Regulation).',
+  },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  lang="en"
+  dir="ltr"
+  hreflang={hreflang}
+  schema={schema}
+  lastmod="2026-10-12"
+>
+  <header class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <Breadcrumb items={breadcrumbs} lang="en" />
+        <h1 class="hero__h1">Family Court Abu Dhabi: Which Court Hears Your Case and How It Works</h1>
+        <p class="byline">By Aleksi Suon, UAE Expat &amp; Legal Consultant · Updated October 2026</p>
+        <p class="hero__sub">
+          Abu Dhabi has two family courts, both run by the Abu Dhabi Judicial Department (ADJD): the
+          Personal Status Court for Muslims, and the Civil Family Court for non-Muslims and foreigners from
+          countries that do not mainly apply Sharia in family matters. Below: which one is yours, what each
+          handles, where they are, what they charge and how to check a case online.
+        </p>
+        <ul class="hero__trust">
+          <li>✓ Both family courts, side by side</li>
+          <li>✓ Fees from ADJD and the 2022 Regulation</li>
+          <li>✓ Addresses and hours as ADJD lists them</li>
+          <li>✓ Article numbers you can check</li>
+        </ul>
+      </div>
+      <div class="hero__form">
+        <LeadForm lang="en" variant="hero" heading="Not Sure Which Court Is Yours? Ask Free" />
+      </div>
+    </div>
+  </header>
+
+  <main class="container main-content">
+
+    <!-- Short answer -->
+    <section class="section" aria-labelledby="answer-heading">
+      <h2 id="answer-heading">Which Family Court in Abu Dhabi? The Short Answer</h2>
+      <p>
+        Your family court in Abu Dhabi depends on religion, nationality and where you married. Abu Dhabi
+        does not use the federal courts: the UAE government portal (u.ae) lists it among the emirates with
+        their own independent judicial departments, here ADJD, with a Court of First Instance, a Court of
+        Appeal and a local Court of Cassation. Inside ADJD, family cases run on two tracks.
+      </p>
+      <ul class="checklist">
+        <li><strong>The Personal Status Court.</strong> Muslims, Emirati or expat, under Federal Decree-Law No. 41 of 2024 on Personal Status, in force since 15 April 2025. A judge may send the case to Family Guidance first, and proceedings are in Arabic.</li>
+        <li><strong>The Abu Dhabi Civil Family Court.</strong> Non-Muslims, and foreigners from countries that do not mainly apply Islamic law in family matters, under Abu Dhabi Law No. 14 of 2021 and its 2022 Regulation (ADJD Chairman Decision No. 8 of 2022). No Family Guidance, bilingual forms, and English proceedings are possible.</li>
+        <li><strong>Not the DIFC Courts or the ADGM Courts.</strong> Neither has family jurisdiction, so neither can divorce anyone.</li>
+      </ul>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-num">2</span>
+          <span class="stat-label">family courts under one judicial department</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">AED 5,000</span>
+          <span class="stat-label">civil no-fault divorce application</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">30 days</span>
+          <span class="stat-label">to appeal a Personal Status Court judgment</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">AED 500,000</span>
+          <span class="stat-label">below this, civil alimony and money judgments are final at once</span>
+        </div>
+      </div>
+      <div class="info-box info-box--blue" style="margin-top:24px;">
+        <h3>How this site earns money</h3>
+        <p>
+          DivorceU.AE is a referral service, not a law firm, and earns when readers ask to be put in touch
+          with a UAE-licensed family lawyer. This page describes the courts from ADJD&rsquo;s own pages and
+          the law text. It is general information, not legal advice.
+        </p>
+      </div>
+    </section>
+
+    <!-- Decision table -->
+    <section class="section" aria-labelledby="which-heading">
+      <h2 id="which-heading">Which Court Is Mine? A Decision Table</h2>
+      <p>
+        Find the row that matches you. If two rows seem to fit, settle the jurisdiction question before you
+        file: the Civil Family Court must decline a case on its own initiative when it lacks jurisdiction
+        (Article 4 of the 2022 Regulation).
+      </p>
+      <div class="cost-table">
+        <table>
+          <thead>
+            <tr><th>Your situation</th><th>Court</th><th>Law applied</th><th>Watch out for</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Both spouses Muslim UAE nationals</td>
+              <td>Personal Status Court</td>
+              <td>Decree-Law 41/2024 (Article 1)</td>
+              <td>Possible referral to Family Guidance (Article 8).</td>
+            </tr>
+            <tr>
+              <td>Muslim expats from a country that applies Islamic family law</td>
+              <td>Personal Status Court</td>
+              <td>Decree-Law 41/2024, unless one of you insists on your national law (Article 1(3))</td>
+              <td>A foreign law has to be put before the court; take advice.</td>
+            </tr>
+            <tr>
+              <td>Muslim expats holding the nationality of a non-Sharia country, or married civilly there</td>
+              <td>Contested</td>
+              <td>Possibly Abu Dhabi Law No. 14 of 2021</td>
+              <td>Abu Dhabi&rsquo;s top court has ruled both ways. See below.</td>
+            </tr>
+            <tr>
+              <td>Non-Muslim expats, at least one living or working in Abu Dhabi</td>
+              <td>Civil Family Court</td>
+              <td>Law 14/2021 and the 2022 Regulation</td>
+              <td>Divorce at the first hearing; AED 5,000 fee.</td>
+            </tr>
+            <tr>
+              <td>Non-Muslim UAE nationals</td>
+              <td>Civil Family Court</td>
+              <td>2022 Regulation, Article 5(1)</td>
+              <td>The civil marriage service itself is closed to UAE nationals.</td>
+            </tr>
+            <tr>
+              <td>Married at the Civil Family Court, now living elsewhere</td>
+              <td>Civil Family Court</td>
+              <td>2022 Regulation, Article 4</td>
+              <td>Jurisdiction continues for civil marriages concluded in the emirate.</td>
+            </tr>
+            <tr>
+              <td>One spouse Muslim, the other not</td>
+              <td>Usually the Personal Status Court</td>
+              <td>Decree-Law 41/2024</td>
+              <td>Civil access turns on nationality and place of marriage (Article 5 of the Regulation).</td>
+            </tr>
+            <tr>
+              <td>Non-Muslims in Dubai or a northern emirate, with no Abu Dhabi link</td>
+              <td>The court of that emirate</td>
+              <td>Federal Decree-Law No. 41 of 2022</td>
+              <td>Abu Dhabi will decline. See <a href="/en/dubai-vs-abu-dhabi-divorce/">Dubai vs Abu Dhabi divorce</a>.</td>
+            </tr>
+            <tr>
+              <td>You hoped to use the DIFC or ADGM Courts</td>
+              <td>Neither</td>
+              <td>None</td>
+              <td>No family jurisdiction at all.</td>
+            </tr>
+            <tr>
+              <td>A money dispute between spouses that is not a divorce claim, such as a private loan</td>
+              <td>ADJD civil track</td>
+              <td>General civil law</td>
+              <td>ADJD sends civil disputes between spouses to Reconciliation and Mediation first, whatever the amount.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">
+          A guide, not legal advice. Jurisdiction turns on facts such as residence, workplace and the
+          nationality you use in the UAE.
+        </p>
+      </div>
+
+      <h3>Muslim expats and the Civil Family Court: an open question</h3>
+      <p>
+        Abu Dhabi Law No. 14 of 2021 defines the people it governs as non-Muslims, whether foreigners or UAE
+        nationals. Its 2022 Regulation, however, lists categories without mentioning religion: a foreigner
+        whose nationality is of a country that does not mainly apply Islamic law in family matters (for dual
+        nationals, the nationality used for UAE residence), a marriage held in such a country, and a civil
+        marriage (Article 5). The court&rsquo;s own page says Muslims who are not UAE citizens can use its
+        civil marriage service.
+      </p>
+      <p>
+        According to published academic commentary, the Abu Dhabi Court of Cassation refused the Civil
+        Family Court jurisdiction over a Muslim couple in April 2024, then on 30 October 2024 upheld a civil
+        divorce between a Muslim French-Moroccan couple married civilly in France, treating their French
+        nationality as decisive. If you are in this group, expect a jurisdiction objection and get advice
+        before choosing a court.
+      </p>
+
+      <h3>Where you live inside the emirate</h3>
+      <p>
+        On the Muslim track, Article 3 of the 2024 law makes the competent court the one where the respondent
+        lives or works, but claims by a wife, children, parents or a custodian (alimony, custody, dowry,
+        divorce or khula) can also go where the claimant lives or works, or where the marital home is. So a
+        wife living in Abu Dhabi can usually sue a husband now in Dubai in Abu Dhabi. The Civil Family Court
+        takes cases where either party has a domicile, residence, or current or former workplace in the
+        emirate, or the disputed property is in the UAE (Article 4 of the Regulation).
+      </p>
+    </section>
+
+    <!-- Personal Status Court -->
+    <section class="section" aria-labelledby="psc-heading">
+      <h2 id="psc-heading">The Personal Status Court: What It Handles and How a Case Moves</h2>
+      <p>
+        The Personal Status Court, which many people call the Sharia court, hears every family matter for
+        Muslims in Abu Dhabi: divorce in all its
+        forms, children, money and marriage documentation. ADJD&rsquo;s FAQ describes Family Guidance files
+        being referred &ldquo;to the Personal Status Court&rdquo; when no agreement is reached.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <h3>Divorce</h3>
+          <p>
+            Documenting a talaq within 15 days (Article 58), khula (Articles 65 and 68), and judicial divorce
+            for harm, unpaid dowry, failure to maintain, desertion or absence (Articles 71 to 79).
+          </p>
+        </div>
+        <div class="card">
+          <h3>Children</h3>
+          <p>
+            Custody to 18 (Article 123), the child&rsquo;s choice at 15 (Article 122), visitation (Article
+            121), and travel permits of up to 60 days a year against security for return (Article 116).
+          </p>
+        </div>
+        <div class="card">
+          <h3>Money</h3>
+          <p>
+            Alimony (Articles 95 to 97), temporary alimony enforceable at once (Article 100), iddah
+            maintenance (Article 101), the consolation payment (Article 102) and mahr (Articles 45 to 47).
+          </p>
+        </div>
+        <div class="card">
+          <h3>Marriage and permits</h3>
+          <p>
+            Documenting or proving a marriage contract (Article 41) and orders on petition wherever the law
+            requires the court&rsquo;s permission (Article 6).
+          </p>
+        </div>
+      </div>
+
+      <h3>How a Personal Status case moves</h3>
+      <ol class="steps">
+        <li>
+          <h3>Register the file</h3>
+          <p>Through the ADJD website, a law firm licensed by ADJD, or a registered typing centre.</p>
+        </li>
+        <li>
+          <h3>Family Guidance, if the judge refers you</h3>
+          <p>Reconciliation or a written settlement, by video (see the next section).</p>
+        </li>
+        <li>
+          <h3>Case preparation</h3>
+          <p>The Case Management Office checks documents and records who attends before the judge takes the file.</p>
+        </li>
+        <li>
+          <h3>Hearings, mostly by video</h3>
+          <p>ADJD says most hearings are held remotely: you receive a link, and the court contacts you if it wants you in person.</p>
+        </li>
+        <li>
+          <h3>Judgment and appeal</h3>
+          <p>30 days to appeal (Article 9), counted from the day after judgment if you attended, otherwise from the day after notice (Article 10).</p>
+        </li>
+      </ol>
+      <p>
+        Urgent requests such as temporary alimony, a travel ban or a seizure are petitions decided without a
+        hearing date, and ADJD&rsquo;s FAQ says you can file one before the main case if you undertake to
+        file the case within 8 days. Documents and step-by-step filing are covered in
+        <a href="/en/how-to-file-for-divorce-in-abu-dhabi/">how to file for divorce in Abu Dhabi</a>.
+      </p>
+      <p>
+        Arabic is the official language of the courts, ADJD says. If you are not fluent, it arranges an
+        interpreter for the video session, which you can request in advance, at AED 100 per hour. Plan for
+        Arabic translation of foreign documents and ask the case manager which ones are needed.
+      </p>
+    </section>
+
+    <!-- Family Guidance -->
+    <section class="section" aria-labelledby="fg-heading">
+      <h2 id="fg-heading">Family Guidance in Abu Dhabi: When It Applies and How It Runs</h2>
+      <p>
+        Family Guidance is ADJD&rsquo;s reconciliation stage on the Muslim track, and under the 2024 law
+        referral is the judge&rsquo;s decision, not an automatic step. Article 8 of Federal Decree-Law No. 41
+        of 2024 lets the supervising judge refer the parties &ldquo;if he/she deems it feasible&rdquo;, and
+        exempts wills, inheritance, urgent matters and cases such as proving a marriage or a divorce.
+      </p>
+      <p>
+        In practice, expect a referral: ADJD&rsquo;s FAQ still describes Family Guidance as a required step
+        before most alimony, custody and fault-based divorce claims. It has branches in Abu Dhabi city, Al
+        Ain and Al Dhafra, but its page says sessions are held by videoconference: you install Webex and a
+        link is emailed to both spouses. Files are registered online, through licensed law firms or approved
+        typing offices, not at the branches.
+      </p>
+      <div class="two-col">
+        <div class="info-box info-box--blue">
+          <h3>What it deals with</h3>
+          <p>
+            Divorce and consensual divorce, declarations such as taking back a divorced wife, dowry, iddah
+            maintenance, custody and parenting time, child support, housing and school fees.
+          </p>
+        </div>
+        <div class="info-box info-box--gold">
+          <h3>What a signed agreement means</h3>
+          <p>
+            Signed by both spouses and the counsellor and approved by the judge, it has the force of an
+            execution writ and cannot be appealed unless it contradicts the law (Article 8(2)).
+          </p>
+        </div>
+      </div>
+      <p>
+        The federal law sets no Family Guidance period at all, so do not plan around a fixed number of days;
+        ask the counsellor how your file will be scheduled. Civil divorces skip this stage entirely (Article
+        15 of Abu Dhabi Law No. 14 of 2021 and Article 39 of the Regulation).
+      </p>
+    </section>
+
+    <!-- Civil Family Court -->
+    <section class="section" aria-labelledby="cfc-heading">
+      <h2 id="cfc-heading">The Abu Dhabi Civil Family Court: Who Can Use It and What It Does</h2>
+      <p>
+        The Abu Dhabi Civil Family Court is ADJD&rsquo;s specialised court for the family matters of
+        non-Muslims and qualifying foreigners, created under Article 17 of Abu Dhabi Law No. 14 of 2021. A
+        single judge sits, who may be a non-Muslim, and all forms and proceedings are bilingual in Arabic
+        and English. ADJD places it in the main court building next to Zayed Sports City.
+      </p>
+      <ul class="checklist">
+        <li><strong>Civil marriage</strong> for residents and visitors, with an optional marriage agreement notarised by the court.</li>
+        <li><strong>No-fault divorce and its effects:</strong> alimony, child support, lump-sum compensation and housing during joint custody (Articles 15 to 20 of the Regulation).</li>
+        <li><strong>Interim orders:</strong> provisional alimony, travel bans, seizure of funds, child travel, birth certificates and proof of parentage (Article 3(2)).</li>
+        <li><strong>Joint custody disputes,</strong> decided on the child&rsquo;s best interests (Article 3(4)).</li>
+        <li><strong>Civil wills and inheritance</strong> where the assets are in the UAE, including estate administration (Articles 3(3) and 3(5)).</li>
+        <li><strong>Family arbitration</strong> by one arbitrator or a panel of three from ADJD&rsquo;s registered roll, if both spouses agree (Article 52).</li>
+      </ul>
+      <p>
+        ADJD&rsquo;s court page says a civil divorce is open to Abu Dhabi residents and anyone married at the
+        court, and that the parties must be from a country not governed by Sharia law; Arab League nationals
+        may be asked for official proof of religion. The legal test is in Articles 4 and 5 of the Regulation.
+      </p>
+
+      <h3>How a civil divorce runs at the court</h3>
+      <ol class="steps">
+        <li>
+          <h3>Application at a typing centre</h3>
+          <p>The bilingual form goes in at an Abu Dhabi typing centre with copies of the marriage certificate (English and Arabic), passport and Emirates ID, filed by you or a special representative (Article 13(1)).</p>
+        </li>
+        <li>
+          <h3>Fee and review</h3>
+          <p>You pay AED 5,000 and the court checks the application, especially jurisdiction (Article 13).</p>
+        </li>
+        <li>
+          <h3>Notice and case management</h3>
+          <p>The other spouse is notified by SMS, and both of you or your representatives must attend a case management session.</p>
+        </li>
+        <li>
+          <h3>Hearing date and defence</h3>
+          <p>The hearing is set at least 30 days after approval, and any defence is due 10 working days before it (Article 14).</p>
+        </li>
+        <li>
+          <h3>Divorce at the first hearing</h3>
+          <p>The judge grants it once the applicant attends and confirms the wish to divorce, with no reason needed (Articles 12 and 14(6)). Joint custody goes into the ruling automatically (Article 26).</p>
+        </li>
+      </ol>
+      <p>
+        Money claims follow on a separate post-divorce application for a financial order. The court says it
+        aims to finish a divorce within one month of registration; treat that as a target, since the 30-day
+        minimum and any jurisdiction objection shape the real timeline.
+      </p>
+      <p>
+        Under Article 44 of the Regulation the judge may run the whole case in English if neither party
+        speaks Arabic, though the claim form and judgment are issued in both languages. Expats need not
+        translate English documents into Arabic, and ADJD&rsquo;s translation section charges a service fee if
+        you ask it to. You may appear in person or appoint a lawyer, and foreign lawyers may act here once
+        licensed on ADJD&rsquo;s Roll of Foreign Lawyers (Article 45).
+      </p>
+
+      <h3>Civil Family Court or &ldquo;civil court&rdquo;?</h3>
+      <p>
+        &ldquo;Civil court Abu Dhabi&rdquo; can also mean ADJD&rsquo;s ordinary civil chambers for money
+        claims. A December 2020 ADJD decision, reported by Gulf News and Khaleej Times, grouped personal
+        status, civil, administrative and rental claims into an Abu Dhabi Court for Family, Civil and
+        Administrative Matters. For divorce, custody or alimony, the two family tracks above are what
+        matter.
+      </p>
+    </section>
+
+    <!-- Fees -->
+    <section class="section" aria-labelledby="fees-heading">
+      <h2 id="fees-heading">What the Abu Dhabi Family Courts Charge: Official Fees</h2>
+      <p>
+        ADJD publishes fixed family fees for the civil track and for interim orders; for other files you see
+        the fee when you register. Its FAQ says cases follow the Abu Dhabi Judicial Fees Law and that
+        alimony cases and Family Guidance files are exempt.
+      </p>
+      <div class="cost-table">
+        <table>
+          <thead>
+            <tr><th>Item</th><th>Fee</th><th>Source</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Civil no-fault divorce application</td><td>AED 5,000</td><td>Article 13, 2022 Regulation</td></tr>
+            <tr><td>Civil marriage, standard or express</td><td>AED 300 or AED 2,500</td><td>ADJD Civil Family Court page</td></tr>
+            <tr><td>Notarising a marriage (pre-nuptial) agreement</td><td>AED 950</td><td>ADJD Civil Family Court page</td></tr>
+            <tr><td>Civil will registration, regular or special</td><td>AED 950 or AED 2,500</td><td>ADJD Civil Family Court page</td></tr>
+            <tr><td>Interim order, Personal Status Division</td><td>AED 100 (alimony requests exempt)</td><td>ADJD FAQ</td></tr>
+            <tr><td>General interim order</td><td>AED 300</td><td>ADJD FAQ</td></tr>
+            <tr><td>Travel ban order</td><td>AED 400</td><td>ADJD FAQ</td></tr>
+            <tr><td>Protective seizure order</td><td>AED 750 to 75,000</td><td>ADJD FAQ</td></tr>
+            <tr><td>Alimony cases and Family Guidance files</td><td>Exempt</td><td>ADJD FAQ</td></tr>
+            <tr><td>Interpreter at a video hearing</td><td>AED 100 per hour</td><td>ADJD FAQ</td></tr>
+          </tbody>
+        </table>
+        <p class="table-note">
+          As published by ADJD in October 2026. Other Civil Family Court transactions use the ordinary
+          personal status fees (Article 51 of the Regulation). Lawyer, typing and translation fees are extra.
+        </p>
+      </div>
+    </section>
+
+    <!-- Locations and hours -->
+    <section class="section" aria-labelledby="where-heading">
+      <h2 id="where-heading">Where the Abu Dhabi Courts Are, and Opening Hours</h2>
+      <p>
+        ADJD&rsquo;s head office is at 16 Al Nofal Street, Al Rawda, Abu Dhabi, with further courts in the
+        Al Ain and Al Dhafra regions. Its contact page lists customer reception from 8:00am to 2:20pm on
+        weekdays; courts close at weekends and on public holidays. Hours change (Ramadan included), so call
+        600 599 799 before you go.
+      </p>
+      <div class="cost-table">
+        <table>
+          <thead>
+            <tr><th>Place</th><th>Address</th><th>Hours as published</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ADJD head office</td>
+              <td>16 Al Nofal Street, Al Rawda, Abu Dhabi, PO Box 84</td>
+              <td>Not shown on the public contact page; call 600 599 799</td>
+            </tr>
+            <tr>
+              <td>Customer service centre, Abu Dhabi</td>
+              <td>Al Khaleej Al Arabi Street, Al Rawda</td>
+              <td>Weekdays 8:00am to 2:20pm; Friday from 8:00am (the closing time looks misprinted)</td>
+            </tr>
+            <tr>
+              <td>Customer service centre, Al Ain</td>
+              <td>Courts Street, Al Jimi, Al Ain</td>
+              <td>Weekdays 8:00am to 2:30pm; Friday from 8:00am</td>
+            </tr>
+            <tr>
+              <td>Abu Dhabi Civil Family Court</td>
+              <td>ADJD main court building, next to Zayed Sports City</td>
+              <td>Marriage ceremonies Monday to Thursday 9:00am to 1:30pm, Friday 9:00am to 11:00am</td>
+            </tr>
+            <tr>
+              <td>Family Guidance</td>
+              <td>Abu Dhabi city, Al Ain and Al Dhafra</td>
+              <td>Sessions by video</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">
+          From ADJD&rsquo;s Contact Us, Civil Family Court and FAQ pages, October 2026. Hours change,
+          especially in Ramadan, so call first.
+        </p>
+      </div>
+      <p>
+        ADJD&rsquo;s Branches page also lists Al Rahba, Baniyas and Al Wathba courts in the Abu Dhabi region;
+        the Al Ain Courts and Prosecutions, a Judicial Services building and an Al Wagan court in the Al Ain
+        region; and the Al Dhafra Court and Prosecution, Al Ruwais, Al Sila, Dalma and Al Mirfa courts in Al
+        Dhafra. Residents of every region register through the website, a licensed law firm or a typing
+        centre, and the hearing notice says how to attend.
+      </p>
+      <ul class="checklist">
+        <li><strong>ADJD:</strong> +971 2 651 2222; call centre and WhatsApp 600 599 799; info@adjd.gov.ae.</li>
+        <li><strong>Civil Family Court:</strong> civilfamilycourt@adjd.gov.ae, telephone 02 651 3257 or 02 651 4009.</li>
+      </ul>
+      <p>
+        ADJD&rsquo;s INJAZ centres handle case inquiry, collecting non-criminal judgments, and typing and
+        filing cases. Several sit in shopping centres such as Marina Mall, Al Mushrif Mall, Deerfields Mall
+        and Al Ain City Centre, and there is one in Musaffah. Their published hours still show a Sunday to
+        Thursday week, which predates the UAE&rsquo;s 2022 weekend change, so phone before going. For
+        hearings you rarely need to travel: ADJD says most are held by video.
+      </p>
+    </section>
+
+    <!-- Case status -->
+    <section class="section" aria-labelledby="status-heading">
+      <h2 id="status-heading">How to Check Your Case Status at ADJD</h2>
+      <p>
+        To check an Abu Dhabi case, sign in to the ADJD website or app with UAE PASS and open the case inquiry
+        service. ADJD&rsquo;s Smart Apps page says the app shows your case files, their status before the
+        courts and prosecution, the requests filed in them and your upcoming appointments.
+      </p>
+      <ol class="steps">
+        <li>
+          <h3>Sign in with UAE PASS</h3>
+          <p>On Apple&rsquo;s App Store the app is listed as AD Judicial, published by the Abu Dhabi Judicial Department; ADJD&rsquo;s site links to both app stores.</p>
+        </li>
+        <li>
+          <h3>Link the case if it is missing</h3>
+          <p>Use the &ldquo;Link Cases to MY UAE Pass Account&rdquo; service, which is for individuals. Lawyers use the Attorney and Legal Representative service.</p>
+        </li>
+        <li>
+          <h3>Read the file</h3>
+          <p>Status, requests, hearing dates and decisions, plus deposits and disbursements, which matters if alimony is paid through the court.</p>
+        </li>
+        <li>
+          <h3>Watch your SMS and email</h3>
+          <p>ADJD sends notices and decisions through approved channels, and the Civil Family Court notifies parties by SMS.</p>
+        </li>
+      </ol>
+      <p>
+        ADJD says a decision is usually announced at the end of the video session, and you can read it
+        through the file viewing subscription, an official SMS or email, or case inquiry. For travel bans and
+        pending claims, ADJD runs an inquiry service called Estafser on its website and app. Dubai Courts and
+        the federal courts run their own systems, so a case filed there is checked through their services.
+        If a judgment is too unclear to enforce, ADJD lets you file a request for judgment interpretation
+        through a licensed law firm or certain registered typing offices.
+      </p>
+    </section>
+
+    <!-- Appeals -->
+    <section class="section" aria-labelledby="appeal-heading">
+      <h2 id="appeal-heading">Appeals, Objections and When a Judgment Is Final</h2>
+      <p>
+        On the Muslim track you have 30 days to appeal; on the civil track, alimony and money judgments under
+        AED 500,000 cannot be appealed on the merits at all. Diary the right deadline the day you receive a
+        decision.
+      </p>
+      <div class="cost-table">
+        <table>
+          <thead>
+            <tr><th>Decision</th><th>Deadline or rule</th><th>Source</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Personal Status Court judgment</td>
+              <td>30 days for appeal and for cassation</td>
+              <td>Articles 9 and 10, Decree-Law 41/2024</td>
+            </tr>
+            <tr>
+              <td>Court permit (order on petition)</td>
+              <td>Appeal within one week</td>
+              <td>Article 6, Decree-Law 41/2024</td>
+            </tr>
+            <tr>
+              <td>Approved Family Guidance agreement</td>
+              <td>Not appealable unless it contradicts the law</td>
+              <td>Article 8(2), Decree-Law 41/2024</td>
+            </tr>
+            <tr>
+              <td>Interim order, such as a travel ban or temporary alimony</td>
+              <td>Objection usually within 7 days of notification</td>
+              <td>ADJD FAQ; Article 22 of the Regulation for provisional alimony</td>
+            </tr>
+            <tr>
+              <td>Civil Family Court alimony or money judgment below AED 500,000</td>
+              <td>Final on issue; challengeable only for breach of jurisdiction rules, or a void judgment or invalid procedure</td>
+              <td>Articles 49 and 50, 2022 Regulation</td>
+            </tr>
+            <tr>
+              <td>Other Civil Family Court judgments</td>
+              <td>Court of Appeal, then Cassation, under the general rules</td>
+              <td>Article 18, Law 14/2021; ADJD FAQ</td>
+            </tr>
+            <tr>
+              <td>Any final judgment</td>
+              <td>Petition for reconsideration only on narrow grounds such as fraud or forged documents</td>
+              <td>ADJD FAQ</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="table-note">
+          The Regulation sets no special deadline for other civil judgments, so confirm it with a lawyer
+          immediately. More in our <a href="/en/divorce-appeal-uae/">divorce appeal guide</a>.
+        </p>
+      </div>
+      <p>
+        Enforcement is quick on both tracks. Civil Family Court judgments carry immediate enforcement
+        (Article 47 of the Regulation) and can order a bank to deduct the amount once 7 working days have
+        passed from notification (Article 48). On the Muslim track, temporary alimony is enforceable by force
+        of law (Article 100), and judgments are enforced through an enforcement file with ADJD. Visitation
+        orders issued in the emirate are scheduled automatically at ADJD&rsquo;s child visitation sites. How
+        custody works on both tracks is in our guide to
+        <a href="/en/child-custody-abu-dhabi/">child custody in Abu Dhabi</a>.
+      </p>
+    </section>
+
+    <!-- What the courts cannot do -->
+    <section class="section" aria-labelledby="limits-heading">
+      <h2 id="limits-heading">What Abu Dhabi&rsquo;s Family Courts Cannot Do for You</h2>
+      <p>These limits cause most wasted filings.</p>
+      <ul class="checklist">
+        <li><strong>ADGM is not the family court.</strong> The ADGM Courts serve the Abu Dhabi Global Market financial free zone and cannot grant a divorce, nor can the DIFC Courts in Dubai. See <a href="/en/adgm-divorce-abu-dhabi/">why ADGM courts cannot divorce you</a>.</li>
+        <li><strong>No Abu Dhabi link, no civil case.</strong> Without a residence, workplace, property or civil marriage connection, the Civil Family Court must decline (Article 4 of the Regulation).</li>
+        <li><strong>No automatic 50/50 split.</strong> The civil judge weighs listed factors (Article 16) and may be guided by no less than 25% of the husband&rsquo;s last monthly income multiplied by the years of marriage (Article 18), adjustable either way.</li>
+        <li><strong>No legal advice at the counter.</strong> Typing centres file forms; legal advice is reserved for licensed lawyers (Article 6 of Federal Decree-Law No. 34 of 2022).</li>
+      </ul>
+    </section>
+
+    <!-- Lawyer -->
+    <section class="section" aria-labelledby="lawyer-heading">
+      <h2 id="lawyer-heading">When a Lawyer Helps at the Abu Dhabi Family Courts</h2>
+      <p>
+        You can run a family case in Abu Dhabi without a lawyer. On the civil track you may appear in person
+        (Article 45 of the Regulation), and Article 8 of Federal Decree-Law No. 34 of 2022 lets a spouse,
+        in-law or blood relative up to the fourth degree appear for you. Otherwise representation is reserved
+        to lawyers on the Roll of Practising Lawyers (Article 6), and non-national lawyers are excluded from
+        family and Muslim personal status proceedings (Article 10), the Civil Family Court&rsquo;s Roll of
+        Foreign Lawyers being the exception. Help tends to pay for itself when:
+      </p>
+      <ul class="checklist">
+        <li>Jurisdiction is in doubt, such as a Muslim expat couple at the Civil Family Court.</li>
+        <li>Money claims sit near or above AED 500,000, where finality under Article 49 cuts both ways.</li>
+        <li>A parent asks to remove the other from joint custody (Articles 32 and 33 of the Regulation).</li>
+        <li>Pleadings must be in Arabic, or an appeal deadline is running.</li>
+      </ul>
+      <p>
+        If you decide to hire someone, our page on
+        <a href="/en/divorce-lawyer-abu-dhabi/">divorce lawyers in Abu Dhabi</a> covers what to check and
+        what it costs.
+      </p>
+      <div class="cta-inline">
+        <p>Unsure which Abu Dhabi court your case belongs in?</p>
+        <a href="#contact" class="btn btn--primary">Ask for a Free Consultation</a>
+      </div>
+    </section>
+
+    <!-- Related -->
+    <section class="section" aria-labelledby="related-heading">
+      <h2 id="related-heading">Related Guides</h2>
+      <div class="service-links">
+        <a href="/en/family-guidance-section-uae/" class="service-link">
+          <strong>Family Guidance</strong>
+          <span>The reconciliation stage on the Muslim track</span>
+        </a>
+        <a href="/en/alimony-abu-dhabi/" class="service-link">
+          <strong>Alimony in Abu Dhabi</strong>
+          <span>Spousal and temporary maintenance on both tracks</span>
+        </a>
+        <a href="/en/divorce-lawyer-al-ain/" class="service-link">
+          <strong>Divorce in Al Ain</strong>
+          <span>Courts and process for Al Ain residents</span>
+        </a>
+        <a href="/en/online-divorce-uae/" class="service-link">
+          <strong>Online Divorce in the UAE</strong>
+          <span>Filing, attending and tracking a case remotely</span>
+        </a>
+        <a href="/en/family-court-dubai/" class="service-link">
+          <strong>Family Court Dubai</strong>
+          <span>How the Dubai Personal Status Court works</span>
+        </a>
+        <a href="/en/non-muslim-divorce-uae/" class="service-link">
+          <strong>Non-Muslim Divorce</strong>
+          <span>The civil track across all emirates</span>
+        </a>
+      </div>
+    </section>
+
+    <FAQSection items={faqItems} lang="en" />
+
+    <section class="section section--cta" aria-labelledby="bottom-cta-heading" id="contact">
+      <h2 id="bottom-cta-heading">Questions About Your Abu Dhabi Court Case?</h2>
+      <p>Request a free, confidential consultation with a UAE-licensed family lawyer, in English or Arabic, to check which court you belong in and what to expect there. If the answer is that you can handle it yourself, that is a perfectly good outcome.</p>
+      <LeadForm lang="en" variant="inline" />
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>&copy; 2026 DivorceU.AE, a legal referral service. Not a law firm. Information provided is for guidance only and does not constitute legal advice.</p>
+      <nav aria-label="Footer navigation">
+        <a href="/en/privacy-policy/">Privacy Policy</a>
+        <a href="/en/disclaimer/">Disclaimer</a>
+        <a href="/ar/">العربية</a>
+      </nav>
+    </div>
+  </footer>
+</BaseLayout>
+
+<style>
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+  .hero { background: linear-gradient(135deg, #1e3a5f 0%, #2563eb 100%); color: #fff; padding: 80px 0 60px; }
+  .hero__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+  .hero__h1 { font-size: clamp(1.8rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+  .byline { font-size: 0.85rem; opacity: 0.8; margin-bottom: 20px; }
+  .hero__sub { font-size: 1.05rem; opacity: 0.9; margin-bottom: 24px; line-height: 1.7; }
+  .hero__sub a { color: #fff; text-decoration: underline; }
+  .hero__trust { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 0.9rem; }
+  .hero__trust li { opacity: 0.9; }
+
+  .section { padding: 60px 0; border-bottom: 1px solid #f3f4f6; }
+  .section h2 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 700; color: #1e3a5f; margin-bottom: 20px; }
+  .section h3 { font-size: 1.1rem; font-weight: 700; color: #1e3a5f; margin: 24px 0 10px; }
+  .section p { color: #374151; line-height: 1.8; margin-bottom: 16px; }
+  .section p a { color: #2563eb; text-decoration: none; font-weight: 600; }
+  .section p a:hover { text-decoration: underline; }
+  .section--cta { border-bottom: none; background: #f0f4ff; border-radius: 16px; padding: 60px 40px; margin-bottom: 60px; text-align: center; }
+
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; margin-top: 24px; }
+  .stat-card { background: #f8faff; border: 2px solid #2563eb; border-radius: 12px; padding: 24px 20px; text-align: center; }
+  .stat-num { display: block; font-size: 2rem; font-weight: 800; color: #2563eb; }
+  .stat-label { font-size: 0.875rem; color: #374151; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 24px; margin-bottom: 8px; }
+  .info-box { padding: 24px; border-radius: 12px; }
+  .info-box--blue { background: #eff6ff; border: 2px solid #2563eb; }
+  .info-box--gold { background: #fffbeb; border: 2px solid #c9a84c; }
+  .info-box h3 { font-size: 1rem; font-weight: 700; color: #1e3a5f; margin: 0 0 8px; }
+  .info-box p { font-size: 0.9rem; color: #374151; margin: 0; }
+  .info-box p a { color: #2563eb; text-decoration: none; font-weight: 600; }
+  .info-box p a:hover { text-decoration: underline; }
+
+  .steps { list-style: none; counter-reset: steps; display: flex; flex-direction: column; gap: 20px; margin-top: 24px; }
+  .steps li { counter-increment: steps; padding: 20px 20px 20px 68px; position: relative; background: #f8faff; border-radius: 12px; border-left: 4px solid #2563eb; }
+  .steps li::before { content: counter(steps); position: absolute; left: 18px; top: 20px; width: 32px; height: 32px; background: #2563eb; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.9rem; }
+  .steps li h3 { font-size: 0.95rem; font-weight: 700; color: #1e3a5f; margin: 0 0 6px; }
+  .steps li p { font-size: 0.875rem; color: #374151; margin: 0; }
+  .steps li p a { color: #2563eb; text-decoration: none; font-weight: 600; }
+  .steps li p a:hover { text-decoration: underline; }
+
+  .checklist { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-top: 24px; margin-bottom: 24px; }
+  .checklist li { position: relative; padding: 14px 18px 14px 48px; background: #f8faff; border-radius: 10px; border-left: 4px solid #c9a84c; color: #374151; font-size: 0.9rem; line-height: 1.6; }
+  .checklist li::before { content: "✓"; position: absolute; left: 16px; top: 13px; width: 22px; height: 22px; background: #c9a84c; color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8rem; }
+
+  .cost-table { margin-top: 24px; margin-bottom: 16px; overflow-x: auto; }
+  .cost-table table { width: 100%; border-collapse: collapse; font-size: 0.875rem; }
+  .cost-table th { background: #1e3a5f; color: #fff; padding: 12px 16px; text-align: left; }
+  .cost-table td { padding: 10px 16px; border-bottom: 1px solid #e5e7eb; color: #374151; vertical-align: top; }
+  .cost-table td a { color: #2563eb; text-decoration: none; font-weight: 600; }
+  .cost-table td a:hover { text-decoration: underline; }
+  .cost-table tr:nth-child(even) td { background: #f8faff; }
+  .table-note { font-size: 0.8rem; color: #6b7280; margin: 10px 0 0; }
+  .table-note a { color: #4b5563; text-decoration: underline; font-weight: 600; }
+
+  .verdict { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; white-space: nowrap; }
+  .verdict--ok { background: #dcfce7; color: #166534; }
+  .verdict--rec { background: #fef3c7; color: #92400e; }
+  .verdict--ess { background: #fee2e2; color: #991b1b; }
+
+  .cta-inline { display: flex; align-items: center; gap: 20px; margin-top: 28px; flex-wrap: wrap; }
+  .cta-inline p { margin: 0; font-weight: 600; }
+  .btn--primary { display: inline-block; padding: 12px 28px; background: #c9a84c; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 700; transition: background 0.2s; }
+  .btn--primary:hover { background: #b8942d; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 24px; }
+  .card { padding: 24px; background: #f8faff; border: 1.5px solid #e5e7eb; border-radius: 12px; }
+  .card h3 { font-size: 0.95rem; font-weight: 700; color: #1e3a5f; margin: 0 0 8px; }
+  .card p { font-size: 0.875rem; color: #4b5563; margin: 0; }
+  .card p a { color: #2563eb; text-decoration: none; font-weight: 600; }
+  .card p a:hover { text-decoration: underline; }
+
+  .service-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 24px; }
+  .service-link { display: flex; flex-direction: column; gap: 4px; padding: 20px; background: #fff; border: 1.5px solid #e5e7eb; border-radius: 10px; text-decoration: none; transition: border-color 0.2s; }
+  .service-link:hover { border-color: #2563eb; }
+  .service-link strong { color: #1e3a5f; }
+  .service-link span { color: #6b7280; font-size: 0.875rem; }
+
+  .footer { background: #1e3a5f; color: rgba(255,255,255,0.7); padding: 40px 0; }
+  .footer__inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+  .footer p { font-size: 0.85rem; margin: 0; }
+  .footer nav { display: flex; gap: 20px; }
+  .footer nav a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.85rem; }
+  .footer nav a:hover { color: #fff; }
+  .main-content { padding-top: 20px; }
+
+  @media (max-width: 768px) {
+    .hero__inner { grid-template-columns: 1fr; gap: 40px; }
+    .hero { padding: 50px 0 40px; }
+    .two-col { grid-template-columns: 1fr; }
+    .section--cta { padding: 40px 24px; }
+    .footer__inner { flex-direction: column; text-align: center; }
+  }
+</style>
