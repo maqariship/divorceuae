@@ -64,6 +64,13 @@ export const SOURCES: Record<string, Source> = {
     url: 'https://uaelegislation.gov.ae/en/legislations/2301',
     urlAr: 'https://uaelegislation.gov.ae/ar/legislations/2301',
   },
+  'dubai-law-21-2015': {
+    title: 'Dubai Law No. (21) of 2015 Concerning Judicial Fees of the Dubai Courts',
+    titleAr: 'قانون دبي رقم (21) لسنة 2015 بشأن الرسوم القضائية في محاكم دبي (بالإنجليزية)',
+    publisher: 'Dubai Legislation Portal, Government of Dubai',
+    publisherAr: 'بوابة تشريعات دبي، حكومة دبي',
+    url: 'https://dlp.dubai.gov.ae/Legislation%20Reference/2015/Law%20No.%20(21)%20of%202015%20Concerning%20Judicial%20Fees%20of%20the%20Dubai%20Courts.html',
+  },
   'law-34-2022': {
     title: 'Federal Decree-Law No. 34 of 2022 Regulating the Legal Profession and Legal Consultation Profession',
     titleAr: 'مرسوم بقانون اتحادي رقم 34 لسنة 2022 بشأن تنظيم مهنتي المحاماة والاستشارات القانونية',
@@ -163,6 +170,7 @@ export const TRIGGERS: Array<[string, RegExp[]]> = [
   ['adjd-civil-family-court', [/civil family court/, /الأسرة المدنية/]],
   ['dv-law-13-2024', [/\b13 of 2024\b/, /13 لسنة 2024/, /domestic violence/, /العنف الأسري/, /(?<![\d٠-٩])١٣ لسنة ٢٠٢٤/]],
   ['cabinet-122-2023', [/\b122 of 2023\b/, /(?<![\d٠-٩])122 لسنة 2023/, /(?<![\d٠-٩])١٢٢ لسنة ٢٠٢٣/]],
+  ['dubai-law-21-2015', [/\b21 of 2015\b/, /(?<![\d٠-٩])21 لسنة 2015/, /(?<![\d٠-٩])٢١ لسنة ٢٠١٥/]],
   ['law-34-2022', [/\b34 of 2022\b/, /(?<![\d٠-٩])34 لسنة 2022/, /(?<![\d٠-٩])٣٤ لسنة ٢٠٢٢/]],
   ['law-31-2021', [/\b31 of 2021\b/, /(?<![\d٠-٩])31 لسنة 2021/, /(?<![\d٠-٩])٣١ لسنة ٢٠٢١/]],
   ['law-42-2022', [/\b42 of 2022\b/, /\b42 2022\b/, /42 لسنة 2022/, /(?<![\d٠-٩])٤٢ لسنة ٢٠٢٢/]],
