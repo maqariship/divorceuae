@@ -4,9 +4,9 @@ import LeadForm from '../../components/ui/LeadForm.astro';
 import FAQSection from '../../components/ui/FAQSection.astro';
 import Breadcrumb from '../../components/seo/Breadcrumb.astro';
 
-const title = 'Family Court Dubai: Complete Guide to the Personal Status Court (2026)';
+const title = 'Personal Status Court Dubai (Family Court): Location, Hours';
 const description =
-  'Dubai does not have a "family court." It has the Personal Status Court. Where it is located, how to file, which court Muslims and non-Muslims use, and the Family Guidance Section explained.';
+  'Where Dubai’s Personal Status Court (the family court) is, opening hours, phone and WhatsApp, what it handles and how to file a case, per Dubai Courts.';
 
 const canonical = 'https://divorceu.ae/en/family-court-dubai/';
 
@@ -17,198 +17,59 @@ const hreflang = {
 
 const breadcrumbItems = [
   { name: 'Home', url: 'https://divorceu.ae/en/' },
-  { name: 'Family Court Dubai' },
+  { name: 'Personal Status Court Dubai' },
 ];
-
-const faqSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: 'Where is the family court in Dubai?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Dubai does not have a court called "family court." The correct name is Dubai Personal Status Court (محكمة الأحوال الشخصية). It is located within the Dubai Courts complex on Umm Hurair Road in Bur Dubai. The Personal Status Court is a separate division from the civil and criminal courts in the same complex.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How long does divorce take in Dubai family court?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Uncontested divorce at Dubai Personal Status Court typically takes 3 to 6 months from filing to decree. Contested divorce, where custody, finances, or assets are disputed, takes 12 to 24 months. Non-Muslim expats filing under Federal Decree-Law 41/2022 can sometimes complete proceedings in 1 to 4 months.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the Family Guidance Section in Dubai?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'The Family Guidance Section (دائرة الإرشاد والتوافق الأسري) is the counselling service where most Muslim divorce cases at Dubai Personal Status Court start. Under Federal Decree-Law No. 41 of 2024 the judge decides whether to refer a case there (under the 2005 law it was mandatory before a case was accepted), and referred spouses attend up to three sessions with trained counsellors, usually over a few weeks. The goal is reconciliation. If reconciliation fails, the counsellor issues a certificate that allows the court filing to proceed.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do I need a lawyer in Dubai Personal Status Court?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'You are not legally required to have a lawyer, but it is strongly advisable. All court proceedings at Dubai Personal Status Court are conducted in Arabic. Without a lawyer, you risk missing procedural deadlines, failing to present evidence correctly, or inadvertently waiving financial and custody rights. Lawyer fees for uncontested cases start at around AED 5,000.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can I file for divorce online in Dubai?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Dubai Courts allows initial case registration via the Dubai Courts app and website. However, in-person attendance is still required for the Family Guidance Section sessions (for Muslims), hearings, and document submission. A fully online divorce procedure is not currently available.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'How much does it cost to file for divorce in Dubai court?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Filing fees at Dubai Personal Status Court are AED 200 to 400 for the petition, plus 2% of any financial claims (mahr, alimony, property). Document translation and attestation adds AED 500 to 2,000. Lawyer fees range from AED 5,000 for simple uncontested cases to AED 50,000 or more for complex contested proceedings.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What documents do I need for Dubai family court?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Required documents include: original marriage certificate (attested and translated into Arabic), passports and Emirates IDs for both spouses, children\'s birth certificates if custody is involved, salary certificate, bank statements, and proof of residency. All foreign documents must be officially translated by a Ministry of Justice-approved translator.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What is the difference between Dubai and Abu Dhabi family court?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Both use Personal Status Courts, but Abu Dhabi has a dedicated Civil Family Court for non-Muslim expats under Abu Dhabi Law No. 14/2021, which can process cases in 1 to 4 weeks. Dubai\'s backlog is generally longer: 3 to 6 months for uncontested cases. Non-Muslims in Dubai file at the Personal Status Court under FL 41/2022; the DIFC Courts do not hear divorce cases.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can non-Muslims use Dubai Personal Status Court?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes. Since Federal Decree-Law 41/2022 came into force, non-Muslims in Dubai can file at the Personal Status Court using civil law principles: no Islamic law applies, no mahr, asset division based on the contributions of each spouse (no automatic 50/50 split), joint custody as default. For English-language no-fault proceedings, the Abu Dhabi Civil Family Court under Abu Dhabi Law No. 14 of 2021 is the venue; the DIFC Courts do not hear divorce cases.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What happens at the first family court hearing in Dubai?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'At the first hearing, the judge confirms both parties have been served, reviews the documents filed, and may ask preliminary questions about the grounds for divorce and any interim orders needed (such as child custody or travel bans). The judge will then schedule the next hearing, typically 4 to 8 weeks later, for substantive arguments.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Is there a 60-day reconciliation period under the 2024 law?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Not for Family Guidance. Under Federal Decree-Law 41/2024, in force since 15 April 2025, the judge decides whether to refer a Muslim case to Family Guidance (it was mandatory under the 2005 law), and there is no statutory time limit for that stage; sessions usually take a few weeks. The 60 days applies to arbitration: in contested divorces for harm or discord, the two arbitrators appointed by the court have up to 60 days from their appointment, down from 90 under the old law.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Can I attend a Dubai family court hearing remotely?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Dubai Courts offers virtual hearing options for some non-evidentiary sessions through its smart services. This can help if you or your spouse are abroad. Evidence hearings, original document verification, and collection of the final decree still generally require in-person attendance, or a lawyer holding a notarised Power of Attorney.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do I need UAE Pass to file a personal status case online in Dubai?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Yes, in practice. A verified UAE Pass digital identity links your Emirates ID to the Dubai Courts platform and the Dubai Now app. Without it, most smart services remain read-only. Once verified, you can register a case, pay fees, upload translated documents, and track hearing dates.',
-      },
-    },
-    {
-      '@type': 'Question',
-      name: 'What should I bring on my first day at Dubai Personal Status Court?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'Bring your passport and Emirates ID with copies, the attested Arabic-translated marriage certificate, any children\'s documents, your non-reconciliation certificate if you are a Muslim applicant, your online filing reference if you pre-registered, and a folder of financial papers. Arrive early, dress modestly, and arrange a translator if you are unrepresented, since proceedings are in Arabic.',
-      },
-    },
-  ],
-};
 
 const faqItems = [
   {
-    question: 'Where is the family court in Dubai?',
+    question: 'Where is the Personal Status Court in Dubai?',
     answer:
-      'Dubai does not have a court called "family court." The correct institution is <strong>Dubai Personal Status Court</strong> (محكمة الأحوال الشخصية), located within the Dubai Courts complex on Umm Hurair Road, Bur Dubai.',
+      'Dubai Courts lists the Personal Status Court and the Inheritance Court at <strong>Deira, Al Garhoud Area, Street 5, next to the RTA main building</strong> (Makani 3427491952). This is not the main Dubai Courts building in Umm Hurair 2, Bur Dubai, which many older guides give as the family court address. Check the address on your hearing notice before you go.',
   },
   {
-    question: 'How long does divorce take in Dubai family court?',
+    question: 'What are the opening hours of the Dubai Personal Status Court?',
     answer:
-      'Uncontested divorce: <strong>3 to 6 months</strong>. Contested divorce: 12 to 24 months. Non-Muslim expats under FL 41/2022 can sometimes complete proceedings in 1 to 4 months.',
+      'Dubai Courts lists <strong>Monday to Thursday, 8:00am to 3:00pm, and Friday, 8:00am to 11:30am</strong>. The courts are closed at weekends and on public holidays. Hours can change, especially in Ramadan and around public holidays, so check with the call centre on +971 4 334 7777 before you go.',
   },
   {
-    question: 'What is the Family Guidance Section in Dubai?',
+    question: 'How do I contact Dubai Courts about a family case?',
     answer:
-      'The counselling service where most Muslim divorce cases start when the judge refers them (it was mandatory under the 2005 law). Up to three sessions with trained counsellors, usually over a few weeks. If reconciliation fails, a non-reconciliation certificate allows the court case to proceed.',
+      'Call or WhatsApp the Dubai Courts call centre on <strong>+971 4 334 7777</strong>, email info@dc.gov.ae, or use the instant chat on the Dubai Courts website. For in-person help registering a case or paying a fee, the Al Adheed service centres answer on 600 523 433. Divorce UAE is a separate referral service and cannot see or update your court file.',
   },
   {
-    question: 'Do I need a lawyer in Dubai Personal Status Court?',
+    question: 'Do I have to go through Family Guidance before filing in Dubai?',
     answer:
-      'Not legally required, but strongly advisable. All proceedings are in Arabic. Without a lawyer you risk missing deadlines and waiving rights. Fees start at around AED 5,000 for uncontested cases.',
+      'Not automatically. Under Article 8 of Federal Decree-Law No. 41 of 2024 the supervising judge <strong>may</strong> refer the spouses to Family Guidance if a settlement seems feasible. Wills, inheritance, urgent and temporary orders (such as alimony or custody) and cases to prove a marriage or a divorce are exempt, and non-Muslim divorces under Federal Decree-Law No. 41 of 2022 are never referred (Article 3). The law sets no fixed Family Guidance period; the 60 days often quoted is the limit for court-appointed arbitrators in contested discord cases (Article 72).',
   },
   {
-    question: 'Can I file for divorce online in Dubai?',
+    question: 'How much does it cost to file a case at Dubai Personal Status Court?',
     answer:
-      'Initial case registration is available via the Dubai Courts app. In-person attendance is still required for counselling sessions, hearings, and document submission.',
-  },
-  {
-    question: 'How much does it cost to file for divorce in Dubai court?',
-    answer:
-      '<strong>Filing fees: AED 200 to 400</strong> plus 2% of financial claims. Translation and attestation: AED 500 to 2,000. Lawyer fees: AED 5,000 to 50,000+ depending on complexity.',
-  },
-  {
-    question: 'What documents do I need for Dubai family court?',
-    answer:
-      'Original marriage certificate (attested + Arabic translation), passports and Emirates IDs, children\'s birth certificates, salary certificate, bank statements, proof of residency. All foreign documents must be translated by a Ministry of Justice-approved translator.',
-  },
-  {
-    question: 'What is the difference between Dubai and Abu Dhabi family court?',
-    answer:
-      'Abu Dhabi has a dedicated Civil Family Court for non-Muslims, often processing cases in 1 to 4 weeks. Dubai\'s Personal Status Court has longer backlogs: 3 to 6 months uncontested. The DIFC Courts do not hear divorce cases, so non-Muslims in Dubai file at the Personal Status Court.',
+      'Under Dubai Law No. 21 of 2015 on Dubai Courts judicial fees, a personal status case costs <strong>AED 100 per application, capped at AED 2,000</strong>. An appeal costs AED 100 (alimony appeals are free), cassation AED 2,000, an order on petition such as a travel ban AED 100, and an enforcement file AED 50. Family Conciliation has no fee. Translation, legalisation and any lawyer’s fees come on top and vary. Confirm the fee when you register.',
   },
   {
     question: 'Can non-Muslims use Dubai Personal Status Court?',
     answer:
-      'Yes, under <strong>Federal Decree-Law 41/2022</strong>. Civil law applies: no Islamic provisions, equal asset division, joint custody default. For English-language no-fault proceedings, the Abu Dhabi Civil Family Court is the venue; the DIFC Courts do not hear divorce cases.',
+      'Yes. Non-Muslim UAE nationals and non-Muslim foreigners living in the UAE fall under <strong>Federal Decree-Law No. 41 of 2022</strong>, unless one spouse holds to the law of their home country (Article 1). Either spouse can ask for a divorce without proving harm (Articles 7 and 8), the case is not sent to Family Guidance (Article 3), and custody is a joint and equal right of both parents (Article 10). The law has no rule that splits property equally. The DIFC Courts have no family jurisdiction, so they cannot grant a divorce.',
   },
   {
-    question: 'What happens at the first family court hearing in Dubai?',
+    question: 'Can I file and attend a Dubai family case online?',
     answer:
-      'The judge confirms service, reviews filed documents, may address interim orders (custody, travel ban), and schedules the next hearing in 4 to 8 weeks for substantive arguments.',
+      'Largely, yes. Dubai Courts lists its website and the Al Adheed centres as channels for personal status claims, and individuals sign in with UAE PASS (check the current sign-in options on the Dubai Courts website).The Civil Procedure Code (Federal Decree-Law No. 42 of 2022) treats registration, service, hearings, judgments and appeals done wholly or partly remotely as valid (Article 330), and any party may ask at a hearing for the trial to be held in person (Article 333). The court decides how each step runs.',
   },
   {
-    question: 'Is there a 60-day reconciliation period under the 2024 law?',
+    question: 'What documents do I need for a case at Dubai Personal Status Court?',
     answer:
-      'Not for Family Guidance. Under Federal Decree-Law 41/2024 (in force since 15 April 2025) the judge decides whether to refer a Muslim case to Family Guidance, and there is no statutory time limit for that stage; sessions usually take a few weeks. The <strong>60 days</strong> applies to arbitration in contested harm cases: the two arbitrators the court appoints have up to 60 days from their appointment, down from 90 under the 2005 law.',
+      'Dubai Courts asks for the statement of claim and supporting documents as PDFs, with a legal Arabic translation of anything not in Arabic. Foreign documents, such as a marriage certificate issued abroad, must be legalised by the issuing country’s foreign ministry, then the UAE embassy in that country, then the UAE Ministry of Foreign Affairs. Most files include the marriage contract, Emirates IDs and passports, children’s birth certificates, and proof of income and expenses for money claims.',
   },
   {
-    question: 'Can I attend a Dubai family court hearing remotely?',
+    question: 'How long does a case at the Dubai family court take?',
     answer:
-      'Some non-evidentiary hearings can be attended by video through Dubai Courts smart services. Evidence hearings, original document checks, and decree collection still generally need in-person attendance or a lawyer with a notarised Power of Attorney.',
+      'Dubai Courts does not publish average durations, and the length depends on whether you agree, what is disputed and how quickly the other side is served. The law does fix some steps: the fee is due within 3 business days from the day after the payment notice and the defence within 10 business days of service (Articles 47 and 48 of the Civil Procedure Code), court arbitrators in contested discord cases have up to 60 days (Article 72 of the 2024 law), and a non-Muslim civil divorce is decided at the first hearing (Article 3 of the 2022 law).',
   },
   {
-    question: 'Do I need UAE Pass to file a personal status case online in Dubai?',
+    question: 'How long do I have to appeal a Dubai family court judgment?',
     answer:
-      'In practice, yes. A verified <strong>UAE Pass</strong> links your Emirates ID to the Dubai Courts platform. Without it, most smart services are read-only. With it, you can register a case, pay fees, upload translated documents, and track hearings.',
-  },
-  {
-    question: 'What should I bring on my first day at Dubai Personal Status Court?',
-    answer:
-      'Passport and Emirates ID plus copies, the attested Arabic-translated marriage certificate, children\'s documents, your non-reconciliation certificate (Muslim applicants), your online filing reference, and financial papers. Arrive early, dress modestly, and bring a translator if unrepresented.',
+      'Under the 2024 Personal Status Law the period is <strong>30 days</strong> for both appeal and cassation (Article 9), counted from the day after the judgment if you attended, or from the day after you were notified if you did not (Article 10). The appeal fee is AED 100 and alimony appeals are free. Non-Muslim civil cases have their own rules on what can be appealed, so check the deadline with a lawyer as soon as you receive the judgment.',
   },
 ];
 ---
@@ -220,7 +81,7 @@ const faqItems = [
   lang="en"
   dir="ltr"
   hreflang={hreflang}
-  schema={faqSchema}
+  lastmod="2026-11-13"
 >
   <main>
     <header class="hero">
@@ -228,20 +89,21 @@ const faqItems = [
         <div class="hero__content">
           <Breadcrumb items={breadcrumbItems} lang="en" />
           <h1 class="hero__h1">
-            Family Court Dubai:<br />
-            Your Complete Guide to the Personal Status Court
+            Dubai Personal Status Court (Family Court): Location, Hours and How to File
           </h1>
+          <p class="byline">By Aleksi Suon, UAE Expat &amp; Legal Consultant · Updated November 2026</p>
           <p class="hero__sub">
-            When people search for "family court Dubai," they mean the <strong>Dubai Personal Status Court</strong>
-            (محكمة الأحوال الشخصية). This guide explains exactly where it is, how the filing process works,
-            which court applies to Muslims and non-Muslims, and what to expect from the
-            Family Guidance Section if the judge refers your case there.
+            In Dubai, the "family court" is the <strong>Personal Status Court</strong>
+            (محكمة الأحوال الشخصية), part of Dubai Courts. It sits in Al Garhoud, Deira, not in the
+            main Dubai Courts building. Below: the address, hours and contact numbers as Dubai Courts
+            lists them, what the court handles for Muslims and non-Muslims, how to file, what to bring
+            and how appeals work.
           </p>
           <ul class="hero__trust">
-            <li>✓ Location &amp; court hierarchy</li>
+            <li>✓ Address and hours from Dubai Courts</li>
+            <li>✓ Fees from Dubai Law No. 21 of 2015</li>
             <li>✓ Muslim &amp; non-Muslim tracks</li>
-            <li>✓ Family Guidance Section explained</li>
-            <li>✓ Why the DIFC Courts cannot grant a divorce</li>
+            <li>✓ Article numbers you can check</li>
           </ul>
         </div>
         <div class="hero__form">
@@ -252,27 +114,127 @@ const faqItems = [
 
     <div class="container">
 
-      <!-- OVERVIEW -->
+      <!-- LOCATION, HOURS, CONTACT -->
+      <section class="section" aria-labelledby="location-heading">
+        <h2 id="location-heading">Where Is the Personal Status Court in Dubai?</h2>
+        <p>
+          The Dubai Personal Status Court shares its address with the Inheritance Court:
+          <strong>Deira, Al Garhoud Area, Street 5, next to the RTA main building</strong>
+          (Makani 3427491952). Dubai Courts lists its hours as <strong>Monday to Thursday, 8:00am to
+          3:00pm, and Friday, 8:00am to 11:30am</strong>. For questions, call or WhatsApp Dubai Courts on
+          <strong>+971 4 334 7777</strong> or email info@dc.gov.ae.
+        </p>
+
+        <div class="summary-box">
+          <h3>Contact Details at a Glance</h3>
+          <div class="summary-grid">
+            <div class="summary-item">
+              <span class="label">Address</span>
+              <span class="value">Deira, Al Garhoud Area, Street 5, next to the RTA main building</span>
+            </div>
+            <div class="summary-item">
+              <span class="label">Makani number</span>
+              <span class="value">3427491952</span>
+            </div>
+            <div class="summary-item">
+              <span class="label">Hours</span>
+              <span class="value">Mon to Thu 8:00am to 3:00pm; Fri 8:00am to 11:30am</span>
+            </div>
+            <div class="summary-item">
+              <span class="label">Call centre and WhatsApp</span>
+              <span class="value">+971 4 334 7777</span>
+            </div>
+            <div class="summary-item">
+              <span class="label">Email</span>
+              <span class="value">info@dc.gov.ae</span>
+            </div>
+            <div class="summary-item">
+              <span class="label">Al Adheed service centres</span>
+              <span class="value">600 523 433</span>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top: 24px;">
+          Two other Dubai Courts sites matter in family cases. The <strong>main Dubai Courts
+          building</strong> is in Bur Dubai, Umm Hurair 2, Riyadh Street, next to Al Maktoum Bridge
+          (Makani 3089993465). Many older guides give it as the family court address, but Dubai Courts
+          lists the Personal Status Court at Al Garhoud. Dubai Courts also lists its <strong>Labour Court
+          and Execution Court</strong> at Al Awir (Makani 4914482430). The contact page does not say which
+          office enforces a family judgment, so if you need to enforce one, for example for
+          <a href="/en/unpaid-alimony-enforcement-uae/">unpaid alimony</a>, ask at the Personal Status Court
+          or the call centre which office handles it.
+        </p>
+
+        <div class="doc-table-wrapper">
+          <table class="doc-table">
+            <thead>
+              <tr><th>Office</th><th>Address</th><th>Hours</th><th>What you go there for</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Personal Status Court and Inheritance Court</td>
+                <td>Deira, Al Garhoud Area, Street 5, next to the RTA main building (Makani 3427491952)</td>
+                <td>Mon to Thu 8:00am to 3:00pm; Fri 8:00am to 11:30am</td>
+                <td>Divorce, custody, alimony, marriage and inheritance cases</td>
+              </tr>
+              <tr>
+                <td>Dubai Courts main building</td>
+                <td>Bur Dubai, Umm Hurair 2, Riyadh Street, next to Al Maktoum Bridge (Makani 3089993465)</td>
+                <td>Mon to Thu 8:00am to 3:00pm; Fri 8:00am to 11:30am</td>
+                <td>Not the family court; go only if your notice or the call centre sends you there</td>
+              </tr>
+              <tr>
+                <td>Labour Court and Execution Court</td>
+                <td>Al Awir (Makani 4914482430)</td>
+                <td>Mon to Thu 8:00am to 3:00pm; Fri 8:00am to 11:30am</td>
+                <td>Listed by Dubai Courts for labour and execution matters; for a family judgment, ask the Personal Status Court which office enforces it</td>
+              </tr>
+              <tr>
+                <td>Al Adheed service centres (600 523 433)</td>
+                <td>Several, including Al Barsha, Qusais, Al Rashidiya, Oud Metha, Umm Hurair, Sheikh Zayed Road and Gold Souq metro</td>
+                <td>Mon to Thu 8:00am to 7:30pm; Fri 8:00am to 12:00pm (Ramadan: Mon to Thu 8:00am to 4:00pm, Fri 8:00am to 12:00pm)</td>
+                <td>Help registering a personal status claim and paying fees in person</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout">
+          <strong>Check before you go.</strong> These details come from the Dubai Courts contact page
+          (last updated 28 February 2026). The courts are closed at weekends and on public holidays, and
+          hours can change, especially in Ramadan and around public holidays, so call +971 4 334 7777 or
+          use the instant chat on the Dubai Courts website before you travel. Many steps, including
+          registering a claim, can be done online instead (see below).
+        </div>
+      </section>
+
+      <!-- WHAT THE COURT HANDLES -->
       <section class="section" aria-labelledby="overview-heading">
-        <h2 id="overview-heading">There Is No "Family Court" in Dubai. Here Is What There Is</h2>
+        <h2 id="overview-heading">What the Dubai Personal Status Court Handles</h2>
         <p>
-          The term "family court" is not used in the UAE court system. What most residents and expats are
-          looking for is the <strong>Dubai Personal Status Court</strong> (محكمة الأحوال الشخصية دبي).
-          This court handles all divorce, child custody, alimony, and marriage annulment cases for people
-          residing in Dubai, regardless of nationality or religion.
+          Dubai has no court officially called the "family court". Family matters go to the
+          <strong>Personal Status Court</strong> of Dubai Courts, which sits with the Inheritance Court.
+          It deals with marriage (the 2024 law requires a marriage contract to be documented in court,
+          Article 41), divorce and khula, the documenting of a talaq, custody and visitation, alimony and
+          child maintenance, dowry claims, court permits such as permission for a custodial parent to
+          travel abroad with a child (Article 116), and inheritance and wills.
         </p>
         <p>
-          The Personal Status Court is located within the <strong>Dubai Courts complex on Umm Hurair Road,
-          Bur Dubai</strong>. It operates as a distinct division from the civil and commercial courts in the
-          same building. You will find signage in Arabic and English directing you to the Personal Status
-          section on the ground floor.
+          UAE courts hear personal status cases against citizens and foreigners who have a domicile,
+          residence or place of work in the UAE (Article 3 of Federal Decree-Law No. 41 of 2024). For
+          divorce, khula, alimony, custody, visitation and dowry claims brought by a wife, children,
+          parents or a custodian, the case can go to the court where the plaintiff or the respondent
+          lives or works, or where the marital home is. The Dubai Courts claim service also expects one party to be a
+          citizen or resident of Dubai.
         </p>
         <p>
-          Since 2022, the court processes two separate legal tracks: one for Muslim couples under
-          Federal Decree-Law No. 41 of 2024 (Islamic personal status law), and one for non-Muslim
-          couples under Federal Decree-Law No. 41 of 2022 (civil family law). The court building is
-          the same; the rules that govern your case are different.
+          Two laws run through the same court:
         </p>
+        <ul class="list">
+          <li><strong>Federal Decree-Law No. 41 of 2024</strong> on Personal Status, in force since 15 April 2025, for Muslims. It also covers foreigners in general unless one spouse insists on applying their own national law (Article 1).</li>
+          <li><strong>Federal Decree-Law No. 41 of 2022</strong> on Civil Personal Status, in force since 1 February 2023, for non-Muslim UAE nationals and non-Muslim foreigners living in the UAE, unless one spouse holds to the law of their home country (Article 1).</li>
+        </ul>
 
         <div class="summary-box">
           <h3>Quick Reference</h3>
@@ -283,116 +245,76 @@ const faqItems = [
             </div>
             <div class="summary-item">
               <span class="label">Arabic name</span>
-              <span class="value">محكمة الأحوال الشخصية دبي</span>
+              <span class="value">محكمة الأحوال الشخصية</span>
             </div>
             <div class="summary-item">
-              <span class="label">Location</span>
-              <span class="value">Umm Hurair Road, Bur Dubai</span>
-            </div>
-            <div class="summary-item">
-              <span class="label">Uncontested timeline</span>
-              <span class="value">3 to 6 months</span>
-            </div>
-            <div class="summary-item">
-              <span class="label">Contested timeline</span>
-              <span class="value">12 to 24 months</span>
+              <span class="label">Laws applied</span>
+              <span class="value">Decree-Law 41/2024 (Muslims); 41/2022 (non-Muslims)</span>
             </div>
             <div class="summary-item">
               <span class="label">Filing fee</span>
-              <span class="value">AED 200 to 400 + 2% of claims</span>
+              <span class="value">AED 100 per application, capped at AED 2,000</span>
+            </div>
+            <div class="summary-item">
+              <span class="label">Family Conciliation</span>
+              <span class="value">No fee; referral at the judge’s discretion (Art. 8)</span>
+            </div>
+            <div class="summary-item">
+              <span class="label">Appeal period</span>
+              <span class="value">30 days (Art. 9, 2024 law)</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- COURT HIERARCHY -->
-      <section class="section" aria-labelledby="hierarchy-heading">
-        <h2 id="hierarchy-heading">Dubai Personal Status Court: Court Hierarchy</h2>
-        <p>
-          The Personal Status Court system in Dubai has three tiers. Understanding them matters because
-          the tier determines your rights of appeal and the timelines involved.
-        </p>
-        <ol class="steps">
-          <li>
-            <h3>Personal Status Court of First Instance</h3>
-            <p>
-              This is where all divorce cases begin. A judge hears the evidence, receives documents,
-              may order a social worker's report for custody matters, and issues the initial divorce
-              decree. Most cases resolve at this level. The timeline from filing to first-instance
-              judgment is 3 to 6 months for uncontested cases and 12 to 24 months for contested ones.
-            </p>
-          </li>
-          <li>
-            <h3>Personal Status Court of Appeal</h3>
-            <p>
-              Either party has <strong>30 days from the date of judgment</strong> to file an appeal.
-              An appeal moves the case to the Court of Appeal as it stood before the first-instance
-              judgment, so the Court of Appeal reviews both the facts and the law: it can reassess the
-              evidence and consider new evidence and defences, although new claims are not accepted
-              (Article 167 of Civil Procedure Law No. 42 of 2022). A decision typically takes 3 to 9
-              months after the appeal is filed.
-            </p>
-          </li>
-          <li>
-            <h3>Court of Cassation</h3>
-            <p>
-              The highest court in the Dubai judicial hierarchy. Unlike the Court of Appeal, it reviews
-              points of law only, not facts: whether the law was applied or interpreted correctly and
-              whether the procedure was valid. A cassation appeal is open where the claim exceeds
-              AED 500,000 or cannot be valued in money, which can include divorce and custody claims,
-              and it must be filed within 30 days (Articles 175 and 178 of Civil Procedure Law No. 42
-              of 2022). Ask your lawyer whether your case qualifies.
-            </p>
-          </li>
-        </ol>
-      </section>
-
       <!-- WHICH COURT: MUSLIMS vs NON-MUSLIMS -->
       <section class="section" aria-labelledby="tracks-heading">
-        <h2 id="tracks-heading">Which Court Applies to You: Muslim vs Non-Muslim</h2>
+        <h2 id="tracks-heading">Which Law Applies to You: Muslim vs Non-Muslim</h2>
 
         <h3>For Muslim Couples</h3>
         <p>
-          Muslim couples, regardless of nationality, file at Dubai Personal Status Court and their
-          case is governed by <strong>Federal Decree-Law No. 41 of 2024</strong> on Personal Status.
-          This is Islamic family law as codified by the UAE federal legislature. It covers grounds for
-          divorce (talaq, khul'a, tatliq), mahr obligations, iddah waiting periods, and the custody
-          hierarchy for children.
+          Muslim couples file at the Dubai Personal Status Court under <strong>Federal Decree-Law
+          No. 41 of 2024</strong>. It applies to UAE citizens where one or both spouses are Muslim, and to
+          foreigners unless one spouse insists on their own national law (Article 1). It also applies to
+          divorce cases that had no final judgment when it came into force (Article 1(4)). The law covers
+          talaq and its documentation, khula, judicial divorce for harm or discord, dowry, the waiting
+          period (iddah), alimony and custody.
         </p>
         <p>
-          Most Muslim divorce cases start with the Family Guidance Section process (explained in
-          detail below). Under the 2005 law this was a legal requirement; under the 2024 law the
-          judge decides whether to refer a case, and in practice many contested cases still go there.
+          Some points people often get wrong. A talaq repeated, or pronounced with a number such as
+          "three", counts as one divorce (Article 57). A husband must document a divorce in court within
+          15 days; if he does not, without an excuse the court accepts, the wife can claim compensation
+          equal to alimony from the divorce to its documentation, and she keeps her right to file a case
+          to prove the divorce (Article 58). Custody ends at 18 (Article 123),
+          and from 15 a child may choose which parent to live with unless the child’s interest requires
+          otherwise (Article 122).
         </p>
 
         <h3>For Non-Muslim Couples under Federal Decree-Law 41/2022</h3>
         <p>
-          Since <strong>Federal Decree-Law No. 41 of 2022</strong> came into force, non-Muslim expats
-          in Dubai have their own legal track at the same Personal Status Court. Key differences from
-          the Muslim track include:
+          Non-Muslim couples use the same court building under <strong>Federal Decree-Law No. 41 of
+          2022</strong>. Key differences from the Muslim track:
         </p>
         <ul class="list">
-          <li><strong>No-fault divorce:</strong> no grounds required, neither party needs to prove harm or misconduct</li>
-          <li><strong>No Family Guidance requirement:</strong> non-Muslims can file directly without pre-filing counselling</li>
-          <li><strong>No automatic 50/50 split:</strong> each spouse generally keeps assets held in their own name, and the court weighs financial and non-financial contributions, the length of the marriage and the children's needs</li>
-          <li><strong>Joint custody default:</strong> both parents share parental rights and responsibilities from the start, which does not automatically mean equal parenting time</li>
-          <li><strong>No iddah:</strong> the Islamic post-divorce waiting period does not apply</li>
-          <li><strong>Either spouse initiates:</strong> there is no equivalent of talaq; either party files the petition</li>
+          <li><strong>No-fault divorce:</strong> either spouse’s wish to separate is enough; no need to show harm or blame (Articles 7 and 8)</li>
+          <li><strong>No Family Guidance:</strong> divorce cases are not referred and go straight to court for a judgment at the first hearing (Article 3)</li>
+          <li><strong>Served first:</strong> the divorce takes place by court decision after the other spouse is duly served (Article 8)</li>
+          <li><strong>Alimony after the judgment:</strong> the wife applies after the divorce judgment, and the judge decides using listed factors such as the years of marriage, her age and the financial position as assessed by an accounting expert (Article 9)</li>
+          <li><strong>Joint custody:</strong> custody is a joint and equal right of both parents (Article 10) until the child is 18 (Article 4)</li>
+          <li><strong>No automatic equal split:</strong> the law has no rule that divides property in half</li>
         </ul>
         <p>
-          To use this track, at least one spouse must be non-Muslim, and you must explicitly request
-          the civil law pathway at filing. If you do not affirmatively elect it, the court may default
-          to applying the law of your country of marriage.
+          If one spouse is a foreigner who holds to the law of their home country, that law may apply
+          instead (Article 1 of both laws). Mixed couples, where one spouse is Muslim, should confirm which
+          law applies before filing. Our <a href="/en/non-muslim-divorce-uae/">non-Muslim divorce guide</a>
+          covers the civil track in more depth.
         </p>
 
         <h3>What About the DIFC Courts?</h3>
         <p>
           Some websites describe the DIFC Courts as a "third option" for non-Muslim divorce in Dubai.
           They are not. The DIFC Courts are the English-language common-law courts of the Dubai
-          International Financial Centre, and under <strong>Dubai Law No. 2 of 2025</strong> they hear
-          civil and commercial claims, employment claims, arbitration-related applications and the
-          probate of non-Muslim wills registered with the DIFC Wills Service Centre. They have no
-          family jurisdiction:
+          International Financial Centre, and they have no family jurisdiction:
         </p>
         <ul class="list">
           <li>They cannot grant a divorce decree</li>
@@ -401,277 +323,384 @@ const faqItems = [
           <li>There is no DIFC filing fee for a divorce, because there is no DIFC divorce filing</li>
         </ul>
         <p>
-          A non-Muslim divorce in Dubai goes to the Personal Status Court under FL 41/2022. If
-          English-language proceedings matter to you and you have a genuine connection to Abu Dhabi,
-          the Abu Dhabi Civil Family Court runs its no-fault process in Arabic and English (see our <a href="/en/family-court-abu-dhabi/">Abu Dhabi family court guide</a>). Our guide
+          A non-Muslim divorce in Dubai goes to the Personal Status Court under Decree-Law 41/2022. Our guide
           to <a href="/en/difc-divorce-dubai/">why the DIFC Courts cannot grant a divorce</a> explains
           the difference in more detail.
         </p>
 
         <div class="callout">
           <strong>Not sure which track applies?</strong> The choice between the Muslim and non-Muslim
-          tracks, and between Dubai and Abu Dhabi where you have a real connection to both, can affect
-          asset division, timelines, and costs significantly. A short consultation with a Dubai family
-          lawyer before filing can save months of delay.
-          See our guide to <a href="/en/divorce-lawyer-dubai/">finding a divorce lawyer in Dubai</a>.
+          tracks, or a home-country law, and the question of which emirate’s court can hear your case,
+          change what you can claim. A short consultation with a UAE-licensed family lawyer before filing
+          helps you start in the right place.
         </div>
       </section>
 
       <!-- FAMILY GUIDANCE SECTION -->
       <section class="section" aria-labelledby="guidance-heading">
-        <h2 id="guidance-heading">The Family Guidance Section: What It Is and What to Expect</h2>
+        <h2 id="guidance-heading">Family Conciliation (Family Guidance): Is It Required?</h2>
         <p>
-          The <strong>Family Guidance Section</strong> (دائرة الإرشاد والتوافق الأسري) is the
-          counselling service where most Muslim divorce cases in Dubai start. Under the old 2005 law
-          referral was mandatory before a divorce petition could proceed; under Federal Decree-Law
-          No. 41 of 2024 the judge refers the parties when it is considered useful. There is no
-          statutory time limit for this stage.
+          Dubai Courts calls the service <strong>Family Conciliation</strong>; the 2024 law calls it
+          Family Guidance. Under Article 8 of Federal Decree-Law No. 41 of 2024, before a case goes to
+          court the supervising judge <strong>may</strong> refer the spouses to Family Guidance to settle
+          amicably, if he or she considers it feasible. It is not automatic.
         </p>
 
-        <h3>What Happens at the Family Guidance Section</h3>
-        <p>
-          The Section is staffed by trained family counsellors, not judges. Sessions are confidential
-          and not recorded as part of the court file. The process typically involves up to three sessions
-          spread over a few weeks (around 30 days is common):
-        </p>
+        <h3>Matters That Are Not Referred</h3>
         <ul class="list">
-          <li><strong>Session 1:</strong> Each spouse is interviewed separately. The counsellor assesses the history of the marriage, reasons for the breakdown, and whether children are involved.</li>
-          <li><strong>Session 2:</strong> Both spouses are brought together (if safe to do so). The counsellor attempts mediation and may propose practical solutions: counselling referrals, financial agreements, parenting plans.</li>
-          <li><strong>Session 3:</strong> Final review. If reconciliation has failed, both parties confirm their position in writing.</li>
+          <li>Wills and inheritance</li>
+          <li>Urgent and temporary cases, including urgent or temporary orders on alimony, custody and tutorship</li>
+          <li>Cases where reconciliation is not foreseeable, such as cases to prove a marriage or to prove a divorce</li>
+          <li>Non-Muslim divorces under Federal Decree-Law No. 41 of 2022, which are never referred (Article 3)</li>
         </ul>
+
+        <h3>How the Dubai Courts Service Works</h3>
         <p>
-          If reconciliation attempts fail across all three sessions, the counsellor issues a
-          <strong>non-reconciliation certificate</strong>, which lets the case continue at the Personal
-          Status Court. If the spouses reach a settlement instead, it can be approved by the court and
-          made binding.
+          According to the Dubai Courts service page, Family Conciliation is open to citizens, residents
+          and people who work in Dubai. You apply on the Dubai Courts website (after registering) or at a
+          government service centre, upload the marriage contract as a PDF, and pay no fee. A file ends in
+          one of four ways: a settlement, a waiver, closure of the file, or referral to court.
+        </p>
+        <p>
+          A settlement reached in Family Guidance is recorded in a report signed by both spouses and the
+          counsellor and approved by the supervising judge. It then has the force of an execution writ and
+          cannot be appealed unless it contradicts the law (Article 8(2)). Read every term before you sign.
+        </p>
+        <p>
+          The Dubai Courts Personal Status Claims service asks for the Family Conciliation referral
+          alongside the statement of claim, so expect to start with conciliation unless your matter is
+          exempt. If it is exempt, ask the call centre or an Al Adheed centre what to upload instead.
         </p>
 
-        <h3>When Is a Case Not Referred to Family Guidance?</h3>
+        <h3>No Fixed Family Guidance Period</h3>
         <p>
-          Under the 2024 law some matters are not referred at all: urgent and temporary matters such
-          as interim maintenance, custody or guardianship orders, wills and inheritance, and matters
-          that cannot be reconciled, such as proving a marriage or a divorce. In practice the stage is
-          also cut short or skipped where:
-        </p>
-        <ul class="list">
-          <li>One party refuses to attend despite being properly notified</li>
-          <li>One party is absent from the UAE and cannot be located</li>
-          <li>Domestic violence has been documented (in which case expedited procedures apply)</li>
-          <li>The case is not covered by Islamic personal status law (i.e., the couple is non-Muslim)</li>
-        </ul>
-        <p>
-          If your spouse refuses to attend the Family Guidance Section, the counsellor records this
-          refusal and issues the certificate allowing you to proceed directly to filing. Your spouse's
-          non-cooperation does not trap you in the counselling phase.
+          The law sets no time limit for the guidance stage. The 60 days often quoted belongs to a later
+          stage: in contested divorces for harm or discord, the two arbitrators the court appoints have up
+          to <strong>60 days from their appointment</strong> (Article 72), down from 90 under the old law.
         </p>
 
-        <h3>Practical Tips for the Family Guidance Section</h3>
+        <h3>Practical Tips for the Sessions</h3>
         <p>
-          While sessions are confidential, anything you communicate about financial assets, parenting
-          arrangements, or admissions of fault can influence how you approach the court phase. Prepare
-          with your lawyer before attending. The counsellors are professionals focused on the wellbeing
-          of the family, not advocates for either party. Arriving with a clear, calm account of your
-          situation is more effective than arriving with grievances.
-        </p>
-        <p>
-          If children are involved, the counsellor's observations about each parent's engagement can
-          inform later social worker reports ordered by the judge. Attend every session punctually and
-          demonstrate your commitment to the children's welfare regardless of your feelings toward
-          your spouse.
+          What you say about money, the children or the reasons for the breakdown can shape how you
+          approach the court stage, so think it through before you attend. Counsellors are not advocates
+          for either spouse. A clear, calm account of your situation and a realistic view of what you want
+          for the children tend to help more than a list of grievances. For a fuller walk-through of this
+          stage, see our guide to the <a href="/en/family-guidance-section-uae/">Family Guidance Section in
+          the UAE</a>.
         </p>
       </section>
 
       <!-- STEP BY STEP FILING -->
       <section class="section" aria-labelledby="filing-heading">
-        <h2 id="filing-heading">Step-by-Step: Filing for Divorce at Dubai Personal Status Court</h2>
+        <h2 id="filing-heading">Step by Step: Filing a Case at Dubai Personal Status Court</h2>
         <p>
-          The following process applies to Muslim couples. Non-Muslim expats under FL 41/2022 skip
-          Step 1. For the full filing guide including costs, see our dedicated article on
+          This is the general route for a Dubai personal status claim, based on the Dubai Courts service
+          pages and the Civil Procedure Code (Federal Decree-Law No. 42 of 2022). Non-Muslim divorces skip
+          Step 2. For the divorce-specific detail, see our guide on
           <a href="/en/how-to-file-for-divorce-in-dubai/">how to file for divorce in Dubai</a>.
         </p>
 
         <ol class="steps">
           <li>
-            <h3>Step 1: Attend the Family Guidance Section (Muslim couples only)</h3>
+            <h3>Step 1: Confirm Dubai Is the Right Court and Which Law Applies</h3>
             <p>
-              Contact the Family Guidance Section at Dubai Courts to schedule your first session.
-              Both spouses receive appointment notifications. If the judge refers the case, complete up
-              to three sessions and obtain the non-reconciliation certificate. This phase typically takes a
-              few weeks (around 30 days is common) but can take
-              longer if scheduling delays occur or one party requires additional time.
+              Check the jurisdiction rules in Article 3 of the 2024 law (where each of you lives or works,
+              and where the marital home is) and which law covers you under Article 1 of the 2024 and 2022
+              laws. The Dubai Courts claim service expects one party to be a citizen or resident of Dubai.
             </p>
           </li>
           <li>
-            <h3>Step 2: File Your Divorce Petition</h3>
+            <h3>Step 2: Family Conciliation, If Your Matter Goes There</h3>
             <p>
-              Attend the ground floor of the Dubai Courts complex, Personal Status Court division.
-              You can pre-register the case online via the Dubai Courts app. Present your documents
-              to the clerk, who verifies completeness before accepting the filing. You will be
-              assigned a case number and an initial hearing date.
+              Apply online or at a government service centre with the marriage contract as a PDF. There
+              is no fee. The file ends in a settlement, a waiver, closure, or referral to court. Keep the
+              referral, because the claim service asks for it.
             </p>
           </li>
           <li>
-            <h3>Step 3: Pay the Filing Fees</h3>
+            <h3>Step 3: Prepare Your Documents</h3>
             <p>
-              Court fees at filing: <strong>AED 200 to 400</strong> for the petition itself.
-              If your petition includes financial claims (deferred mahr, alimony, property),
-              an additional <strong>2% of the claimed amount</strong> is collected at filing.
-              For example, a petition claiming AED 50,000 in deferred mahr would attract an
-              additional fee of AED 1,000. See our full breakdown of
-              <a href="/en/divorce-cost-uae/">divorce costs in the UAE</a>.
+              Scan everything as PDFs. Anything not in Arabic needs a legal Arabic translation, and foreign
+              documents must be legalised first (see the documents table below).
             </p>
           </li>
           <li>
-            <h3>Step 4: Court Serves the Other Party</h3>
+            <h3>Step 4: Register the Claim</h3>
             <p>
-              The court handles service of the divorce petition on your spouse. This is done
-              via registered mail to the address on file, and by SMS/WhatsApp to the registered
-              mobile number. If your spouse is abroad or cannot be located, the court can serve
-              by public notice published in a UAE newspaper. Your spouse has a set period to file
-              a response after service.
+              Upload the statement of claim and the Family Conciliation referral through the Dubai Courts
+              website, signing in with UAE PASS, or register at an Al Adheed centre. The Civil Procedure
+              Code allows a statement of claim in electronic or paper form under the court’s procedures
+              (Article 44(1)). If you have no domicile in the UAE, you must name an address for service in
+              the UAE and a legal representative (Article 44(2)(a)).
             </p>
           </li>
           <li>
-            <h3>Step 5: First Court Hearing</h3>
+            <h3>Step 5: Pay the Fee on Time</h3>
             <p>
-              The first hearing typically takes place <strong>4 to 8 weeks after filing</strong>.
-              The judge confirms both parties are present (or that service was properly effected),
-              reviews the filed documents, and may address urgent interim matters such as temporary
-              custody arrangements, travel bans on children, or interim maintenance payments. The
-              judge then schedules subsequent hearings for substantive arguments.
+              The personal status fee is <strong>AED 100 per application, capped at AED 2,000</strong>
+              (Dubai Law No. 21 of 2015). Pay within 3 business days, counted from the day after the payment
+              notice, or the registration is void (Article 47(1) of the Civil Procedure Code). See our
+              breakdown of <a href="/en/divorce-cost-uae/">divorce costs in the UAE</a> for translation and
+              lawyer costs on top.
             </p>
           </li>
           <li>
-            <h3>Step 6: Exchange of Documents and Financial Disclosure</h3>
+            <h3>Step 6: The Court Serves the Other Party</h3>
             <p>
-              Both parties are ordered to file their evidence: financial documents, property records,
-              salary certificates, bank statements. If custody is contested, the judge may order a
-              social worker's investigation and report, which typically adds 6 to 8 weeks to the
-              timeline. For the full evidence requirements, review our guide to
-              <a href="/en/contested-vs-uncontested-divorce-uae/">contested vs uncontested divorce in the UAE</a>.
+              Service can be made by recorded audio or video call, SMS, smart applications, email or fax,
+              or by hand at the home, workplace or chosen address; failing that, by posting on the court’s
+              website (Article 9 of the Civil Procedure Code). Electronic service counts from the date it is sent (Article 11). The
+              defendant has 10 business days from service to file a defence (Article 48(2)).
             </p>
           </li>
           <li>
-            <h3>Step 7: Judgment</h3>
+            <h3>Step 7: Hearings and Judgment</h3>
             <p>
-              The judge issues a judgment covering the divorce, any financial orders (mahr, alimony),
-              and custody arrangements. Uncontested cases reach judgment in 3 to 6 months.
-              Contested cases: 12 to 24 months. See typical timelines in our
-              <a href="/en/divorce-timeline-uae/">UAE divorce timeline guide</a>.
+              The judge can deal with urgent matters while the case runs; for example, during an alimony
+              case the court may order temporary alimony for the wife and children at her request, and that
+              order is enforceable immediately (Article 100 of the 2024 law). In contested discord cases
+              the court appoints two arbitrators, who have up to 60 days (Article 72). A non-Muslim civil
+              divorce is decided at the first hearing (Article 3 of the 2022 law). Dubai Courts issues the
+              first-instance judgment electronically. How long all this takes depends on what is disputed;
+              see our <a href="/en/divorce-timeline-uae/">UAE divorce timeline guide</a> and the guide to
+              <a href="/en/contested-vs-uncontested-divorce-uae/">contested vs uncontested divorce</a>.
             </p>
           </li>
           <li>
-            <h3>Step 8: Appeal Window</h3>
+            <h3>Step 8: Appeal or Enforce</h3>
             <p>
-              Either party has <strong>30 days</strong> from the date the judgment is formally
-              notified to file an appeal at the Court of Appeal. If no appeal is filed within
-              30 days, the judgment becomes final and enforceable.
+              Either side has <strong>30 days</strong> to appeal under Article 9 of the 2024 law, counted
+              from the day after the judgment if they attended, otherwise from the day after notice
+              (Article 10). If the other side does not pay what the judgment orders, you open an enforcement
+              file (AED 50 under Dubai Law No. 21 of 2015); ask at the Personal Status Court which office
+              handles enforcement of your judgment.
             </p>
           </li>
         </ol>
+      </section>
+
+      <!-- SERVICES AND FEES -->
+      <section class="section" aria-labelledby="smart-heading">
+        <h2 id="smart-heading">Dubai Courts Services and Fees for a Personal Status Case</h2>
+        <p>
+          These are the Dubai Courts services you are most likely to meet in a family file, with the fees
+          set by Dubai Law No. 21 of 2015 Concerning Judicial Fees of the Dubai Courts and the Dubai Courts
+          service pages.
+        </p>
+        <div class="doc-table-wrapper">
+          <table class="doc-table">
+            <thead>
+              <tr><th>Service</th><th>Used for</th><th>Fee</th></tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Family Conciliation</td>
+                <td>Trying to settle a family dispute before it reaches court; online or at a government service centre</td>
+                <td>No fee</td>
+              </tr>
+              <tr>
+                <td>Personal Status Claims</td>
+                <td>Filing a statement of claim; online or at an Al Adheed centre</td>
+                <td>AED 100 per application, capped at AED 2,000</td>
+              </tr>
+              <tr>
+                <td>Documentations and Ishhadat</td>
+                <td>Formal documentation before the court; in person or through an agent with a special official power of attorney, with original ID and two witnesses</td>
+                <td>AED 220</td>
+              </tr>
+              <tr>
+                <td>Order on petition or travel ban request</td>
+                <td>Court permission where the law requires it, and urgent orders</td>
+                <td>AED 100</td>
+              </tr>
+              <tr>
+                <td>Appeal</td>
+                <td>Challenging a first-instance judgment</td>
+                <td>AED 100 (alimony appeals free)</td>
+              </tr>
+              <tr>
+                <td>Cassation</td>
+                <td>Challenging an appeal judgment on the law</td>
+                <td>AED 2,000</td>
+              </tr>
+              <tr>
+                <td>Enforcement file</td>
+                <td>Enforcing a judgment, such as unpaid alimony</td>
+                <td>AED 50</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-note">
+          Fees change from time to time; confirm the current amount when you register. Translation,
+          legalisation and lawyer fees are separate.
+        </p>
+        <p>
+          Where the law requires court permission, you apply by "order on petition" to the court where you
+          live, and any interested party may appeal the order within one week (Article 6 of the 2024 law).
+          A travel ban request carries the same AED 100 fee; see our guide to a
+          <a href="/en/travel-ban-divorce-uae/">travel ban during a divorce</a>.
+        </p>
       </section>
 
       <!-- DOCUMENTS -->
       <section class="section" aria-labelledby="docs-heading">
         <h2 id="docs-heading">Documents Required to File at Dubai Personal Status Court</h2>
         <p>
-          Incomplete or incorrectly attested documents are the most common cause of delays at filing.
-          Every document in a language other than Arabic must be translated by a translator approved
-          by the UAE Ministry of Justice. English originals are not accepted by the court clerk.
+          Incomplete files and untranslated or unlegalised foreign papers slow a case down. Dubai Courts
+          asks for documents in PDF with a legal Arabic translation, and foreign documents must be
+          legalised before they are translated and used.
         </p>
         <div class="doc-table-wrapper">
           <table class="doc-table">
             <thead>
-              <tr><th>Document</th><th>Notes</th><th>Attestation required?</th></tr>
+              <tr><th>Document</th><th>Notes</th><th>Legalisation needed?</th></tr>
             </thead>
             <tbody>
               <tr>
-                <td>Original marriage certificate</td>
-                <td>Foreign certificates: attested by UAE Embassy in issuing country, then UAE MOFA, then Arabic translation</td>
-                <td>Yes</td>
-              </tr>
-              <tr>
-                <td>Both spouses' passports (copy + original)</td>
-                <td>Must be valid; expired passports may delay filing</td>
+                <td>Statement of claim</td>
+                <td>Uploaded as a PDF when you register the claim</td>
                 <td>No</td>
               </tr>
               <tr>
-                <td>Emirates ID (both spouses)</td>
-                <td>Required for all UAE residents</td>
+                <td>Family Conciliation referral</td>
+                <td>Uploaded with the claim where the matter went through conciliation</td>
+                <td>No (issued by Dubai Courts)</td>
+              </tr>
+              <tr>
+                <td>Marriage contract or certificate</td>
+                <td>PDF, with a legal Arabic translation if it is not in Arabic</td>
+                <td>Yes, if issued abroad</td>
+              </tr>
+              <tr>
+                <td>Emirates IDs and passports</td>
+                <td>Original ID is required for in-person documentation services</td>
                 <td>No</td>
               </tr>
               <tr>
-                <td>Children's birth certificates</td>
-                <td>Required if custody is part of the case; attested and translated if foreign</td>
-                <td>Yes (if foreign)</td>
+                <td>Children’s birth certificates</td>
+                <td>Needed where custody, visitation or child maintenance is claimed</td>
+                <td>Yes, if issued abroad</td>
               </tr>
               <tr>
-                <td>Salary certificate</td>
-                <td>Issued by employer on company letterhead within 30 days of filing</td>
-                <td>No</td>
+                <td>Proof of income and expenses</td>
+                <td>Salary certificate, bank statements, rent and school fees; alimony is set by the payer’s means and the recipient’s needs (Article 96)</td>
+                <td>Translation if not in Arabic</td>
               </tr>
               <tr>
-                <td>Bank statements (3 months)</td>
-                <td>Both parties typically ordered to disclose; bring voluntarily to avoid delay</td>
-                <td>No</td>
-              </tr>
-              <tr>
-                <td>Tenancy contract or property title</td>
-                <td>Establishes Dubai residency; needed for MOHRE-registered employees</td>
-                <td>No</td>
-              </tr>
-              <tr>
-                <td>Non-reconciliation certificate</td>
-                <td>Muslims only; issued by Family Guidance Section after failed counselling</td>
-                <td>N/A (issued by Dubai Courts)</td>
+                <td>Power of attorney</td>
+                <td>If a lawyer or agent acts for you</td>
+                <td>Yes, if signed abroad</td>
               </tr>
             </tbody>
           </table>
         </div>
         <p class="table-note">
-          Document attestation chain for foreign certificates: country of origin notary or official
-          body → UAE Embassy in that country → UAE Ministry of Foreign Affairs (MOFA) → Ministry
-          of Justice-approved Arabic translator. Your lawyer handles this chain.
+          Legalisation chain for foreign documents: the issuing country’s foreign ministry, then the UAE
+          embassy in that country, then the UAE Ministry of Foreign Affairs, followed by a legal Arabic
+          translation.
+        </p>
+        <p>
+          For a fuller checklist by case type, see our guide to the
+          <a href="/en/documents-for-divorce-uae/">documents required for divorce in the UAE</a>.
         </p>
       </section>
 
-      <!-- DUBAI vs ABU DHABI -->
-      <section class="section" aria-labelledby="comparison-heading">
-        <h2 id="comparison-heading">Dubai Personal Status Court vs Abu Dhabi: Key Differences</h2>
+      <!-- ONLINE FILING -->
+      <section class="section" aria-labelledby="online-heading">
+        <h2 id="online-heading">Filing Online and Attending Remotely</h2>
         <p>
-          If you reside in Dubai, you must file in Dubai regardless of where your spouse lives
-          (assuming you have established Dubai residency). However, understanding the differences
-          between Dubai and Abu Dhabi courts is useful for expats who may be considering relocation
-          before filing.
+          You do not have to visit Al Garhoud to start a case. Dubai Courts lists its website and the
+          Al Adheed centres as channels for personal status claims, and Family Conciliation can be
+          requested on the website after registering. Individuals sign in to Dubai Courts e-services with
+          UAE PASS; confirm the current sign-in options on the Dubai Courts website.
         </p>
-
-        <div class="compare-grid">
-          <div class="compare-card">
-            <h3>Dubai Personal Status Court</h3>
-            <ul class="list">
-              <li>Uncontested cases: <strong>3 to 6 months</strong></li>
-              <li>Non-Muslims under FL 41/2022: file at the Personal Status Court (the DIFC Courts do not hear divorces)</li>
-              <li>Higher case volume; longer wait times for hearings</li>
-              <li>Online case registration available via Dubai Courts app</li>
-              <li>Family Guidance Section usually the first step for Muslims (at the judge's discretion since April 2025)</li>
-            </ul>
-          </div>
-          <div class="compare-card">
-            <h3>Abu Dhabi Civil Family Court</h3>
-            <ul class="list">
-              <li>Non-Muslim expats: often <strong>1 to 4 weeks</strong> (Abu Dhabi Law No. 14/2021)</li>
-              <li>Muslim couples: Abu Dhabi Personal Status Court under same federal law</li>
-              <li>Generally faster processing due to dedicated non-Muslim court track</li>
-              <li>Less court backlog than Dubai for non-Muslim cases</li>
-              <li>Abu Dhabi Global Market (ADGM) Courts do not hear divorces either: they handle civil and commercial matters, plus non-Muslim wills</li>
-            </ul>
-          </div>
-        </div>
-
         <p>
-          For expat couples seeking the fastest possible resolution, filing in Abu Dhabi (if you
-          genuinely reside there) can be significantly quicker. Filing in the wrong emirate to
-          take advantage of faster courts is not permissible. The court will verify your residency.
+          The Civil Procedure Code backs this up. Fee collection, registration, service, documents,
+          attendance, pleading, witnesses, judgments, appeals and execution are all valid if done wholly or
+          partly remotely (Article 330), and remote proceedings can reach a person outside the emirate in
+          coordination with the local authority (Article 332). At each remote hearing any party may ask the
+          court to hold the trial in person, and the court decides after notifying the others
+          (Article 333). An enforceable copy of a judgment obtained remotely carries the writ of execution
+          and an electronic signature (Article 131(1)).
+        </p>
+        <p>
+          If you live abroad, you need an address for service in the UAE and a legal representative
+          (Article 44(2)(a)), and a power of attorney signed abroad must be legalised before it can be used.
+          Our guide to <a href="/en/online-divorce-uae/">online divorce in the UAE</a> walks through filing,
+          attending and tracking a case from a screen.
+        </p>
+      </section>
+
+      <!-- FIRST DAY -->
+      <section class="section" aria-labelledby="firstday-heading">
+        <h2 id="firstday-heading">What to Bring on the Day</h2>
+        <p>
+          Check the address on your notice first: personal status cases are at Al Garhoud, not the main
+          building in Umm Hurair 2. Confirm the hours, especially in Ramadan
+          or near a public holiday, and dress as you would for any government office.
+        </p>
+        <p>
+          What to carry:
+        </p>
+        <ul class="list">
+          <li>Your original Emirates ID and passport, plus copies</li>
+          <li>Your case number, hearing notice or application reference</li>
+          <li>The originals of the documents you uploaded (marriage contract, children’s birth certificates) with their legal Arabic translations</li>
+          <li>Your Family Conciliation referral or settlement report, if you have one</li>
+          <li>Fee receipts</li>
+          <li>For a documentation (Ishhadat) appointment: original ID and two witnesses, or an agent with a special official power of attorney</li>
+          <li>Financial papers (salary certificate, recent bank statements, rent and school fees) if money is claimed</li>
+        </ul>
+        <p>
+          Court papers are in Arabic, which is why Dubai Courts asks for a legal Arabic translation of
+          everything else. If you do not read Arabic and have no lawyer, bring someone who does. Keep every receipt and stamped page, as you will need them later. Expats often
+          ask whether filing in another emirate would be quicker; our comparison of
+          <a href="/en/dubai-vs-abu-dhabi-divorce/">Dubai versus Abu Dhabi divorce</a> explains why the
+          jurisdiction rules, not convenience, decide where you file.
+        </p>
+      </section>
+
+      <!-- COURT HIERARCHY / APPEALS -->
+      <section class="section" aria-labelledby="hierarchy-heading">
+        <h2 id="hierarchy-heading">Appeals: Court of First Instance, Appeal and Cassation</h2>
+        <p>
+          Dubai has its own court system with three levels. The level your case has reached decides what
+          you can still challenge and how quickly you must act.
+        </p>
+        <ol class="steps">
+          <li>
+            <h3>Court of First Instance (Personal Status)</h3>
+            <p>
+              Every case starts here. The judge hears the parties, receives documents, can appoint
+              experts or arbitrators, and issues the first-instance judgment, which Dubai Courts delivers
+              electronically.
+            </p>
+          </li>
+          <li>
+            <h3>Court of Appeal</h3>
+            <p>
+              Under the 2024 law either party has <strong>30 days</strong> to appeal (Article 9), counted
+              from the day after the judgment if they attended, or from the day after notice if they did
+              not (Article 10). The appeal fee is AED 100, and appeals in alimony cases are free. Our
+              guide on <a href="/en/divorce-appeal-uae/">appealing a divorce decision in the UAE</a> covers
+              grounds and preparation.
+            </p>
+          </li>
+          <li>
+            <h3>Court of Cassation</h3>
+            <p>
+              The highest court in Dubai, which reviews how the law was applied rather than rehearing the
+              facts. The same 30-day period applies to cassation in personal status matters (Article 9),
+              and the fee is AED 2,000. Not every judgment can go to cassation, so ask a lawyer early
+              whether yours can.
+            </p>
+          </li>
+        </ol>
+        <p>
+          Two limits to know. A settlement approved by the judge after Family Guidance cannot be appealed
+          unless it contradicts the law (Article 8(2)). Non-Muslim civil cases have their own rules on what
+          can be appealed, so check the position on the day you receive the judgment.
         </p>
       </section>
 
@@ -679,84 +708,93 @@ const faqItems = [
       <section class="section" aria-labelledby="rep-heading">
         <h2 id="rep-heading">Do You Need a Lawyer at Dubai Personal Status Court?</h2>
         <p>
-          You are entitled to represent yourself (pro se) at the Personal Status Court. In practice,
-          this is an extremely poor choice for the following reasons:
+          You can appear yourself. Article 52(1) of the Civil Procedure Code lets litigants appear in
+          person or through an attorney: a lawyer, or a relative or in-law up to the fourth degree.
+          Whether you should depends on the case. Points to weigh:
         </p>
         <ul class="list">
-          <li>All court proceedings, filings, and judge communications are in <strong>Arabic only</strong></li>
-          <li>Procedural rules are strict: missing a filing deadline or response window can result in a default judgment against you</li>
-          <li>Financial rights (mahr, alimony, asset division) and custody arrangements are determined at these hearings, and errors are difficult to reverse on appeal</li>
-          <li>Judges expect lawyers to present arguments in a specific legal format; unrepresented litigants often fail to meet this standard</li>
+          <li>The court works in <strong>Arabic</strong>, and Dubai Courts asks for a legal Arabic translation of your documents</li>
+          <li>Deadlines are short: 3 business days to pay the fee after the payment notice, 10 business days for a defence, 30 days to appeal</li>
+          <li>Money claims have time limits: a wife’s past maintenance is not heard for more than two years before filing (Article 99(3)), and a child’s past maintenance from the father for more than one year (Article 111)</li>
+          <li>A settlement approved by the judge is enforceable and generally cannot be appealed (Article 8(2))</li>
         </ul>
         <p>
-          A UAE-licensed family lawyer, particularly one fluent in both Arabic and English and
-          experienced in Personal Status Court proceedings, dramatically improves your outcome.
-          Fees for uncontested cases start at around AED 5,000. For contested cases involving
-          custody or significant assets, budget AED 20,000 to 50,000 or more.
-        </p>
-        <p>
-          See our guide to <a href="/en/divorce-lawyer-dubai/">choosing a divorce lawyer in Dubai</a>
-          for what to look for and what questions to ask before engaging representation.
+          In Dubai, the Government of Dubai Legal Affairs Department keeps separate rolls for advocates and
+          legal consultants. Before you instruct anyone, check that the person who will appear for you is
+          on the advocates’ roll, and ask for the fee agreement in writing. Lawyer fees vary with the case;
+          see our guide to <a href="/en/divorce-lawyer-dubai/">divorce lawyers in Dubai</a> for what to
+          check and what to ask.
         </p>
 
         <div class="cta-inline">
-          <p>Get matched with a licensed UAE family lawyer today.</p>
+          <p>Ask to be matched with a UAE-licensed family lawyer.</p>
           <a href="#contact" class="btn btn--primary">Free Legal Consultation</a>
         </div>
       </section>
 
-      <!-- ONLINE FILING -->
-      <section class="section" aria-labelledby="online-heading">
-        <h2 id="online-heading">Online Filing: Dubai Courts App and eDubai Courts</h2>
-        <p>
-          Dubai Courts has invested in digital services, and limited online functionality is available.
-          What you can do online:
-        </p>
-        <ul class="list">
-          <li>Register a new case and receive a case number</li>
-          <li>Pay court fees</li>
-          <li>Submit some documents electronically (scanned copies)</li>
-          <li>Receive hearing notifications and updates</li>
-          <li>Track case status</li>
-        </ul>
-        <p>
-          What still requires in-person attendance:
-        </p>
-        <ul class="list">
-          <li>Family Guidance Section sessions (for Muslims)</li>
-          <li>Original document verification</li>
-          <li>All court hearings</li>
-          <li>Collection of the final divorce decree</li>
-        </ul>
-        <p>
-          If you are abroad and cannot attend in person, your UAE-licensed lawyer can hold a
-          Power of Attorney (PoA) and represent you at most hearings. The PoA must be notarised
-          and attested. Consult your lawyer about which specific hearing stages require your
-          personal presence and which do not.
-        </p>
-      </section>
-
       <!-- AMICABLE ROUTE -->
       <section class="section" aria-labelledby="amicable-heading">
-        <h2 id="amicable-heading">Fastest Route Through Dubai Personal Status Court</h2>
+        <h2 id="amicable-heading">Settling: The Agreed Route Through the Court</h2>
         <p>
-          If you and your spouse have agreed on divorce and can settle the financial and custody
-          terms before filing, the <strong>mutual consent (amicable) divorce</strong> route is
-          significantly faster. A jointly filed petition with a signed settlement agreement covering
-          mahr, alimony, custody, and assets allows the judge to approve the settlement rather than
-          adjudicate disputes.
+          If you and your spouse agree on the divorce and on money and children, a written settlement
+          narrows what the judge has to decide. A settlement reached in Family Guidance is signed by both
+          spouses and the counsellor, approved by the supervising judge, and then has the force of an
+          execution writ (Article 8(2)).
         </p>
         <p>
-          For Muslim couples, this is typically concluded within 3 months of completing the Family
-          Guidance Section. For non-Muslim couples under FL 41/2022, an agreed case can sometimes
-          be resolved in 1 to 2 months. Read more in our detailed guide to
+          On the Muslim track a wife can also ask for khula, where the husband accepts a consideration; if
+          he stubbornly refuses, the court orders khula for an appropriate consideration, and the
+          consideration can never waive the children’s rights, maintenance or custody (Article 66). On the
+          civil track either spouse can file without giving a reason, and the divorce is decided at the
+          first hearing (Articles 3 and 7 of the 2022 law). Read more in our guide to
           <a href="/en/mutual-consent-divorce-uae/">mutual consent divorce in the UAE</a>.
         </p>
         <p>
-          Even in agreed cases, have a lawyer review the settlement agreement before you sign it.
-          Agreeing to terms that are below what the law would award you by default (particularly
-          on deferred mahr or child support) can be difficult to reverse once the court has
-          approved the settlement.
+          Even in an agreed case, have a lawyer read the settlement before you sign it. Once the judge
+          approves it, a term you regret, particularly on deferred dowry or child maintenance, is hard to
+          undo.
+        </p>
+      </section>
+
+      <!-- DUBAI vs ABU DHABI -->
+      <section class="section" aria-labelledby="comparison-heading">
+        <h2 id="comparison-heading">Dubai Personal Status Court vs Abu Dhabi: Key Differences</h2>
+        <p>
+          Where you file is decided by the jurisdiction rules, not by which court looks quicker. Under
+          Article 3 of the 2024 law the competent court is normally where the respondent lives or works;
+          for divorce, alimony, custody and dowry claims by a wife, children, parents or a custodian, the
+          plaintiff’s place and the marital home also count. If you could file in either emirate, the
+          differences below matter.
+        </p>
+
+        <div class="compare-grid">
+          <div class="compare-card">
+            <h3>Dubai Personal Status Court</h3>
+            <ul class="list">
+              <li>Muslims: Federal Decree-Law No. 41 of 2024; Family Guidance at the judge’s discretion (Article 8)</li>
+              <li>Non-Muslims: same court, Federal Decree-Law No. 41 of 2022; no Family Guidance; divorce decided at the first hearing (Article 3)</li>
+              <li>Fee: AED 100 per application, capped at AED 2,000 (Dubai Law No. 21 of 2015)</li>
+              <li>Filing: Dubai Courts website with UAE PASS, or an Al Adheed centre</li>
+              <li>Non-Muslim custody: joint and equal until the child is 18</li>
+            </ul>
+          </div>
+          <div class="compare-card">
+            <h3>Abu Dhabi Courts</h3>
+            <ul class="list">
+              <li>Muslims: Abu Dhabi Personal Status Court under the same federal 2024 law</li>
+              <li>Non-Muslims: Abu Dhabi Civil Family Court under Abu Dhabi Law No. 14 of 2021 and its 2022 Regulation, with English-language proceedings</li>
+              <li>Civil divorce application fee: <strong>AED 5,000</strong></li>
+              <li>The hearing is set at least 30 days after the application is approved, and the divorce is decided at that first hearing</li>
+              <li>Joint custody until 16, then the child chooses (2022 Regulation, Article 25)</li>
+              <li>The ADGM Courts have no family jurisdiction, so they cannot grant a divorce either</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>
+          Filing in an emirate whose courts have no jurisdiction over your case only adds delay. Our
+          <a href="/en/family-court-abu-dhabi/">Abu Dhabi family court guide</a> explains which Abu Dhabi
+          court hears which case, its addresses and its fees.
         </p>
       </section>
 
@@ -764,87 +802,22 @@ const faqItems = [
       <section class="section" aria-labelledby="law2024-heading">
         <h2 id="law2024-heading">What the 2024 Muslim Personal Status Law Changed at the Dubai Court</h2>
         <p>
-          Federal Decree-Law No. 41 of 2024 replaced the older 2005 personal status statute and took
-          effect in April 2025. For Muslim couples filing at Dubai Personal Status Court, the practical
-          change most people notice is that Family Guidance is no longer automatic.
-        </p>
-        <p>
-          Under the 2005 law most personal status claims had to go to Family Guidance first. Under
-          Article 8 of the 2024 law the supervising judge may refer the parties to the Family Guidance
-          and Reconciliation Centre if the judge considers it useful, and urgent matters are not
-          referred. There is no statutory time limit for the guidance stage; sessions usually take a
-          few weeks, and if reconciliation fails the counsellor refers the matter back to the judge.
-          The 60-day figure often quoted is about arbitration: in contested divorces for harm or
-          discord, the two arbitrators appointed by the court have up to <strong>60 days from their
-          appointment</strong> under Article 72, down from 90 days under the 2005 law.
-        </p>
-        <p>
-          Other procedural shifts under the 2024 law include clearer rules on documenting talaq, tighter
-          timelines for financial claims after divorce, and updated custody provisions. The Family
-          Guidance stage itself is unchanged in spirit, and in practice many contested Muslim cases in
-          Dubai still start there, while the arbitration cap gives contested harm cases a defined
-          endpoint.
-          For a fuller walk-through of the counselling stage, see our guide to the
-          <a href="/en/family-guidance-section-uae/">Family Guidance Section in the UAE</a>.
-        </p>
-      </section>
-
-      <!-- SMART SERVICES -->
-      <section class="section" aria-labelledby="smart-heading">
-        <h2 id="smart-heading">Dubai Courts Smart Services for a Personal Status Case</h2>
-        <p>
-          Beyond basic online registration, Dubai Courts runs a wider set of digital services that are
-          genuinely useful in a divorce file if you know what to open. Access starts with a verified
-          <strong>UAE Pass</strong> digital identity, which links your Emirates ID to the Dubai Courts
-          platform and the Dubai Now app. Without a verified UAE Pass, most smart features stay
-          read-only.
-        </p>
-        <p>
-          Services worth using directly in a personal status case:
+          Federal Decree-Law No. 41 of 2024 replaced the older personal status statute and has applied
+          since 15 April 2025, including to divorce cases that had no final judgment by then
+          (Article 1(4)). For Muslim couples at the Dubai Personal Status Court, the changes people notice
+          most:
         </p>
         <ul class="list">
-          <li><strong>Smart petition registration:</strong> open a personal status case and receive a case number before you attend in person</li>
-          <li><strong>e-Notary and remote attestation:</strong> notarise a Power of Attorney or a settlement acknowledgement without visiting a notary counter</li>
-          <li><strong>Remote and virtual hearings:</strong> some non-evidentiary hearings can be attended by video, which matters if you or your spouse travel</li>
-          <li><strong>Case tracking and hearing alerts:</strong> follow status changes and receive hearing dates by SMS and app notification</li>
-          <li><strong>Fee payment and translated-document upload:</strong> pay court fees and submit scanned Arabic translations ahead of the counter check</li>
+          <li><strong>Family Guidance is discretionary:</strong> the supervising judge may refer a case if a settlement seems feasible, and urgent matters, inheritance and cases to prove a marriage or divorce are exempt (Article 8)</li>
+          <li><strong>Arbitration has a 60-day cap:</strong> court-appointed arbitrators in contested discord cases have up to 60 days from appointment, down from 90 (Article 72)</li>
+          <li><strong>Talaq must be documented within 15 days:</strong> documenting is a duty, and a husband who is late without an excuse the court accepts owes compensation equal to alimony up to the date of documentation (Article 58)</li>
+          <li><strong>Repeated talaq counts once:</strong> a divorce repeated or coupled with a number, spoken, written or by signal, counts as one (Article 57)</li>
+          <li><strong>Custody runs to 18:</strong> custody ends at 18 (Article 123), and from 15 a child may choose which parent to live with (Article 122)</li>
+          <li><strong>30 days to appeal:</strong> the appeal and cassation period in personal status matters is 30 days (Article 9)</li>
         </ul>
         <p>
-          A practical tip: uploading a document through the smart portal does not replace the physical
-          verification of originals at the counter. Treat the online upload as a head start, then bring
-          the stamped originals on your hearing day. For the exact paperwork the clerk checks, see our
-          guide to the <a href="/en/documents-for-divorce-uae/">documents required for divorce in the UAE</a>.
-        </p>
-      </section>
-
-      <!-- FIRST DAY -->
-      <section class="section" aria-labelledby="firstday-heading">
-        <h2 id="firstday-heading">Your First Day at the Court: What to Bring and What to Expect</h2>
-        <p>
-          The Dubai Courts complex on Umm Hurair Road is large and shared with the civil and criminal
-          divisions, so allow time to find the Personal Status section on the ground floor. Arrive early;
-          counters open in the morning and queues build quickly, and security screening is at the
-          entrance. Dress modestly, as you would for any government office.
-        </p>
-        <p>
-          What to carry on the day:
-        </p>
-        <ul class="list">
-          <li>Your passport and Emirates ID, plus copies</li>
-          <li>The attested, Arabic-translated marriage certificate and any children's documents</li>
-          <li>Your non-reconciliation certificate if you are a Muslim applicant who has completed counselling</li>
-          <li>Your case number or filing reference if you pre-registered online</li>
-          <li>A folder of financial papers (salary certificate, recent bank statements) in case the clerk requests them</li>
-        </ul>
-        <p>
-          What to expect: the counter clerk checks that your file is complete and correctly translated
-          before it is accepted. Proceedings and signage are in Arabic, so if you are unrepresented,
-          arrange a translator or bring your lawyer. A first attendance is usually administrative rather
-          than a full hearing; you confirm details, receive or verify your hearing date, and leave. Keep
-          every receipt and stamped page, as you will need them at later stages. Expats often ask whether
-          filing across the border would be faster; our comparison of
-          <a href="/en/dubai-vs-abu-dhabi-divorce/">Dubai versus Abu Dhabi divorce</a> explains why
-          residency, not convenience, decides where you file.
+          See our guide to the <a href="/en/new-uae-personal-status-law-2025/">new UAE Personal Status
+          Law</a> for the full list of changes.
         </p>
       </section>
 
@@ -852,21 +825,13 @@ const faqItems = [
       <section class="section" aria-labelledby="related-heading">
         <h2 id="related-heading">Related Guides</h2>
         <div class="related-links">
-          <a href="/en/how-to-file-for-divorce-in-dubai/" class="related-link">
-            <strong>How to File for Divorce in Dubai</strong>
-            <span>Step-by-step guide for Muslims and non-Muslims</span>
-          </a>
           <a href="/en/divorce-timeline-uae/" class="related-link">
             <strong>Divorce Timeline UAE</strong>
-            <span>How long each stage takes, month by month</span>
+            <span>What decides how long each stage takes</span>
           </a>
           <a href="/en/divorce-cost-uae/" class="related-link">
             <strong>Divorce Cost UAE</strong>
             <span>Court fees, lawyer fees, and total cost breakdown</span>
-          </a>
-          <a href="/en/divorce-lawyer-dubai/" class="related-link">
-            <strong>Divorce Lawyer Dubai</strong>
-            <span>How to choose and what to ask before engaging</span>
           </a>
           <a href="/en/contested-vs-uncontested-divorce-uae/" class="related-link">
             <strong>Contested vs Uncontested Divorce UAE</strong>
@@ -874,15 +839,23 @@ const faqItems = [
           </a>
           <a href="/en/mutual-consent-divorce-uae/" class="related-link">
             <strong>Mutual Consent Divorce UAE</strong>
-            <span>Fastest route through the Personal Status Court</span>
+            <span>Settling terms before or during the case</span>
           </a>
           <a href="/en/khula-divorce-uae/" class="related-link">
             <strong>Khula Divorce UAE</strong>
-            <span>Women's right to divorce without husband's consent</span>
+            <span>Wife-initiated divorce under the 2024 law</span>
           </a>
           <a href="/en/divorce-for-harm-uae/" class="related-link">
             <strong>Divorce for Harm UAE</strong>
             <span>Judicial divorce (tatliq): grounds and process</span>
+          </a>
+          <a href="/en/child-custody-uae/" class="related-link">
+            <strong>Child Custody UAE</strong>
+            <span>Custody, guardianship and the age rules</span>
+          </a>
+          <a href="/en/temporary-alimony-uae/" class="related-link">
+            <strong>Temporary Alimony UAE</strong>
+            <span>Money while your case is pending</span>
           </a>
         </div>
       </section>
@@ -894,8 +867,8 @@ const faqItems = [
       <section class="section section--cta" id="contact" aria-labelledby="cta-heading">
         <h2 id="cta-heading">Need Help With Dubai Personal Status Court?</h2>
         <p>
-          Speak with a UAE-licensed family lawyer. Free initial consultation. Available in
-          English and Arabic. Response within 2 hours.
+          Ask to be matched with a UAE-licensed family lawyer for a free initial consultation, in English
+          or Arabic. Divorce UAE is a referral service, not a law firm, and does not handle court files.
         </p>
         <LeadForm lang="en" variant="inline" />
       </section>
@@ -928,6 +901,7 @@ const faqItems = [
   }
   .hero__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
   .hero__h1 { font-size: clamp(1.7rem, 3.5vw, 2.6rem); font-weight: 800; line-height: 1.2; margin-bottom: 16px; }
+  .byline { font-size: 0.85rem; opacity: 0.8; margin-bottom: 20px; }
   .hero__sub { font-size: 1.02rem; opacity: 0.9; margin-bottom: 24px; line-height: 1.7; }
   .hero__trust { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 24px; font-size: 0.88rem; }
   .hero__trust li { opacity: 0.9; }
@@ -947,7 +921,7 @@ const faqItems = [
   .summary-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
   .summary-item { display: flex; flex-direction: column; gap: 4px; }
   .summary-item .label { font-size: 0.8rem; color: #6b7280; text-transform: uppercase; letter-spacing: 0.05em; }
-  .summary-item .value { font-size: 1rem; font-weight: 700; color: #1e3a5f; }
+  .summary-item .value { font-size: 1rem; font-weight: 700; color: #1e3a5f; overflow-wrap: anywhere; }
 
   .steps { list-style: none; counter-reset: steps; display: flex; flex-direction: column; gap: 28px; margin-top: 24px; }
   .steps > li {
